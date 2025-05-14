@@ -2,7 +2,9 @@
 permalink: /about/
 title: "About"
 ---
-
+<br>
+<br>
+<br>
 With over eight years of hands-on Salesforce experience, I’m a certified Salesforce Architect and seasoned professional with a comprehensive portfolio of certifications and a proven track record in architecting, configuring, and optimizing enterprise CRM solutions. Based in DeBary, Florida, I combine strong technical acumen with strategic project management skills to help organizations achieve digital transformation through scalable and sustainable Salesforce implementations.
 
 ### Technical Skills <br>
