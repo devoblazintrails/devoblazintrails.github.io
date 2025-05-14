@@ -72,12 +72,6 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/devoblazintrails"
 
-header:
-    overlay_image: /assets/images/IMG_1611.jpg
-    actions:
-    - label: "Book a Free Consultation"
-      url: "https://github.com"
-
 footer:
   links:
     - label: "View my Certifications"
