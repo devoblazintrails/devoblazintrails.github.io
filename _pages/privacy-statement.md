@@ -5,6 +5,8 @@ permalink: /privacy-policy/
 author_profile: false
 ---
 
+# Privacy Statement
+
 Last Updated: May 2025
 
 ## Who We Are
