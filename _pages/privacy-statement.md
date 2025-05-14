@@ -1,11 +1,10 @@
 ---
 layout: single
+title: Privacy Statement
 classes: wide
 permalink: /privacy-policy/
 author_profile: false
 ---
-
-# Privacy Statement
 
 Last Updated: May 2025
 
