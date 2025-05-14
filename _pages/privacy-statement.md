@@ -1,6 +1,9 @@
 ---
-layout: default
-title: Privacy Statement
+title: "Privacy Policy"
+layout: single
+classes: wide
+permalink: /privacy-policy/
+author_profile: false
 ---
 
 # Privacy Statement
