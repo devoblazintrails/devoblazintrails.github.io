@@ -10,6 +10,7 @@
 
 # Site settings
 logo: "/assets/images/bio-photo.png"
+masthead_title: "My Custom Title"
 
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
