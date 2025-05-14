@@ -72,6 +72,11 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/devoblazintrails"
 
+header:
+    overlay_color: "#333"
+    actions:
+      - label: "Book a Free Consultation"
+      url: "https://github.com"
 
 footer:
   links:
