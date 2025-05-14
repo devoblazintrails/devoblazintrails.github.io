@@ -9,7 +9,7 @@ header:
   overlay_image: /assets/images/IMG_1611.jpg
   actions:
     - label: "Book Your Free Consultation"
-      url: "https://github.com/mmistakes/minimal-mistakes/"
+      url: "https://calendar.app.google/cCb7oXFs3Wa55zPV6"
 author_profile: true
 ---
 
