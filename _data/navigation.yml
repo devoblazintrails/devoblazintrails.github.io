@@ -3,7 +3,7 @@ main:
     url: /our-services/
   - title: "Client Reviews"
     url: /client-reviews/
-  - title: "Blog"
-    url: /blog/
+#  - title: "Blog"
+#    url: /blog/
   - title: "About"
     url: /about/
