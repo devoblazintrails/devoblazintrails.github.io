@@ -3,6 +3,13 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: splash
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/IMG_1611.jpg
+  actions:
+    - label: "Book Your Free Consultation"
+      url: "https://github.com/mmistakes/minimal-mistakes/"
 author_profile: true
 ---
 
