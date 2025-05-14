@@ -1,6 +1,7 @@
 ---
 permalink: /about/
-title: "About"
+name: About Us
+title: null
 layout: single
 classes: wide
 author_profile: true
