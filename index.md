@@ -5,3 +5,16 @@
 layout: splash
 author_profile: true
 ---
+
+# love unITed Solutions, LLC
+
+## Maximizing your orgs potential!
+
+Thank you for checking out our website, we're an independent consultancy aimed at helping companies maximize the ROI from their Salesforce orgs. Our main areas of focus are:
+*   Increasing User Adoption
+*   Gaining insights to business trends via analytics
+*   Training users on Salesforce the "human way"
+*   Configuring/implementing niche products (e.g. CPQ, CRMA, Marketing Cloud Account Engagement, Health Cloud, Manufacturing Cloud etc.)
+
+
+Send us an inquiry below to begin your journey with us!
