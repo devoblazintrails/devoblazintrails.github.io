@@ -63,7 +63,7 @@ author:
   bio    : "Salesforce Consulting with Heart."
   links:
     - label: "View my Certifications"
-      icon: "fas fa-fw fa-link"
+      icon: "fa-brands fa-salesforce"
       url: "https://www.salesforce.com/trailblazer/devomoore"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
