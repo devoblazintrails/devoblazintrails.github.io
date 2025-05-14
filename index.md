@@ -6,7 +6,7 @@ title: Salesforce Consulting with Heart
 layout: splash
 header:
   overlay_filter: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 255, 255, 0.5))
-  overlay_image: /assets/images/IMG_1611.jpg
+  overlay_image: assets/images/ChatGPT Image May 14, 2025, 04_48_16 PM.png
   actions:
     - label: "Speak with a Consultant"
       url: "https://calendar.app.google/cCb7oXFs3Wa55zPV6"
