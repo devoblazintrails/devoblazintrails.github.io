@@ -10,8 +10,7 @@ header:
   actions:
     - label: "Speak with a Consultant"
       url: "https://calendar.app.google/cCb7oXFs3Wa55zPV6"
-  excerpt: "Providing custom solutions to help companies overcome problems and gain the most from their CRM."
-author_profile: true
+excerpt: "Providing custom solutions to help companies overcome problems and gain the most from their CRM."
 ---
 
 ## Let's start maximizing your orgs potential!
