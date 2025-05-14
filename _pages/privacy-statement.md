@@ -1,5 +1,5 @@
 ---
-title: "Privacy Policy"
+title: null
 layout: single
 classes: wide
 permalink: /privacy-policy/
