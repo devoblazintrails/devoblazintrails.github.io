@@ -1,8 +1,8 @@
 main:
   - title: "Our Services"
     url: /our-services/
-#  - title: "Client Reviews"
-#    url: /client-reviews/
+  - title: "Client Reviews"
+    url: /client-reviews/
 #  - title: "Tags"
 #    url: /tags/
   - title: "About"
