@@ -6,8 +6,7 @@ permalink: /our-services/
 author_profile: false
 ---
 
-Test Review
-##### Client Name
-Review Date: XX.XX.XXXX
+Video Testimonials
 
-They did an amazing job helping us get better at x.
+
+Written Testimonials
