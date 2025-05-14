@@ -73,7 +73,7 @@ author:
       url: "https://github.com/devoblazintrails"
 
 header:
-    overlay_color: "#333"
+    overlay_image: /assets/images/IMG_1611.jpg
     actions:
     - label: "Book a Free Consultation"
       url: "https://github.com"
