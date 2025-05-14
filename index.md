@@ -4,16 +4,16 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: splash
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
+  overlay_filter: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 255, 255, 0.5))
   overlay_image: /assets/images/IMG_1611.jpg
   actions:
-    - label: "Book Your Free Consultation"
+    - label: "Salesforce Consulting with Heart"
       url: "https://calendar.app.google/cCb7oXFs3Wa55zPV6"
+  excerpt: "Providing custom solutions to help companies overcome problems and gain the most from their CRM."
 author_profile: true
 ---
 
-## Maximizing your orgs potential!
+## Let's start maximizing your orgs potential!
 
 Thank you for checking out our website, we're an independent consultancy aimed at helping companies maximize the ROI from their Salesforce orgs. Our main areas of focus are:
 *   Increasing User Adoption
