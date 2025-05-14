@@ -1,7 +1,6 @@
 ---
-layout: single
+layout: splash
 title: Privacy Statement
-classes: wide
 permalink: /privacy-policy/
 author_profile: false
 ---
