@@ -1,6 +1,5 @@
 ---
 permalink: /about/
-name: About Us
 title: null
 layout: single
 classes: wide
