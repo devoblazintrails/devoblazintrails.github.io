@@ -5,7 +5,7 @@
 title: Salesforce Consulting with Heart
 layout: splash
 header:
-  overlay_filter: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 255, 255, 0.5))
+  overlay_filter: linear-gradient(rgba(194, 178, 128, 0.5), rgba(19, 63, 105, 0.5))
   overlay_image: assets/images/Untitled design.GIF
   actions:
     - label: "Speak with a Consultant"
