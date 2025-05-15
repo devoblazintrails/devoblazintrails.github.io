@@ -6,7 +6,7 @@ title: Salesforce Consulting with Heart
 layout: splash
 header:
   overlay_filter: linear-gradient(rgba(194, 178, 128, 0.5), rgba(19, 63, 105, 0.5))
-  overlay_image: assets/images/Untitled design.GIF
+  overlay_image: assets/images/Untitled design.gif
   actions:
     - label: "Speak with a Consultant"
       url: "https://calendar.app.google/cCb7oXFs3Wa55zPV6"
