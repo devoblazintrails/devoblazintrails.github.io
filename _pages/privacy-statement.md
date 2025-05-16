@@ -65,9 +65,5 @@ Should any questions, comments, or concerns arise regarding this Privacy Policy 
 
 
 Email: compliance@loveunited.solutions<br>
-Phone Number: XXX-XXX-XXXX<br>
-Mailing Address:<br>
-Devohne Perez Mercado<br>
-love unITed Solutions, LLC<br>
-P.O Box XX,<br>
-Lake Monroe, FL 32747
+Phone Number: 321-370-2301<br>
+
