@@ -39,3 +39,17 @@ Collaboration is a core part of how I work. I actively engage with developers, o
 I take a <strong>holistic approach to solution design</strong>—considering not just the technical architecture, but also the business value, user experience, and long-term sustainability. I apply systems thinking and hands-on configuration skills to ensure my solutions deliver impact and scale with the business.
 
 In short, I’m a multifaceted Salesforce Architect who brings together <strong>technical excellence, strategic insight, and a collaborative mindset</strong>. I’m passionate about leveraging Salesforce to drive business outcomes, improve user experience, and build solutions that scale.
+
+
+<meta name="description" content="Learn about lu Solutions, LLC, an independent Salesforce consultancy dedicated to helping businesses enhance their CRM systems through customized solutions.">
+
+<meta property="og:title" content="About Us | lu Solutions, LLC">
+<meta property="og:description" content="Discover how lu Solutions, LLC helps businesses enhance their CRM systems through customized Salesforce solutions.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.loveunited.solutions/about">
+<meta property="og:image" content="https://www.loveunited.solutions/assets/images/ChatGPT Image May.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About Us | lu Solutions, LLC">
+<meta name="twitter:description" content="Discover how lu Solutions, LLC helps businesses enhance their CRM systems through customized Salesforce solutions.">
+<meta name="twitter:image" content="https://www.loveunited.solutions/assets/images/logo.png">
