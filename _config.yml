@@ -75,6 +75,17 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/devoblazintrails"
 
+footer:
+  links:
+    - label: "View my Certifications"
+      icon: "fa-brands fa-salesforce"
+      url: "https://www.salesforce.com/trailblazer/devomoore"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/devo-pm/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/devoblazintrails"
 
 defaults:
   # _posts
