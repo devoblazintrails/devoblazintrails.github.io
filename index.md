@@ -25,9 +25,9 @@ Thank you for checking out our website, we're an independent consultancy aimed a
 Send us an inquiry below to begin your journey with us!
 
 
-<meta name="description" content="lu Solutions, LLC offers personalized Salesforce consulting services to help companies maximize their CRM investment through user adoption, analytics, and tailored solutions.">
+<meta name="description" content="love united Solutions, LLC offers personalized Salesforce consulting services to help companies maximize their CRM investment through user adoption, analytics, and tailored solutions.">
 
-<meta property="og:title" content="Salesforce Consulting with Heart | lu Solutions, LLC">
+<meta property="og:title" content="Salesforce Consulting with Heart | love united Solutions, LLC">
 <meta property="og:description" content="Personalized Salesforce consulting to maximize your CRM investment.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.loveunited.solutions/">
