@@ -8,8 +8,8 @@ header:
   overlay_filter: linear-gradient(rgba(194, 178, 128, 0.7), rgba(19, 63, 105, 0.7))
   overlay_image: assets/images/Untitled design.gif
   actions:
-    - label: "Speak with a Consultant"
-      url: "https://calendar.app.google/cCb7oXFs3Wa55zPV6"
+    - label: "BOOK YOUR FREE CONSULTATION"
+      url: "https://calendar.app.google/KtFfzRHRmS41CmtZ7"
 excerpt: "Providing custom solutions to help companies overcome problems and gain the most from their CRM."
 ---
 
@@ -27,7 +27,7 @@ Let’s architect a Salesforce ecosystem that works for your team — with clari
 Click the button below to get a free consultation with us!
 
 <a href="https://calendar.app.google/KtFfzRHRmS41CmtZ7" target="_blank" rel="noopener noreferrer">
-  <button style="background-color: #007BFF; color: white; padding: 12px 20px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
+  <button style="background-color: #c2b280; color: #133f69; padding: 12px 20px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
     Schedule a Call
   </button>
 </a>
