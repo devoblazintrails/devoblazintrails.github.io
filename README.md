@@ -1,27 +1,42 @@
-# Minimal Mistakes remote theme starter
+# lu Solutions, LLC – Salesforce Consulting with Heart 💙
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+Welcome to the repository for the [lu Solutions, LLC](https://devoblazintrails.github.io) website — the home base of an independent Salesforce consultancy that combines technical excellence with a personal touch.
 
-Contains basic configuration to get you a site with:
-
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
-
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+This site is built using GitHub Pages and serves as the primary hub for showcasing our services, expertise, and approach to Salesforce solutions.
 
 ---
 
-## Troubleshooting
+## 🚀 About
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+**lu Solutions, LLC** offers specialized Salesforce consulting services including:
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+- Salesforce Implementation
+- Report & Dashboard Enhancement
+- Process Optimization
+- User Adoption Strategy
+- Third-Party Tool Integration
+- Custom Development
+- Training & Documentation
+
+We focus on practical, people-first solutions that help teams get the most from their Salesforce investment.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** HTML5 / CSS3
+- **Hosting:** GitHub Pages
+- **Design Philosophy:** Lightweight, responsive, and easy to maintain
+- **Repository Purpose:** Hosting and version control for the public-facing consultancy website
+
+---
+
+## 📁 Structure
+
+```plaintext
+/
+├── index.html          # Homepage
+├── our-services.html   # Detailed services overview
+├── contact.html        # Contact form or link to email
+├── assets/             # CSS, images, and supporting assets
+└── README.md           # This file
