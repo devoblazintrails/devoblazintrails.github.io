@@ -1,7 +1,6 @@
 ---
 title: "Our Services"
-layout: single
-classes: wide
+layout: splash
 permalink: /our-services/
 author_profile: false
 ---
