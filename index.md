@@ -31,9 +31,9 @@ Send us an inquiry below to begin your journey with us!
 <meta property="og:description" content="Personalized Salesforce consulting to maximize your CRM investment.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.loveunited.solutions/">
-<meta property="og:image" content="https://www.loveunited.solutions/assets/images/ChatGPT Image May 14, 2025, 04_48_16 PM.png">
+<meta property="og:image" content="https://www.loveunited.solutions/assets/images/Large-Logo.png">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Salesforce Consulting with Heart">
 <meta name="twitter:description" content="Personalized Salesforce consulting to maximize your CRM investment.">
-<meta name="twitter:image" content="https://www.loveunited.solutions/assets/images/ChatGPT Image May 14, 2025, 04_48_16 PM.png">
+<meta name="twitter:image" content="https://www.loveunited.solutions/assets/images/Large-Logo.png">
