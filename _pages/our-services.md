@@ -34,3 +34,16 @@ We don’t just build systems—we empower your team to use them effectively. Ou
 * Salesforce Starter Suite (formerly Salesforce Essentials)
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNwCpf3mMZuYhMWWibaCdDjVW1tkqWIeczzYXCcJv79yz14w/viewform?embedded=true" width="640" height="1393" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+<meta name="description" content="Understand what to expect when partnering with lu Solutions, LLC for your Salesforce consulting needs, including our approach to implementation, training, and support.">
+
+<meta property="og:title" content="What To Expect | lu Solutions, LLC">
+<meta property="og:description" content="Learn about our approach to Salesforce consulting, including implementation, training, and ongoing support.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.loveunited.solutions/what-to-expect">
+<meta property="og:image" content="https://www.loveunited.solutions/assets/images/Large-Logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What To Expect | lu Solutions, LLC">
+<meta name="twitter:description" content="Learn about our approach to Salesforce consulting, including implementation, training, and ongoing support.">
+<meta name="twitter:image" content="https://www.loveunited.solutions/assets/images/Large-Logo.png">
