@@ -27,7 +27,7 @@ Let’s architect a Salesforce ecosystem that works for your team — with clari
 Click the button below to get a free consultation with us!
 
 <a href="https://calendar.app.google/KtFfzRHRmS41CmtZ7" target="_blank" rel="noopener noreferrer">
-  <button style="background-color: #c2b280; color: #133f69; padding: 12px 20px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
+  <button class="large-centered-button"; style="background-color: #c2b280; color: #133f69; padding: 12px 20px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
     Schedule a Call
   </button>
 </a>
