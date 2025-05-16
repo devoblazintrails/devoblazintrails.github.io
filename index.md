@@ -13,16 +13,24 @@ header:
 excerpt: "Providing custom solutions to help companies overcome problems and gain the most from their CRM."
 ---
 
-## Let's start maximizing your orgs potential!
+## Transforming Vision Into Salesforce Solutions
+At Love United Solutions, we don’t just implement Salesforce — we build smart, scalable solutions that empower your business to thrive. Whether you're looking to optimize sales operations, streamline your quote-to-cash process, or increase user adoption, our tailored approach helps turn complexity into clarity.
 
-Thank you for checking out our website, we're an independent consultancy aimed at helping companies maximize the ROI from their Salesforce orgs. Our main areas of focus are:
-*   Increasing User Adoption
-*   Gaining insights to business trends via analytics
-*   Training users on Salesforce the "human way"
-*   Configuring/implementing niche products (e.g. CPQ, CRMA, Marketing Cloud Account Engagement, Health Cloud, Manufacturing Cloud etc.)
+We specialize in:
+* Salesforce CPQ & Revenue Cloud Implementation
+* Managed Admin Support
+* Business Process Strategy & Architecture
+* Data Migration & Health Cleanups
+* Training & Change Management
 
+Let’s architect a Salesforce ecosystem that works for your team — with clarity, confidence, and care.
+Click the button below to get a free consultation with us!
 
-Send us an inquiry below to begin your journey with us!
+<a href="https://calendar.app.google/KtFfzRHRmS41CmtZ7" target="_blank" rel="noopener noreferrer">
+  <button style="background-color: #007BFF; color: white; padding: 12px 20px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
+    Schedule a Call
+  </button>
+</a>
 
 
 <meta name="description" content="love united Solutions, LLC offers personalized Salesforce consulting services to help companies maximize their CRM investment through user adoption, analytics, and tailored solutions.">
