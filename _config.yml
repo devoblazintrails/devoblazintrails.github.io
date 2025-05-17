@@ -74,6 +74,12 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/devoblazintrails"
+    - label: "Get In Touch"
+      icon: "fa-solid fa-envelope"
+      url: "mailto:contact@loveunited.solutions"
+    - label: "Free Consultation"
+      icon: "fa-solid fa-calendar-days"
+      url: "https://calendar.app.google/kbYDtnBk5uyyGWL77"
 
 footer:
   links:
