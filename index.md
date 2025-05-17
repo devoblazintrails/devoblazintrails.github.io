@@ -14,7 +14,7 @@ excerpt: "Providing custom solutions to help companies overcome problems and gai
 ---
 
 ## Transforming Vision Into Salesforce Solutions
-At Love United Solutions, we don’t just implement Salesforce — we build smart, scalable solutions that empower your business to thrive. Whether you're looking to optimize sales operations, streamline your quote-to-cash process, or increase user adoption, our tailored approach helps turn complexity into clarity.
+At love unITed Solutions, we don’t just implement Salesforce — we build smart, scalable solutions that empower your business to thrive. Whether you're looking to optimize sales operations, streamline your quote-to-cash process, or increase user adoption, our tailored approach helps turn complexity into clarity.
 
 We specialize in:
 * Salesforce CPQ & Revenue Cloud Implementation
