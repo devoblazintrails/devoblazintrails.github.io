@@ -84,10 +84,7 @@ html {
 background-color: #0f3557; /* a slightly darker shade for hover */
 }
 
-.site-logo {
-  display: block;
-  margin: 0 auto;               /* centers horizontally */
-  max-width: 100%;              /* makes it responsive */
-  height: auto;                 /* keeps aspect ratio */
+.site-logo img {
+  height: 4 rem;
 }
 
