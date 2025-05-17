@@ -10,7 +10,7 @@
 
 # Site settings
 logo: "assets/images/Logo 240 X 240.png"
-masthead_title: " "
+masthead_title: "love unITed Solutions"
 
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
