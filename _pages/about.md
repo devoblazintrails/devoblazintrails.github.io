@@ -1,6 +1,6 @@
 ---
 permalink: /about/
-title: About Us
+title: " "
 layout: single
 classes: wide
 author_profile: true
@@ -40,6 +40,11 @@ I take a <strong>holistic approach to solution design</strong>—considering not
 
 In short, I’m a multifaceted Salesforce Architect who brings together <strong>technical excellence, strategic insight, and a collaborative mindset</strong>. I’m passionate about leveraging Salesforce to drive business outcomes, improve user experience, and build solutions that scale.
 
+<a href="https://calendar.app.google/KtFfzRHRmS41CmtZ7" target="_blank" rel="noopener noreferrer">
+  <button class="large-centered-button">
+    BOOK A CONSULTATION
+  </button>
+</a>
 
 <meta name="description" content="Learn about lu Solutions, LLC, an independent Salesforce consultancy dedicated to helping businesses enhance their CRM systems through customized solutions.">
 
