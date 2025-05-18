@@ -24,13 +24,18 @@ We specialize in:
 * Training & Change Management
 
 Let’s architect a Salesforce ecosystem that works for your team — with clarity, confidence, and care.
-Click the button below to get a free consultation with us!
 
-<a href="https://calendar.app.google/KtFfzRHRmS41CmtZ7" target="_blank" rel="noopener noreferrer">
-  <button class="large-centered-button">
-    Schedule a Call
-  </button>
-</a>
+### We look forward to working with you!
+
+<div class="button-container">
+  <a href="https://calendar.app.google/KtFfzRHRmS41CmtZ7" target="_blank" rel="noopener noreferrer">
+    <button class="large-centered-button">Schedule a Call</button>
+  </a>
+  <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+    <button class="large-centered-button">Take Our Salesforce Readiness Quiz</button>
+  </a>
+</div>
+
 
 
 <meta name="description" content="love united Solutions, LLC offers personalized Salesforce consulting services to help companies maximize their CRM investment through user adoption, analytics, and tailored solutions.">
