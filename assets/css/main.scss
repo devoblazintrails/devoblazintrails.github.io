@@ -67,6 +67,12 @@ html {
     }
   }
 
+.button-container {
+  display: flex;
+  gap: 10px; /* Adds spacing between buttons */
+  justify-content: center; /* Centers the buttons horizontally */
+}
+
 .large-centered-button {
   display: block;
   margin: 40px auto; /* centers the button horizontally */
@@ -75,7 +81,7 @@ html {
   background-color: #133f69; /* your desired background color */
   color: #c2b280;            /* your desired text color */
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
