@@ -31,8 +31,8 @@ Let’s architect a Salesforce ecosystem that works for your team — with clari
   <a href="https://calendar.app.google/KtFfzRHRmS41CmtZ7" target="_blank" rel="noopener noreferrer">
     <button class="large-centered-button">Schedule a Call</button>
   </a>
-  <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-    <button class="large-centered-button">Take Our Salesforce Readiness Quiz</button>
+  <a href="https://app.formbricks.com/s/cmatz49ts052zu2014tacgoxc" target="_blank" rel="noopener noreferrer">
+    <button class="large-centered-button">Inquire About Services</button>
   </a>
 </div>
 
