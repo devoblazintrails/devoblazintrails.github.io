@@ -1,7 +1,4 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 title: Salesforce Consulting with Heart
 layout: splash
 header:
@@ -25,7 +22,7 @@ We specialize in:
 
 Let’s architect a Salesforce ecosystem that works for your team — with clarity, confidence, and care.
 
-### We look forward to working with you!
+## We look forward to working with you! <br>
 
 <div class="button-container">
   <a href="https://calendar.app.google/KtFfzRHRmS41CmtZ7" target="_blank" rel="noopener noreferrer">
