@@ -22,7 +22,7 @@ We specialize in:
 
 Let’s architect a Salesforce ecosystem that works for your team — with clarity, confidence, and care.
 
-## We look forward to working with you! <br> {: .text-center}
+## We look forward to working with you! <br> {: style="text-align: center;"}
 
 <div class="button-container">
   <a href="https://calendar.app.google/KtFfzRHRmS41CmtZ7" target="_blank" rel="noopener noreferrer">
