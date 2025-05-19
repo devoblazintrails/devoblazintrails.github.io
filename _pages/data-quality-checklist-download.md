@@ -16,7 +16,7 @@ author_profile: false
     window.onload = function () {
       // Create a hidden link and trigger download
       const link = document.createElement('a');
-      link.href = 'assets/Data-Enhancement-Checklist.pdf';
+      link.href = '/assets/Data-Enhancement-Checklist.pdf';
       link.download = 'LoveUnited-Data-Enhancement-Checklist.pdf'; // Desired filename
       document.body.appendChild(link);
       link.click();
@@ -30,6 +30,6 @@ author_profile: false
   </script>
 </head>
 <body>
-  <p>Your download is starting. If it doesn’t, <a href="assets/Data-Enhancement-Checklist.pdf" download>click here</a>.</p>
+  <p>Your download is starting. If it doesn’t, <a href="/assets/Data-Enhancement-Checklist.pdf" download>click here</a>.</p>
 </body>
 </html>
