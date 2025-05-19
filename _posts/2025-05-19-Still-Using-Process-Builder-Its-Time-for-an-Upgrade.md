@@ -5,11 +5,13 @@ header:
   og_image: /assets/images/page-header-og-image.png
 categories:
   - Flow
-  - Automation
+  - Enhancement Guides
 tags:
   - Process Improvements
   - Process Builder
-  - 
+  - Process Mapping
+  - Flownatic
+  - Automation
 last_modified_at: 2025-05-19T11:30:00-04:00
 ---
  
