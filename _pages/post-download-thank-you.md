@@ -14,11 +14,11 @@ Together, we can build a Salesforce solution that’s not just functional — bu
 <br>
 
 <!-- Button section -->
-<div style="margin-top: 40px; text-align: center;">
-  <a href="https://www.loveunited.solutions/our-services" style="display: inline-block; margin: 10px; padding: 12px 24px; background-color: #133f69; color: #c2b280; border-radius: 6px; text-decoration: none;">
-    View Services
+<div class="button-container">
+  <a href="https://calendar.app.google/KtFfzRHRmS41CmtZ7" target="_blank" rel="noopener noreferrer">
+    <button class="large-centered-button">Book a Discovery Call</button>
   </a>
-  <a href="https://calendar.app.google/KtFfzRHRmS41CmtZ7" style="display: inline-block; margin: 10px; padding: 12px 24px; background-color: #133f69; color: #c2b280; border-radius: 6px; text-decoration: none;">
-    Book a Discovery Call
+  <a href="https://app.formbricks.com/s/cmatz49ts052zu2014tacgoxc" target="_blank" rel="noopener noreferrer">
+    <button class="large-centered-button">Inquire About Services</button>
   </a>
 </div>
