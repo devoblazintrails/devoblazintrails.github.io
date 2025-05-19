@@ -1,12 +1,14 @@
 ---
 title: "Salesforce Flow Demystified: Design, Build, and Automate with Confidence"
 categories:
-  - Automation
   - Flow
-  - Guides
+  - Enhancement Guides
 tags:
-  - Salesforce Flow
+  - Process Improvements
+  - Process Mapping
+  - Flownatic
   - Automation
+  - Process Mapping
 ---
 ## Mastering the Flow: A Practical Guide to Process Automation
 
