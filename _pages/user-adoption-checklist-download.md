@@ -1,3 +1,10 @@
+---
+title: "User Adoption Checklist"
+layout: splash
+permalink: /user-adoption-checklist-download/
+author_profile: false
+---
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
