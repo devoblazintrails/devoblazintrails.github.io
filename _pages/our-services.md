@@ -7,7 +7,7 @@ author_profile: false
 
 ## Services we provide include:
 
-<h3 class="center-heading">Salesforce Implementation</h3> <br>
+<h3 class="centered-heading">Salesforce Implementation</h3> <br>
 ![image-right](/assets/images/Salesforce Implementation Graphic Design.png){: .align-right}
 We provide full-service Salesforce implementation, tailored to meet the unique needs of your organization. From discovery and planning to deployment and post-go-live support, we guide you through every step. Whether you're launching Salesforce for the first time or enhancing your current setup, we ensure alignment with your business goals and long-term scalability. Our expertise spans Sales Cloud, Service Cloud, Experience Cloud, and custom solutions. 
 <br>
@@ -18,19 +18,19 @@ We provide full-service Salesforce implementation, tailored to meet the unique n
   </button>
 </a><br>
 
-<h3 class="center-heading">Report & Dashboard Enhancement</h3> <br>
+<h3 class="centered-heading">Report & Dashboard Enhancement</h3> <br>
 ![image-left](/assets/images/Report & Dashboard Design Enhancements.png){: .align-left}
 Transform raw data into actionable insights. We specialize in designing and optimizing Salesforce reports and dashboards to give your teams the visibility they need. Whether you require executive-level KPIs or detailed operational reporting, we tailor visualizations that are intuitive, real-time, and aligned with business priorities. Expect better decision-making through clearer, more accessible metrics.<br>
 <br>
-<h3 class="center-heading">Process Optimization</h3> <br>
+<h3 class="centered-heading">Process Optimization</h3> <br>
 ![image-right](/assets/images/Process Optimization Flowchart Icon.png){: .align-right}
 Your business processes should work for you, not against you. We analyze current workflows and identify gaps, redundancies, or inefficiencies. From lead management to case resolution, we redesign processes within Salesforce to maximize productivity and accuracy. Our approach ensures smoother operations, faster turnaround times, and improved customer satisfaction—all while reducing manual tasks and overhead. <br>
 <br>
-<h3 class="center-heading">Increase User Adoption</h3> <br>
+<h3 class="centered-heading">Increase User Adoption</h3> <br>
 ![image-left](/assets/images/Increasing User Adoption Concept.png){: .align-left}
 A great system only succeeds when your team uses it effectively. We drive Salesforce user adoption through targeted training, intuitive interface design, and thoughtful change management strategies. From onboarding new users to revitalizing engagement among seasoned teams, we ensure your staff has the tools, support, and motivation needed to embrace Salesforce in their day-to-day work.<br>
 <br>
-<h3 class="center-heading">Training and Documentation</h3> <br>
+<h3 class="centered-heading">Training and Documentation</h3> <br>
 ![image-right](/assets/images/Training and Documentation Icon.png){: .align-right}
 We don’t just build systems—we empower your team to use them effectively. Our training services are tailored to your users’ roles and needs, whether they’re admins, sales reps, or customer service agents. We also provide clear, comprehensive documentation and user guides to support onboarding, troubleshooting, and long-term knowledge retention.<br>
 <br>
