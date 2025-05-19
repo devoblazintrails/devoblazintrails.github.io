@@ -8,6 +8,22 @@ header:
     - label: "BOOK YOUR FREE CONSULTATION"
       url: "https://calendar.app.google/KtFfzRHRmS41CmtZ7"
 excerpt: "Providing custom solutions to help companies overcome problems and gain the most from their CRM."
+feature_row2:
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "Get Our User Adoption Enhancer Checklist"
+    title: "Struggling with low Salesforce engagement?"
+    excerpt: 'Unlock practical steps to drive real user adoption and make your CRM work for your team — not against them.'
+    url: "/user-adoption-checklist/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+feature_row3:
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "Get Our Data Enrichment Checklist"
+    title: "Get Our Data Enrichment Checklist"
+    excerpt: 'Unlock actionable insights to improve data quality, optimize workflows, and enhance user adoption within your Salesforce org.'
+    url: "/data-quality-checklist/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 ---
 
 ## Transforming Vision Into Salesforce Solutions
