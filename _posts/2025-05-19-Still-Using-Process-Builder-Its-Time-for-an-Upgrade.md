@@ -1,6 +1,7 @@
 ---
 title: "Still Using Process Builder? It’s Time for an Upgrade"
 header:
+  overlay_filter: linear-gradient(rgba(194, 178, 128, 0.7), rgba(19, 63, 105, 0.7))
   overlay_image: /assets/images/Process-Mapping-Blog Image.png
   og_image: /assets/images/page-header-og-image.png
 categories:
