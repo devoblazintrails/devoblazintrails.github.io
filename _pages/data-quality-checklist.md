@@ -17,14 +17,12 @@ Unlock actionable insights to improve data quality, optimize workflows, and enha
 ## Get the FREE Checklist
 
 Please fill in the short form below to receive immediate access to the downloadable file.
-
 <div style="position: relative; height:80dvh; overflow:auto;"> 
   <iframe 
-    src="https://app.formbricks.com/s/cmaucfsp52a8oss0143qaeti4?suId=a02a2ba80c904c1e4cabc5c2e68a01d5:1382e38e868a5b8258407d8cb6a7fd07f4faf9d9cf4745d6:5678f376ca1edc484bc437208fb72f99" 
+    src="https://app.formbricks.com/s/cmaucfsp52a8oss0143qaeti4?embed=true" 
     frameborder="0" style="position: absolute; left:0; top:0; width:100%; height:100%; border:0;">
   </iframe>
 </div>
-
 <cite>** We respect your privacy.**</cite> Your information will only be used to share the checklist and occasional insights — no spam.
 {: .small}
 <br>
