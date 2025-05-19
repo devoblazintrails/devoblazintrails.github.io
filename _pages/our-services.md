@@ -8,7 +8,7 @@ author_profile: false
 ## Services we provide include:
 
 <h3 class="centered-heading">Salesforce Implementation</h3> <br>
-![image-right](/assets/images/Salesforce Implementation Graphic Design.png){: .align-right}
+![image-right](/assets/images/Salesforce Implementation Graphic Design (1).png){: .align-right}
 We provide full-service Salesforce implementation, tailored to meet the unique needs of your organization. From discovery and planning to deployment and post-go-live support, we guide you through every step. Whether you're launching Salesforce for the first time or enhancing your current setup, we ensure alignment with your business goals and long-term scalability. Our expertise spans Sales Cloud, Service Cloud, Experience Cloud, and custom solutions. 
 <br>
 <br>
