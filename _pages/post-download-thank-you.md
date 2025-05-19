@@ -1,3 +1,10 @@
+---
+title: "Thank You!"
+layout: splash
+permalink: /thanks/
+author_profile: false
+---
+
 # 🎉 Thank You!
 
 We hope the downloaded content helps you excellerate your instance. We're excited to connect with you!
