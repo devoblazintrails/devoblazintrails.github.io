@@ -5,7 +5,7 @@ permalink: /thanks/
 author_profile: false
 ---
 
-# 🎉 Thank You!
+<h1 class="centered-heading">Thank You!</h1>
 
 We hope the downloaded content helps you excellerate your instance. We're excited to connect with you!
 
