@@ -27,12 +27,9 @@ Fill in your info to receive the checklist instantly:
     frameborder="0" style="position: absolute; left:0; top:0; width:100%; height:100%; border:0;">
   </iframe>
 </div>
-<br>
-
 <cite>** We respect your privacy.**</cite> Your information will only be used to share the checklist and occasional insights — no spam.
 {: .small}
 
-<br>
 <br>
 <div style="margin-top: 40px; text-align: center;">
   <a href="https://www.loveunited.solutions/our-services" style="display: inline-block; margin: 10px; padding: 12px 24px; background-color: #133f69; color: #c2b280; border-radius: 6px; text-decoration: none;">
