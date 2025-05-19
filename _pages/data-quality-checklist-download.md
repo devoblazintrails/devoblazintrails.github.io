@@ -23,7 +23,7 @@ author_profile: false
 
       // Redirect after delay
       setTimeout(function () {
-        window.location.href = 'https://www.loveunited.solutions';
+        window.location.href = 'https://www.loveunited.solutions/thanks';
       }, 1200);
     };
   </script>
