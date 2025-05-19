@@ -88,6 +88,23 @@ html {
 background-color: #0f3557; /* a slightly darker shade for hover */
 }
 
+.medium-centered-button {
+  display: block;
+  margin: 40px auto; /* centers the button horizontally */
+  padding: 24px 48px; /* increases size */
+  font-size: 1.5rem;  /* makes text larger */
+  background-color: #133f69;
+  color: #c2b280;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.medium-centered-button:hover {
+  background-color: #0f3557;
+}
+
 .site-logo img {
   height: 4 rem;
 }
