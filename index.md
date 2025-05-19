@@ -29,6 +29,8 @@ feature_row2:
 ## Transforming Vision Into Salesforce Solutions
 At love unITed Solutions, we don’t just implement Salesforce — we build smart, scalable solutions that empower your business to thrive. Whether you're looking to optimize sales operations, streamline your quote-to-cash process, or increase user adoption, our tailored approach helps turn complexity into clarity.
 
+{% include feature_row id="feature_row1" type="left" %}
+
 We specialize in:
 * Salesforce CPQ & Revenue Cloud Implementation
 * Managed Admin Support
@@ -36,11 +38,10 @@ We specialize in:
 * Data Migration & Health Cleanups
 * Training & Change Management
 
-Let’s architect a Salesforce ecosystem that works for your team — with clarity, confidence, and care.
-
-{% include feature_row id="feature_row1" type="left" %}
 
 {% include feature_row id="feature_row2" type="right" %}
+
+Let’s architect a Salesforce ecosystem that works for your team — with clarity, confidence, and care.
 
 <h1 class="centered-heading">We look forward to working with you!</h1>
 
