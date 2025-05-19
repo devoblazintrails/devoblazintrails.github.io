@@ -17,7 +17,7 @@ feature_row1:
     btn_label: "Read More"
     btn_class: "btn--primary"
 feature_row2:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+  - image_path: /assets/images/Enhance Your Data Quality Icon.png
     alt: "Get Our Data Enrichment Checklist"
     title: "Tired of dirty data dragging you down?"
     excerpt: 'Supercharge your Salesforce org with our **Data Quality Enhancement Checklist** — a fast-track guide to boosting accuracy, efficiency, and trust in your CRM.'
