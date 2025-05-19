@@ -8,7 +8,7 @@ Explore how we can help you streamline processes, enhance data quality, and deli
 
 [What To Expect](https://www.loveunited.solutions/our-services) <br>
 
-Together, we can build a Salesforce solution that’s not just functional — but future-proof.
+Together, we can build a Salesforce solution that’s not just functional — but future-proof. <br>
 — Love unITed Solutions
 
 <br>
