@@ -1,7 +1,7 @@
 ---
 title: "Still Using Process Builder? It’s Time for an Upgrade"
 header:
-  overlay_image: /assets/images/unsplash-image-1.jpg
+  overlay_image: /assets/images/Process-Mapping-Blog Image.png
   og_image: /assets/images/page-header-og-image.png
 categories:
   - Flow
