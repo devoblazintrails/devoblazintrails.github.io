@@ -14,7 +14,7 @@ Unlock actionable insights to improve data quality, optimize workflows, and enha
 - Guidance on data cleanup and process improvements
 - Tips for boosting adoption and efficiency
 
-## 📩 Get the Checklist
+## Get the Checklist
 
 Please fill in the short form below to receive immediate access to the downloadable file.
 
@@ -25,5 +25,5 @@ Please fill in the short form below to receive immediate access to the downloada
   </iframe>
 </div>
 
-** We respect your privacy.** Your information will only be used to share the checklist and occasional insights — no spam.
-
+<cite>** We respect your privacy.**</cite> Your information will only be used to share the checklist and occasional insights — no spam.
+{: .small}
