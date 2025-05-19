@@ -26,8 +26,6 @@ Before you even open the migration tool, take stock of your current automation l
 * Is it redundant with another process?
 <br>
 We recommend reviewing automations by object and business function. This ensures you're not just migrating clutter, but instead strategically updating your system to meet current business needs.
-<br>
-<br>
 
 ### Evaluate Areas for Consolidation
 One of the key benefits of Salesforce Flow is the ability to consolidate fragmented automations into a single, streamlined process. In the old Process Builder days, you might have created multiple builders on the same object, each handling a different piece of logic. This led to performance issues, debugging headaches, and unclear execution order.
@@ -38,8 +36,6 @@ With Flow, you can combine multiple related automations into a single record-tri
 * Opportunities to merge workflows into one optimized flow
 * Consolidation not only improves system performance, but it makes your automation easier to scale.
 <br>
-<br>
-
 ### Map Out a Process Strategy
 This is where many teams get stuck: how to go from chaotic builders to well-structured flows without breaking anything.
 
@@ -49,8 +45,6 @@ The key is process mapping. Outline each business process your automations suppo
 * Where manual processes can be automated for the first time
 <br>
 Don’t treat this as a one-to-one migration. Instead, think of it as a system upgrade. Clean up bad habits, build with best practices, and design flows with maintainability in mind.
-<br>
-<br>
 
 ### Use the Process Builder to Flow Conversion Tool
 Thankfully, Salesforce provides a native Migrate to Flow tool that helps convert Process Builders into Flows with minimal effort. While the tool is a great starting point, it doesn’t eliminate the need for review and refinement.
@@ -61,11 +55,8 @@ Things to know:
 * Testing is critical. Even after migration, validate the new Flow against every use case the old builder handled.
 <br>
 You can find Salesforce's documentation on the migration tool here:
-[Salesforce Help: Migrate to Flow Tool](https://help.salesforce.com/s/articleView?id=sf.flow_mig_tool_overview.htm)
 <br>
-<br>
-<br>
-<br>
+[Salesforce Help: Migrate to Flow Tool](https://help.salesforce.com/s/articleView?id=platform.flow_migrate_to_flow.htm&type=5)
 
 ### Why Partner with love unITed Solutions?
 While it’s tempting to do this all in-house, the truth is: automation cleanups are time-consuming, and errors can be costly. That’s where love unITed Solutions comes in. We specialize in:
@@ -75,7 +66,6 @@ While it’s tempting to do this all in-house, the truth is: automation cleanups
 * Training your team to own and extend the new system
 <br>
 We don’t just migrate your automations — we make them better. With our help, your org won’t just survive the transition away from Process Builder; it will thrive.
-<br>
 
 ### Final Thoughts
 Salesforce is making it clear: the future is Flow. While the sunsetting of Process Builder may feel like a burden, it’s actually a chance to streamline, innovate, and future-proof your Salesforce environment. Take the time to review, consolidate, and build smart — and don’t be afraid to bring in experts who live and breathe this stuff every day.
