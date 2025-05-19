@@ -8,19 +8,19 @@ header:
     - label: "BOOK YOUR FREE CONSULTATION"
       url: "https://calendar.app.google/KtFfzRHRmS41CmtZ7"
 excerpt: "Providing custom solutions to help companies overcome problems and gain the most from their CRM."
-feature_row2:
+feature_row1:
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "Get Our User Adoption Enhancer Checklist"
     title: "Struggling with low Salesforce engagement?"
-    excerpt: 'Unlock practical steps to drive real user adoption and make your CRM work for your team — not against them.'
+    excerpt: 'Unlock real adoption with our **4-Step User Adoption Checklist** — your go-to guide for turning users into champions.'
     url: "/user-adoption-checklist/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-feature_row3:
+feature_row2:
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "Get Our Data Enrichment Checklist"
-    title: "Get Our Data Enrichment Checklist"
-    excerpt: 'Unlock actionable insights to improve data quality, optimize workflows, and enhance user adoption within your Salesforce org.'
+    title: "Tired of dirty data dragging you down?"
+    excerpt: 'Supercharge your Salesforce org with our **Data Quality Enhancement Checklist** — a fast-track guide to boosting accuracy, efficiency, and trust in your CRM.'
     url: "/data-quality-checklist/"
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -37,6 +37,10 @@ We specialize in:
 * Training & Change Management
 
 Let’s architect a Salesforce ecosystem that works for your team — with clarity, confidence, and care.
+
+{% include feature_row id="feature_row1" type="left" %}
+
+{% include feature_row id="feature_row2" type="right" %}
 
 <h1 class="centered-heading">We look forward to working with you!</h1>
 
