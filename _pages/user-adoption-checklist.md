@@ -23,7 +23,7 @@ Our <strong>User Adoption Checklist</strong> gives you practical, proven steps t
 Fill in your info to receive the checklist instantly:
 <div style="position: relative; height:80dvh; overflow:auto;"> 
   <iframe 
-    src="https://app.formbricks.com/s/da8whbz51obximvatsy4mtii?suId=2dc2cc1e4b0bf23ef239782b1b0de64d:e5222289529b5c0a03b7b67dedd313c3bda81f06b9427d69:77ee4fe26caed7624d3a7589c5729232" 
+    src="https://app.formbricks.com/s/da8whbz51obximvatsy4mtii?embed=true" 
     frameborder="0" style="position: absolute; left:0; top:0; width:100%; height:100%; border:0;">
   </iframe>
 </div>
