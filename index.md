@@ -9,7 +9,7 @@ header:
       url: "https://calendar.app.google/KtFfzRHRmS41CmtZ7"
 excerpt: "Providing custom solutions to help companies overcome problems and gain the most from their CRM."
 feature_row1:
-  - image_path: /assets/images/Increase User Adoption Icon.png
+  - image_path: /assets/images/Mejora de Adopción de Usuarios.png
     alt: "Get Our User Adoption Enhancer Checklist"
     title: "Struggling with low Salesforce engagement?"
     excerpt: 'Unlock real adoption with our **4-Step User Adoption Checklist** — your go-to guide for turning users into champions.'
@@ -17,7 +17,7 @@ feature_row1:
     btn_label: "Read More"
     btn_class: "btn--primary"
 feature_row2:
-  - image_path: /assets/images/Enhance Your Data Quality Icon.png
+  - image_path: /assets/images/Data Enhancement Checklist Design.png
     alt: "Get Our Data Enrichment Checklist"
     title: "Tired of dirty data dragging you down?"
     excerpt: 'Supercharge your Salesforce org with our **Data Quality Enhancement Checklist** — a fast-track guide to boosting accuracy, efficiency, and trust in your CRM.'
