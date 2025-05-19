@@ -9,7 +9,7 @@ header:
       url: "https://calendar.app.google/KtFfzRHRmS41CmtZ7"
 excerpt: "Providing custom solutions to help companies overcome problems and gain the most from their CRM."
 feature_row1:
-  - image_path: /assets/images/Mejora de Adopción de Usuarios.png
+  - image_path: /assets/images/User Adoption Checklist Design.png
     alt: "Get Our User Adoption Enhancer Checklist"
     title: "Struggling with low Salesforce engagement?"
     excerpt: 'Unlock real adoption with our **4-Step User Adoption Checklist** — your go-to guide for turning users into champions.'
