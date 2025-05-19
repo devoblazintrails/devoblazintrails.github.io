@@ -36,6 +36,7 @@ With Flow, you can combine multiple related automations into a single record-tri
 * Opportunities to merge workflows into one optimized flow
 * Consolidation not only improves system performance, but it makes your automation easier to scale.
 <br>
+
 ### Map Out a Process Strategy
 This is where many teams get stuck: how to go from chaotic builders to well-structured flows without breaking anything.
 
