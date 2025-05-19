@@ -1,3 +1,10 @@
+---
+title: "Data Quality Checklist"
+layout: splash
+permalink: /data-quality-checklist-download/
+author_profile: false
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +16,8 @@
     window.onload = function () {
       // Create a hidden link and trigger download
       const link = document.createElement('a');
-      link.href = 'assets/sample-file.pdf'; // Change to your file path in repo
-      link.download = 'LoveUnited_Resource.pdf'; // Desired filename
+      link.href = 'assets/Data Enhancement Checklist.pdf';
+      link.download = 'LoveUnited-Data-Enhancement-Checklist.pdf'; // Desired filename
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -23,6 +30,6 @@
   </script>
 </head>
 <body>
-  <p>Your download is starting. If it doesn’t, <a href="assets/sample-file.pdf" download>click here</a>.</p>
+  <p>Your download is starting. If it doesn’t, <a href="assets/Data Enhancement Checklist.pdf" download>click here</a>.</p>
 </body>
 </html>
