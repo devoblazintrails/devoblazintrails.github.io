@@ -38,10 +38,9 @@ We specialize in:
 * Data Migration & Health Cleanups
 * Training & Change Management
 
+Let Us architect a Salesforce ecosystem that works for your team — with clarity, confidence, and care.
 
 {% include feature_row id="feature_row2" type="right" %}
-
-Let’s architect a Salesforce ecosystem that works for your team — with clarity, confidence, and care.
 
 <h1 class="centered-heading">We look forward to working with you!</h1>
 
