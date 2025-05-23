@@ -2,7 +2,7 @@
 title: "From Vision to Launch: Why I Started Love unITed Solutions"
 header:
   overlay_filter: linear-gradient(rgba(19, 63, 105, 0.7), rgba(194, 178, 128, 0.7))
-  overlay_image: /assets/images/Process-Mapping-Blog Image.png
+  overlay_image: /assets/images/Launch-Banner.png
   og_image: /assets/images/page-header-og-image.png
 categories:
   - Company Announcements
@@ -14,8 +14,10 @@ tags:
   - User Adoption
   - Salesforce Optimization
   - Small Business Tech Solutions
-last_modified_at: 2025-05-19T11:30:00-04:00
+permalink: /from-vision-to-launch/
+last_modified_at: 2025-05-23T10:45:00-04:00
 ---
+
 # From Vision to Launch: Why I Started Love unITed Solutions
 
 Today, I’m excited to share something I’ve been working on and is truly a dream 7 years in the making. I’m so excited to launch my independent Salesforce Consulting Company Love unITed Solutions, this is such an exciting journey for me to take on and I’m beyond excited to share this journey with you all!
@@ -69,9 +71,8 @@ Whether you're just starting out or cleaning up years of clutter, we're here to 
 
 If you or someone you know is looking to transform their Salesforce experience — whether through smarter automation, better adoption, or a total system refresh — I’d love to connect.
 
-📎 Explore our services
-📅 Book a free discovery call: [Insert scheduling link]
-
+📎 [Explore our services](www.loveunited.solutions/our-services)
+📅 [Book a free discovery call](https://calendar.app.google/KtFfzRHRmS41CmtZ7)
 Thank you for being part of this journey. Every share, introduction, and message of support means the world.
 
 With gratitude,
@@ -84,15 +85,5 @@ Founder, Love unITed Solutions
 <meta name="author" content="Love unITed Solutions">
 <meta property="og:title" content="From Vision to Launch: Why I Started Love unITed Solutions">
 <meta property="og:description" content="We're here to make Salesforce work smarter for your team. Learn about our launch story and services.">
-<meta property="og:url" content="https://www.loveunited.solutions/blog/launch">
+<meta property="og:url" content="https://www.loveunited.solutions/from-vision-to-launch">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://www.loveunited.solutions/assets/launch-banner.jpg">
-
-<!-- Google Analytics 4 (Replace 'G-XXXXXXXXXX' with your GA4 Measurement ID) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
