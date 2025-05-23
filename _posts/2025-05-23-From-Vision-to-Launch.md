@@ -77,8 +77,8 @@ If you or someone you know is looking to transform their Salesforce experience â
 
 Thank you for being part of this journey. Every share, introduction, and message of support means the world.
 
-With gratitude,
-Devo Perez Mercado
+With gratitude,<br>
+Devo Perez Mercado<br>
 Founder, Love unITed Solutions
 
 <!-- SEO Meta Tags (can also go in <head>) -->
