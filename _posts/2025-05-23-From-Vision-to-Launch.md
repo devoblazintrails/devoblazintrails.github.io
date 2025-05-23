@@ -18,7 +18,7 @@ permalink: /from-vision-to-launch/
 last_modified_at: 2025-05-23T10:45:00-04:00
 ---
 
-# From Vision to Launch: Why I Started Love unITed Solutions
+# Turning a Vision of Inclusion into a Tech-Driven Reality
 
 Today, I’m excited to share something I’ve been working on and is truly a dream 7 years in the making. I’m so excited to launch my independent Salesforce Consulting Company Love unITed Solutions, this is such an exciting journey for me to take on and I’m beyond excited to share this journey with you all!
 
