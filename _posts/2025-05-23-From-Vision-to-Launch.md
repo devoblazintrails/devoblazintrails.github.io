@@ -72,7 +72,9 @@ Whether you're just starting out or cleaning up years of clutter, we're here to 
 If you or someone you know is looking to transform their Salesforce experience — whether through smarter automation, better adoption, or a total system refresh — I’d love to connect.
 
 📎 [Explore our services](www.loveunited.solutions/our-services)
+
 📅 [Book a free discovery call](https://calendar.app.google/KtFfzRHRmS41CmtZ7)
+
 Thank you for being part of this journey. Every share, introduction, and message of support means the world.
 
 With gratitude,
