@@ -1,7 +1,7 @@
 ---
-title: "Our Services"
+title: "What to Expect? -- Booking a Consultation"
 layout: splash
-permalink: /our-services/
+permalink: /get-started-with-us/
 author_profile: false
 ---
 
