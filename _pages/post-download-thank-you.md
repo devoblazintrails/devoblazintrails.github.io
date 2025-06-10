@@ -27,7 +27,7 @@ Together, we can build a Salesforce solution that’s not just functional — bu
 
 <!-- Button section -->
 <div class="button-container">
-  <a href="https://calendar.app.google/KtFfzRHRmS41CmtZ7" target="_blank" rel="noopener noreferrer">
+  <a href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener noreferrer">
     <button class="large-centered-button">Book a Discovery Call</button>
   </a>
   <a href="https://app.formbricks.com/s/cmatz49ts052zu2014tacgoxc" target="_blank" rel="noopener noreferrer">
