@@ -14,7 +14,7 @@ feature_row1:
     title: "Struggling with low Salesforce engagement?"
     excerpt: 'Unlock real adoption with our **4-Step User Adoption Checklist** — your go-to guide for turning users into champions.'
     url: "/user-adoption-checklist/"
-    btn_label: "Read More"
+    btn_label: "Get Checklist"
     btn_class: "btn--primary"
 feature_row2:
   - image_path: /assets/images/Data Enhancement Checklist Design.png
@@ -22,7 +22,7 @@ feature_row2:
     title: "Tired of dirty data dragging you down?"
     excerpt: 'Supercharge your Salesforce org with our **Data Quality Enhancement Checklist** — a fast-track guide to boosting accuracy, efficiency, and trust in your CRM.'
     url: "/data-quality-checklist/"
-    btn_label: "Read More"
+    btn_label: "Get Checklist"
     btn_class: "btn--primary"
 ---
 
