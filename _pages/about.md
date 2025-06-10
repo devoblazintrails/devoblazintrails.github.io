@@ -40,7 +40,7 @@ I take a <strong>holistic approach to solution design</strong>—considering not
 
 In short, I’m a multifaceted Salesforce Architect who brings together <strong>technical excellence, strategic insight, and a collaborative mindset</strong>. I’m passionate about leveraging Salesforce to drive business outcomes, improve user experience, and build solutions that scale.
 
-<a href="https://calendar.app.google/KtFfzRHRmS41CmtZ7" target="_blank" rel="noopener noreferrer">
+<a href="https://app.usemotion.com/meet/devo-perez/consultation" target="_blank" rel="noopener noreferrer">
   <button class="large-centered-button">
     BOOK A CONSULTATION
   </button>
