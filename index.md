@@ -45,7 +45,7 @@ Let Us architect a Salesforce ecosystem that works for your team — with clarit
 <h1 class="centered-heading">We look forward to working with you!</h1>
 
 <div class="button-container">
-  <a href="https://calendar.app.google/KtFfzRHRmS41CmtZ7" target="_blank" rel="noopener noreferrer">
+  <a href="https://app.usemotion.com/meet/devo-perez/consultation" target="_blank" rel="noopener noreferrer">
     <button class="large-centered-button">Schedule a Call</button>
   </a>
   <a href="https://app.formbricks.com/s/cmatz49ts052zu2014tacgoxc" target="_blank" rel="noopener noreferrer">
