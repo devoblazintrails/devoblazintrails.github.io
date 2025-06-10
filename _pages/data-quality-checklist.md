@@ -30,7 +30,7 @@ Please fill in the short form below to receive immediate access to the downloada
   <a href="https://www.loveunited.solutions/our-services" style="display: inline-block; margin: 10px; padding: 12px 24px; background-color: #133f69; color: #c2b280; border-radius: 6px; text-decoration: none;">
     Explore Our Services
   </a>
-  <a href="https://calendar.app.google/KtFfzRHRmS41CmtZ7" style="display: inline-block; margin: 10px; padding: 12px 24px; background-color: #133f69; color: #c2b280; border-radius: 6px; text-decoration: none;">
+  <a href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" style="display: inline-block; margin: 10px; padding: 12px 24px; background-color: #133f69; color: #c2b280; border-radius: 6px; text-decoration: none;">
     Book a Strategy Call
   </a>
 </div>
