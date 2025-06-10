@@ -5,8 +5,8 @@ header:
   overlay_filter: linear-gradient(rgba(194, 178, 128, 0.7), rgba(19, 63, 105, 0.7))
   overlay_image: assets/images/Untitled design.gif
   actions:
-    - label: "BOOK YOUR FREE CONSULTATION"
-      url: "https://calendar.app.google/KtFfzRHRmS41CmtZ7"
+    - label: "LET'S DISCUSS HOW TO IMPROVE YOUR INSTANCE"
+      url: "https://app.usemotion.com/meet/devo-perez/meeting"
 excerpt: "Providing custom solutions to help companies overcome problems and gain the most from their CRM."
 feature_row1:
   - image_path: /assets/images/User Adoption Checklist Design.png
