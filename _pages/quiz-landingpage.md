@@ -1,3 +1,10 @@
+---
+title: "Your Guide to Salesforce Project Success"
+layout: splash
+permalink: /quiz-thankyou/
+author_profile: false
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
