@@ -4,7 +4,7 @@ search: false
 ---
 
 @charset "utf-8";
-$link-color: #e3c16f;
+$link-color: #c2b280;
 $background-color: #f4efe6;
 $text-color: #133f69;
 
@@ -104,6 +104,24 @@ background-color: #0f3557; /* a slightly darker shade for hover */
 }
 
 .medium-centered-button:hover {
+  background-color: #0f3557;
+}
+
+.medium-right-button {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 24px 48px; /* increases size */
+  font-size: 1.5rem;  /* makes text larger */
+  background-color: #133f69;
+  color: #c2b280;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.medium-right-button:hover {
   background-color: #0f3557;
 }
 
