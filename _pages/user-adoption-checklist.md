@@ -31,11 +31,15 @@ Fill in your info to receive the checklist instantly:
 {: .small}
 
 <br>
-<div style="margin-top: 40px; text-align: center;">
-  <a href="https://www.loveunited.solutions/our-services" style="display: inline-block; margin: 10px; padding: 12px 24px; background-color: #133f69; color: #c2b280; border-radius: 6px; text-decoration: none;">
-    Explore Our Services
+<h3 class="centered"> Ready to Transform Your Salesforce Experience?</h3>
+
+<p class="centered"> <strong>Schedule a free 15-minute discovery call</strong> to discuss your needs and explore how we can help your business thrive.</p>
+
+<div class="button-container">
+  <a href="https://app.usemotion.com/meet/devo-perez/meeting?d=15" target="_blank" rel="noopener noreferrer">
+    <button class="btn--primary">Book a Call</button>
   </a>
-  <a href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" style="display: inline-block; margin: 10px; padding: 12px 24px; background-color: #133f69; color: #c2b280; border-radius: 6px; text-decoration: none;">
-    Book a Strategy Call
+  <a href="#" onclick="openForm(); return false;">
+    <button class="btn--primary">Inquire About Services</button>
   </a>
 </div>
