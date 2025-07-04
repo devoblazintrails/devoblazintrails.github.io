@@ -24,7 +24,7 @@ Now’s your chance to **trial a project with me** or get **bite-sized expert su
 
 👉 [Claim your credit and start now](https://balo.expert/profile/devo-pm)
 
-## 🚀 Quick-Start Salesforce Setup  
+<h2 class="centered-heading"> 🚀 Quick-Start Salesforce Setup </h2>
 
 **Get up and running in weeks, not months.**
 
