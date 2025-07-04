@@ -5,6 +5,7 @@ permalink: /our-services/
 author_profile: false
 ---
 
+
 # Our Salesforce Services  
 ### Helping businesses run smarter, faster, and more connected with Salesforce.
 
@@ -26,7 +27,6 @@ Whether you need a small fix, process automation, or want to test-drive a bigger
     Claim your credit and start now!
   </button>
 </a><br>
-<hr>
 <h2 class="centered"> 🚀 Quick-Start Salesforce Setup </h2>
 
 <p class="centered"> <strong>Get up and running in weeks, not months.</strong>
