@@ -13,12 +13,12 @@ feature_row1:
     alt: "Get Our User Adoption Enhancer Checklist"
     title: "Struggling with low Salesforce engagement?"
     excerpt: 'If your team avoids Salesforce, you’re not alone—and you’re definitely not stuck that way. We can help you turn things around with a smarter, user-first approach: from guided training and clean Lightning layouts, to dashboards your team actually wants to use.
-
+<br><br>
 Curious how to make that shift stick?
+<br>
+We’ve put together a practical guide that reveals <strong>4 proven steps to boost user adoption</strong>—the same ones we use with our clients to transform their CRM into a tool their team relies on daily.
 
-We’ve put together a practical guide that reveals **4 proven steps to boost user adoption**—the same ones we use with our clients to transform their CRM into a tool their team relies on daily.
-
-👉 *Discover how to get buy-in, simplify workflows, and make analytics truly matter to your users.*'
+👉 <em>Discover how to get buy-in, simplify workflows, and make analytics truly matter to your users.</em>'
     url: "/user-adoption-checklist/"
     btn_label: "Get Checklist"
     btn_class: "btn--primary"
