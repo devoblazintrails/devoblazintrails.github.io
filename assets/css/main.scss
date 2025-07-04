@@ -124,11 +124,14 @@ background-color: #0f3557; /* a slightly darker shade for hover */
   text-justify: inter-word;
 }
 
-div.container {
-  text-align: center;
+.column {
+  float: left;
+  width: 50%;
 }
 
-ul.ULCentered {
-  display: inline-block;
-  text-align: left;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
