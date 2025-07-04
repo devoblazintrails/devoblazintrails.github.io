@@ -12,7 +12,7 @@ feature_row1:
   - image_path: /assets/images/User Adoption Checklist Design.png
     alt: "Get Our User Adoption Enhancer Checklist"
     title: "Struggling with low Salesforce engagement?"
-    excerpt: 'If your team avoids Salesforce, you’re not alone—and you’re definitely not stuck that way. We can help you turn things around with a smarter, user-first approach: from guided training and clean Lightning layouts, to dashboards your team actually wants to use.
+    excerpt: > 'If your team avoids Salesforce, you’re not alone—and you’re definitely not stuck that way. We can help you turn things around with a smarter, user-first approach: from guided training and clean Lightning layouts, to dashboards your team actually wants to use.
 <br><br>
 Curious how to make that shift stick?
 <br><br>
@@ -26,7 +26,7 @@ feature_row2:
   - image_path: /assets/images/Data Enhancement Checklist Design.png
     alt: "Get Our Data Enrichment Checklist"
     title: "Tired of dirty data dragging you down?"
-    excerpt: 'Tired of second-guessing your Salesforce data? Whether it's duplicate records, outdated info, or chaotic page layouts—messy data slows everyone down.
+    excerpt: > 'Tired of second-guessing your Salesforce data? Whether it's duplicate records, outdated info, or chaotic page layouts—messy data slows everyone down.
 <br><br>
 Our <strong>Data Enhancement Checklist</strong> gives you a fresh, actionable approach to improving data quality right at the source. Learn how to clean up clutter, streamline layouts by role, track changes that matter, and build a stewardship plan that sticks.
 <br><br>
