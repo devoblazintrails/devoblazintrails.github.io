@@ -9,3 +9,5 @@ main:
     url: /about/
   - title: "Book a Consultation"
     url: /get-started-with-us/
+  - title: "Contact Us"
+    url: /contact/  
