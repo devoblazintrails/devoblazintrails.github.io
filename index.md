@@ -12,7 +12,13 @@ feature_row1:
   - image_path: /assets/images/User Adoption Checklist Design.png
     alt: "Get Our User Adoption Enhancer Checklist"
     title: "Struggling with low Salesforce engagement?"
-    excerpt: 'Unlock real adoption with our **4-Step User Adoption Checklist** — your go-to guide for turning users into champions.'
+    excerpt: 'If your team avoids Salesforce, you’re not alone.  
+Let’s fix that together with:
+
+- Guided training and easy-to-follow documentation
+- Lightning page layouts that actually make sense
+- Dashboards and reports your team *wants* to use
+- A reimagined CRM experience that works how you do'
     url: "/user-adoption-checklist/"
     btn_label: "Get Checklist"
     btn_class: "btn--primary"
@@ -20,39 +26,97 @@ feature_row2:
   - image_path: /assets/images/Data Enhancement Checklist Design.png
     alt: "Get Our Data Enrichment Checklist"
     title: "Tired of dirty data dragging you down?"
-    excerpt: 'Supercharge your Salesforce org with our **Data Quality Enhancement Checklist** — a fast-track guide to boosting accuracy, efficiency, and trust in your CRM.'
+    excerpt: 'Duplicate records, outdated fields, and messy reports aren’t just annoying—they cost time and money.  
+We can help you:
+
+- Clean up your database and eliminate duplicates
+- Streamline record types, picklists, and fields
+- Automate data entry and validation
+- Set up scalable rules to keep data clean over time'
     url: "/data-quality-checklist/"
     btn_label: "Get Checklist"
     btn_class: "btn--primary"
 ---
 
-## Transforming Vision Into Salesforce Solutions
-At love unITed Solutions, we don’t just implement Salesforce — we build smart, scalable solutions that empower your business to thrive. Whether you're looking to optimize sales operations, streamline your quote-to-cash process, or increase user adoption, our tailored approach helps turn complexity into clarity.
+# Love unITed Solutions
+
+## Your Partner for Smarter Salesforce Solutions & Business Growth
+
+---
+
+### Unlock the Power of Salesforce Without the Overwhelm
+
+Is your business struggling to get the most out of Salesforce?  
+Or maybe you need a trusted guide to streamline your sales, service, and operations?  
+
+**Love unITed Solutions** is here to help you maximize your Salesforce investment—so you can focus on what really matters: growing your business.
+
+---
+
+### Why Work With Us?
+
+- **Tailored Salesforce Expertise**  
+  We customize Salesforce to fit your unique business needs — no cookie-cutter solutions here.  
+
+- **Fractional Admin & Consulting**  
+  Get expert Salesforce help on-demand, from quick fixes to strategic projects — without the cost of a full-time employee.  
+
+- **Real-World Business Experience**  
+  We understand the challenges of retail, services, and trades businesses and translate those into effective Salesforce solutions.
+
+- **Ongoing Support & Training**  
+  We don’t just set up Salesforce and leave you hanging. We provide continuous support and empower your team to succeed.
+
+---
+
+### How We Help You Win
+
+| Service                      | What You Get                                               |
+|------------------------------|------------------------------------------------------------|
+| [Salesforce Setup & Configuration](https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%9A%80%20Quick%2DStart%20Salesforce%20Setup) | Customized CRM tailored to your business workflows         |
+| [Admin Support (Fractional)](https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%94%84%20Admin%20Support%20%26%20Enhancements)   | On-demand admin help for updates, reports, and fixes        |
+| [Salesforce Training & Adoption](https://app.usemotion.com/meet/devo-perez/meeting)| Hands-on coaching and resources to empower your team       |
+| [Automation & Integration](https://app.usemotion.com/meet/devo-perez/meeting)     | Streamline tasks with workflow automation and app integrations |
+
+---
 
 {% include feature_row id="feature_row1" type="left" %}
 
-We specialize in:
-* Salesforce CPQ & Revenue Cloud Implementation
-* Managed Admin Support
-* Business Process Strategy & Architecture
-* Data Migration & Health Cleanups
-* Training & Change Management
+### Ready to Transform Your Salesforce Experience?
 
-Let Us architect a Salesforce ecosystem that works for your team — with clarity, confidence, and care.
-
-{% include feature_row id="feature_row2" type="right" %}
-
-<h1 class="centered-heading">We look forward to working with you!</h1>
+**Schedule a free 15-minute discovery call** to discuss your needs and explore how we can help your business thrive.  
 
 <div class="button-container">
-  <a href="https://app.usemotion.com/meet/devo-perez/consultation" target="_blank" rel="noopener noreferrer">
-    <button class="large-centered-button">Schedule a Call</button>
+  <a href="https://app.usemotion.com/meet/devo-perez/meeting?d=15" target="_blank" rel="noopener noreferrer">
+    <button class="large-centered-button">Book a Call</button>
   </a>
   <a href="https://app.formbricks.com/s/cmatz49ts052zu2014tacgoxc" target="_blank" rel="noopener noreferrer">
     <button class="large-centered-button">Inquire About Services</button>
   </a>
-</div>
+</div><br>
 
+{% include feature_row id="feature_row2" type="right" %}
+
+---
+
+### Quick FAQ
+
+**Q: Who do you work with?**  
+A: We partner with businesses of all sizes—from small teams to medium and enterprise organizations.
+
+**Q: How quickly can you start?**  
+A: Typically within a week after our initial consultation.
+
+**Q: What if I’m new to Salesforce?**  
+A: No problem! We specialize in making Salesforce easy and accessible for any experience level.
+
+---
+
+## Stay Connected
+
+Follow us for Salesforce tips, updates, and success stories:  
+
+[LinkedIn](https://linkedin.com/company/loveunitedsolutions) | [Instagram](https://instagram.com/loveunitedsolutions)
 
 
 <meta name="description" content="love united Solutions, LLC offers personalized Salesforce consulting services to help companies maximize their CRM investment through user adoption, analytics, and tailored solutions.">
