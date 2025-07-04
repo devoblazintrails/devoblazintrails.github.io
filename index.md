@@ -21,7 +21,7 @@ Let’s fix that together with:
 - A reimagined CRM experience that works how you do'
     url: "/user-adoption-checklist/"
     btn_label: "Get Checklist"
-    btn_class: "medium-centered-button"
+    btn_class: "btn--primary"
 feature_row2:
   - image_path: /assets/images/Data Enhancement Checklist Design.png
     alt: "Get Our Data Enrichment Checklist"
@@ -35,7 +35,7 @@ We can help you:
 - Set up scalable rules to keep data clean over time'
     url: "/data-quality-checklist/"
     btn_label: "Get Checklist"
-    btn_class: "medium-centered-button"
+    btn_class: "btn--primary"
 ---
 
 # Love unITed Solutions
@@ -93,7 +93,7 @@ Or maybe you need a trusted guide to streamline your sales, service, and operati
   </div>
 </div>
 
-
+<hr>
 {% include feature_row id="feature_row1" type="left" %}
 
 <h3 class="centered"> Ready to Transform Your Salesforce Experience?</h3>
