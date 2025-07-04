@@ -24,9 +24,9 @@ Whether you need a small fix, process automation, or want to test-drive a bigger
 
 → [Claim your credit and start now](https://balo.expert/profile/devo-pm)
 
-<h2 class="justified"> 🚀 Quick-Start Salesforce Setup </h2>
+<h2 class="centered"> 🚀 Quick-Start Salesforce Setup </h2>
 
-<p class="justified"> <strong>Get up and running in weeks, not months.</strong>
+<p class="centered"> <strong>Get up and running in weeks, not months.</strong>
 <br>
   
 We help you launch Salesforce with the essentials tailored to your business. Perfect for first-time users.
@@ -98,6 +98,36 @@ We help fine-tune your system to align with your team’s workflows and business
 </p>
 
 ---
+<div class="row">
+  <div class="column">
+    ## ❤️ Who We Help
+
+We partner with businesses of all sizes—from small teams to medium and enterprise organizations—looking to leverage Salesforce to streamline operations and deepen customer relationships. Our experience spans diverse industries including **manufacturing**, **healthcare and life sciences**, **media**, as well as **retail**, **services**, and **trades**.
+
+We’ve supported clients by:  
+- Helping **retail shops** improve loyalty and inventory visibility  
+- Assisting **service-based teams** with appointment scheduling and customer follow-ups  
+- Enabling **trades businesses** to manage jobs, estimates, and crews  
+- Optimizing processes for **manufacturing firms** to enhance supply chain tracking  
+- Supporting **healthcare and life sciences organizations** with compliance and patient management  
+- Streamlining content workflows and advertising operations for **media companies**
+
+No matter your size or sector, we tailor Salesforce solutions that fit your unique needs.
+
+[See What’s Possible for Your Business →](https://app.usemotion.com/meet/devo-perez/meeting)
+  </div>
+  <div class="column">
+    ## ⭐ Why Love unITed?
+
+✔️ Minority-founded, values-led consultancy  
+✔️ Deep Salesforce expertise, human-first approach  
+✔️ Flexible engagements for small budgets  
+✔️ Trusted partner, not just a contractor  
+
+Let’s build something meaningful—together.
+
+  </div>
+</div>
 
 ## ❤️ Who We Help
 
