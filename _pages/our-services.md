@@ -27,34 +27,7 @@ Whether you need a small fix, process automation, or want to test-drive a bigger
     Claim your credit and start now!
   </button>
 </a><br>
-<h2 class="centered"> 🚀 Quick-Start Salesforce Setup </h2>
 
-<p class="centered"> <strong>Get up and running in weeks, not months.</strong>
-<br>
-  
-We help you launch Salesforce with the essentials tailored to your business. Perfect for first-time users.
-<br>
-<br>
-<strong>What’s included:</strong>
-<br>
-→ Salesforce environment setup<br>
-→ Lead, Contact, Account, and Opportunity customization<br>
-→ Email templates & activity tracking<br>
-→ Product & pricebook setup (if needed)<br>
-→ Mobile setup and user onboarding<br>
-→ 30-day post-go-live support<br>
-<br>
-💡 <em>Ideal for businesses ready to ditch spreadsheets and centralize their customer info.</em>
-<br>
-<strong>Starting at $3,500</strong><br>
-<div class="button-container">
-  <a href="https://app.usemotion.com/meet/devo-perez/meeting" target="_blank" rel="noopener noreferrer">
-    <button class="medium-centered-button">Request a Free Quote</button>
-  </a>
-  <a href="https://app.formbricks.com/s/w673bin19s21ams8gylzlhlc" target="_blank" rel="noopener noreferrer">
-  <button class="medium-centered-button">Take our Readiness Quiz</button>
-  </a>
-</div>
 <div class="row">
   <div class="column">
     <h2> 🔄 Admin Support & Enhancements </h2>
@@ -128,6 +101,35 @@ We help you launch Salesforce with the essentials tailored to your business. Per
         </a>
       </p>
   </div>
+</div>
+
+<h2 class="centered"> 🚀 Quick-Start Salesforce Setup </h2>
+
+<p class="centered"> <strong>Get up and running in weeks, not months.</strong>
+<br>
+  
+We help you launch Salesforce with the essentials tailored to your business. Perfect for first-time users.
+<br>
+<br>
+<strong>What’s included:</strong>
+<br>
+→ Salesforce environment setup<br>
+→ Lead, Contact, Account, and Opportunity customization<br>
+→ Email templates & activity tracking<br>
+→ Product & pricebook setup (if needed)<br>
+→ Mobile setup and user onboarding<br>
+→ 30-day post-go-live support<br>
+<br>
+💡 <em>Ideal for businesses ready to ditch spreadsheets and centralize their customer info.</em>
+<br>
+<strong>Starting at $3,500</strong><br>
+<div class="button-container">
+  <a href="https://app.usemotion.com/meet/devo-perez/meeting" target="_blank" rel="noopener noreferrer">
+    <button class="medium-centered-button">Request a Free Quote</button>
+  </a>
+  <a href="https://app.formbricks.com/s/w673bin19s21ams8gylzlhlc" target="_blank" rel="noopener noreferrer">
+  <button class="medium-centered-button">Take our Readiness Quiz</button>
+  </a>
 </div>
 
 <div class="row">
