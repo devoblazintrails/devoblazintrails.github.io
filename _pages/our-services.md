@@ -24,13 +24,13 @@ Now’s your chance to **trial a project with me** or get **bite-sized expert su
 
 👉 [Claim your credit and start now](https://balo.expert/profile/devo-pm)
 
-<h2 class="centered"> 🚀 Quick-Start Salesforce Setup </h2>
+<h2 class="right"> 🚀 Quick-Start Salesforce Setup </h2>
 
-**Get up and running in weeks, not months.**
+<p class="right"> <strong>Get up and running in weeks, not months.</strong>
 
 We help you launch Salesforce with the essentials tailored to your business. Perfect for first-time users.
 
-**What’s included:**
+<strong>What’s included:</strong>
 - Salesforce environment setup
 - Lead, Contact, Account, and Opportunity customization
 - Email templates & activity tracking
@@ -38,11 +38,11 @@ We help you launch Salesforce with the essentials tailored to your business. Per
 - Mobile setup and user onboarding
 - 30-day post-go-live support
 
-> 💡 *Ideal for businesses ready to ditch spreadsheets and centralize their customer info.*
+💡 <em>Ideal for businesses ready to ditch spreadsheets and centralize their customer info.</em>
 
-**Starting at $3,500**  
+<strong>Starting at $3,500</strong>
 [Request a Free Quote →](https://app.usemotion.com/meet/devo-perez/meeting)
-
+</p>
 ---
 
 ## 🔄 Admin Support & Enhancements  
