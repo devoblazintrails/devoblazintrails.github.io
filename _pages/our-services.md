@@ -22,7 +22,12 @@ Whether you need a small fix, process automation, or want to test-drive a bigger
 
 **No strings.** Just *smart, strategic* Salesforce help – when and how you need it.
 
-→ [Claim your credit and start now](https://balo.expert/profile/devo-pm)
+<br>
+<a href="https://balo.expert/profile/devo-pm" target="_blank" rel="noopener noreferrer">
+  <button class="medium-centered-button">
+    Claim your credit and start now!
+  </button>
+</a><br>
 
 <h2 class="centered"> 🚀 Quick-Start Salesforce Setup </h2>
 
@@ -46,8 +51,15 @@ We help you launch Salesforce with the essentials tailored to your business. Per
 <strong>Starting at $3,500</strong><br>
 <a href="https://app.usemotion.com/meet/devo-perez/meeting">Request a Free Quote</a>
 </p>
-
+<br>
+<br>
+<a href="https://app.formbricks.com/s/w673bin19s21ams8gylzlhlc" target="_blank" rel="noopener noreferrer">
+  <button class="medium-centered-button">
+    Take our Salesforce Implementation Readiness Quiz
+  </button>
+</a><br>
 ---
+
 <div class="row">
   <div class="column">
     <h2> 🔄 Admin Support & Enhancements </h2>
@@ -65,7 +77,7 @@ We help you launch Salesforce with the essentials tailored to your business. Per
     → Data import and cleanup<br>
     → Quarterly health checks<br>
     </p>
-    <h3> Flexible Pricing for Every Stage</h3>
+    <h4> Flexible Pricing for Every Stage</h4>
     <table>
       <tr>
         <th>Tier</th>
@@ -103,22 +115,27 @@ We help you launch Salesforce with the essentials tailored to your business. Per
       <br>
       <br>
       <strong>Examples of what we deliver:</strong><br>
-      → Quote-to-close automation<br>
-      → Service ticket tracking<br>
-      → SMS & email integration<br>
-      → Marketing list segmentation<br>
-      → Customer journey mapping<br>
-      → Field service scheduling<br>
-      <br>
+      Quote-to-close automation ←<br>
+      Service ticket tracking ←<br>
+      SMS & email integration ←<br>
+      Marketing list segmentation ←<br>
+      Customer journey mapping ←<br>
+      Field service scheduling ←<br>
+        <br>
+        <br>
       🛠️ <em>We specialize in helping businesses simplify complex operations.</em>
       <br>
-      <a href="https://app.usemotion.com/meet/devo-perez/meeting">Let's Optimize Your CRM</a>
+      <a href="https://app.usemotion.com/meet/devo-perez/meeting" target="_blank" rel="noopener noreferrer">
+        <button class="medium-centered-button">
+          Let's Optimize Your CRM
+        </button>
+        </a>
       </p>
   </div>
 </div>
 
-
 ---
+
 <div class="row">
   <div class="column">
       <h2 class="centered">❤️ Who We Help</h2>
@@ -126,6 +143,7 @@ We help you launch Salesforce with the essentials tailored to your business. Per
       <br>
       <br>
 We’ve supported clients by:<br>
+        <br>
 → Assisting <strong>service-based teams</strong> with appointment scheduling and customer follow-ups<br>
 → Enabling <strong>trades businesses</strong> to manage jobs, estimates, and crews<br>
 → Optimizing <strong>manufacturing firms</strong> supply chain tracking<br>
