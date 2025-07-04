@@ -53,12 +53,10 @@ We help you launch Salesforce with the essentials tailored to your business. Per
     <button class="medium-centered-button">Request a Free Quote</button>
   </a>
   <a href="https://app.formbricks.com/s/w673bin19s21ams8gylzlhlc" target="_blank" rel="noopener noreferrer">
-  <button class="medium-centered-button">Take our Salesforce Implementation Readiness Quiz</button>
+  <button class="medium-centered-button">Take our Readiness Quiz</button>
   </a>
 </div>
-
----
-
+<hr>
 <div class="row">
   <div class="column">
     <h2> 🔄 Admin Support & Enhancements </h2>
@@ -124,6 +122,7 @@ We help you launch Salesforce with the essentials tailored to your business. Per
         <br>
       🛠️ <em>We specialize in helping businesses simplify complex operations.</em>
       <br>
+        <br>
       <a href="https://app.usemotion.com/meet/devo-perez/meeting" target="_blank" rel="noopener noreferrer">
         <button class="medium-right-button">
           Let's Optimize Your CRM
@@ -132,9 +131,7 @@ We help you launch Salesforce with the essentials tailored to your business. Per
       </p>
   </div>
 </div>
-
----
-
+<hr>
 <div class="row">
   <div class="column">
       <h2 class="centered">❤️ Who We Help</h2>
@@ -164,9 +161,7 @@ Let’s build something meaningful—together.
 </p>
   </div>
 </div>
-
----
-
+<hr>
 <h2 class="centered"> Ready to Get Started? Fill out the form below, and we'll reach out!</h2>
 <br>
 
