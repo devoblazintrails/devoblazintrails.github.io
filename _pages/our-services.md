@@ -24,9 +24,9 @@ Whether you need a small fix, process automation, or want to test-drive a bigger
 
 → [Claim your credit and start now](https://balo.expert/profile/devo-pm)
 
-<h2 class="right"> 🚀 Quick-Start Salesforce Setup </h2>
+<h2 class="justified"> 🚀 Quick-Start Salesforce Setup </h2>
 
-<p class="right"> <strong>Get up and running in weeks, not months.</strong>
+<p class="justified"> <strong>Get up and running in weeks, not months.</strong>
 <br>
   
 We help you launch Salesforce with the essentials tailored to your business. Perfect for first-time users.
@@ -53,7 +53,7 @@ We help you launch Salesforce with the essentials tailored to your business. Per
 
 **Ongoing help to keep Salesforce humming.**
 
-Need regular support but not full-time staff?
+Need regular support but not full-time staff?<br>
 Our **Fractional Admin Services** give you certified Salesforce expertise when and how you need it.
 
 **Common tasks we handle:**
@@ -76,9 +76,9 @@ Our **Fractional Admin Services** give you certified Salesforce expertise when a
 
 ---
 
-<h2 class="right"> 📈 Sales & Service Optimization </h2>
+<h2 class="centered"> 📈 Sales & Service Optimization </h2>
 
-<p class="right"> <strong>Turn Salesforce into your growth engine.</strong>
+<p class="centered"> <strong>Turn Salesforce into your growth engine.</strong>
 <br>
 Already using Salesforce but not sure you're getting full value?<br>
 We help fine-tune your system to align with your team’s workflows and business goals.
@@ -132,7 +132,7 @@ Let’s build something meaningful—together.
 <br>
 <p class="centered">Whether you need setup, support, or just have questions—we’re here.
 <br>
-[**Book a Free Discovery Call**](https://app.usemotion.com/meet/devo-perez/meeting)
+<a href="https://app.usemotion.com/meet/devo-perez/meeting">Book a Discovery Call</a>
 </p>
 
 <div style="position: relative; height:80dvh; overflow:auto;"> 
