@@ -45,13 +45,13 @@ We can help you:
     btn_class: "btn--primary"
 ---
 
-### Unlock the Power of Salesforce Without the Overwhelm
+## Unlock the Power of Salesforce Without the Overwhelm
 
 Is your business struggling to get the most out of Salesforce?  
 Or maybe you need a trusted guide to streamline your sales, service, and operations?  
 
 
-<h3 class="centered">Why Work With Us?</h3>
+<h2 class="centered">Why Work With Us?</h2>
 <p>→ <strong>Tailored Salesforce Expertise</strong><br>  
 We customize Salesforce to fit your unique business needs — no cookie-cutter solutions here.  
 <br>
@@ -67,17 +67,17 @@ We customize Salesforce to fit your unique business needs — no cookie-cutter s
       → <strong>Ongoing Support & Training</strong><br>  
   We don’t just set up Salesforce and leave you hanging. We provide continuous support and empower your team to succeed.
 
-  <h4 class="centered">How We Help You Win</h4>
+  <h2 class="centered">How We Help You Win</h2>
   <div class="row">
   <div class="column">
-    <h5>Service</h5><br>
+    <h5>Service</h5>
     <a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%9A%80%20Quick%2DStart%20Salesforce%20Setup">Salesforce Setup & Configuration</a><br>
     <a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%94%84%20Admin%20Support%20%26%20Enhancements">Admin Support (Fractional)</a><br>
     <a href="https://app.usemotion.com/meet/devo-perez/meeting">Salesforce Training & Adoption</a><br>
     <a href="https://app.usemotion.com/meet/devo-perez/meeting">Automation & Integration</a>
   </div>
   <div class="column">
-    <h5>What You Get</h5><br>
+    <h5>What You Get</h5>
     Customized CRM tailored to your business workflows<br>
     On-demand admin help for updates, reports, and fixes<br>
     Hands-on coaching and resources to empower your team<br>
@@ -100,10 +100,10 @@ We customize Salesforce to fit your unique business needs — no cookie-cutter s
   </a>
 </div>
 <br>
-
+<hr>
 {% include feature_row id="feature_row2" type="right" %}
 
-<h3 class="centered"> Quick FAQ </h3>
+<h3 class="centered"> FAQ </h3>
 
 <p class="centered"><strong>Q: Who do you work with?</strong><br> 
 A: We partner with businesses of all sizes—from small teams to medium and enterprise organizations.<br>
