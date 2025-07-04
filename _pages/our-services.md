@@ -28,7 +28,7 @@ Now’s your chance to **trial a project with me** or get **bite-sized expert su
 
 **Get up and running in weeks, not months.** {: .right}
 
-We help you launch Salesforce with the essentials tailored to your business. Perfect for first-time users. {: .right}
+We help you launch Salesforce with the essentials tailored to your business. Perfect for first-time users.{: .text-justify}
 
 **What’s included:** {: .right}
 - Salesforce environment setup
