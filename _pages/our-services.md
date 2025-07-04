@@ -6,14 +6,13 @@ author_profile: false
 ---
 
 # Our Salesforce Services  
-**Helping businesses run smarter, faster, and more connected with Salesforce.**
+### Helping businesses run smarter, faster, and more connected with Salesforce.
 
 At Love unITed Solutions, we specialize in bringing Salesforce to life for businesses of all sizes. Whether you're looking to set it up from scratch, get more out of what you already have, or need an admin partner without the full-time cost—we've got you covered.
 
 We empower and collaborate with teams who want big results from a simple CRM strategy.
 
----
-## Want to trial our services?
+### Want to trial our services?
 Curious about what Salesforce can really do for your business – without the big commitment?
 
 Now’s your chance to **trial a project with me** or get **bite-sized expert support** with a **AUD$300 credit** on [Balo](https://balo.expert/profile/devo-pm). Just use the promo code **EOFY25BALO**.
@@ -27,7 +26,7 @@ Whether you need a small fix, process automation, or want to test-drive a bigger
     Claim your credit and start now!
   </button>
 </a><br>
-
+<hr>
 <h2 class="centered"> 🚀 Quick-Start Salesforce Setup </h2>
 
 <p class="centered"> <strong>Get up and running in weeks, not months.</strong>
@@ -56,7 +55,6 @@ We help you launch Salesforce with the essentials tailored to your business. Per
   <button class="medium-centered-button">Take our Readiness Quiz</button>
   </a>
 </div>
-<hr>
 <div class="row">
   <div class="column">
     <h2> 🔄 Admin Support & Enhancements </h2>
@@ -131,7 +129,7 @@ We help you launch Salesforce with the essentials tailored to your business. Per
       </p>
   </div>
 </div>
-<hr>
+
 <div class="row">
   <div class="column">
       <h2 class="centered">❤️ Who We Help</h2>
@@ -161,7 +159,6 @@ Let’s build something meaningful—together.
 </p>
   </div>
 </div>
-<hr>
 <h2 class="centered"> Ready to Get Started? Fill out the form below, and we'll reach out!</h2>
 <br>
 
