@@ -16,8 +16,11 @@ feature_row1:
 Let’s fix that together with:
 
 - Guided training and easy-to-follow documentation
+  
 - Lightning page layouts that actually make sense
+
 - Dashboards and reports your team *wants* to use
+
 - A reimagined CRM experience that works how you do'
     url: "/user-adoption-checklist/"
     btn_label: "Get Checklist"
@@ -48,11 +51,14 @@ Or maybe you need a trusted guide to streamline your sales, service, and operati
 <p>→ <strong>Tailored Salesforce Expertise</strong><br>  
 We customize Salesforce to fit your unique business needs — no cookie-cutter solutions here.  
 <br>
+    <br>
       → <strong>Fractional Admin & Consulting</strong><br> 
   Get expert Salesforce help on-demand, from quick fixes to strategic projects — without the cost of a full-time employee.
     <br>
+    <br>
       → <strong>Real-World Business Experience</strong><br>
   We understand the challenges of retail, services, and trades businesses and translate those into effective Salesforce solutions.
+    <br>
     <br>
       → <strong>Ongoing Support & Training</strong><br>  
   We don’t just set up Salesforce and leave you hanging. We provide continuous support and empower your team to succeed.
