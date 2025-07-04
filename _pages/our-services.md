@@ -102,7 +102,7 @@ We help fine-tune your system to align with your team’s workflows and business
   <div class="column">
     <h2 class="centered">❤️ Who We Help</h2>
     <p class="centered">We partner with businesses of all sizes—from small teams to medium and enterprise organizations—looking to leverage Salesforce to streamline operations and deepen customer relationships.
-
+<br>
 We’ve supported clients by:
 → Assisting <strong>service-based teams</strong> with appointment scheduling and customer follow-ups<br>
 → Enabling <strong>trades businesses</strong> to manage jobs, estimates, and crews<br>
@@ -114,7 +114,9 @@ We’ve supported clients by:
   <div class="column">
     <h2 class="centered"> ⭐ Why Love unITed? </h2>
 
-<p class="centered">✔️ Minority-founded, values-led consultancy<br>
+<p class="centered"> When you work with Love unITed Solutions, you're not just hiring a consultant—you’re gaining a committed partner who understands the balance between technology, people, and business growth. We bring hands-on Salesforce expertise with a personal touch and a deep understanding of what makes organizations work smarter.<br>
+<br>
+✔️ Minority-founded, values-led consultancy<br>
 ✔️ Deep Salesforce expertise, human-first approach<br>
 ✔️ Flexible engagements for small budgets<br>
 ✔️ Trusted partner, not just a contractor<br>
@@ -124,9 +126,12 @@ Let’s build something meaningful—together.
   </div>
 </div>
 
-No matter your size or sector, we tailor Salesforce solutions that fit your unique needs.
+---
 
-[See What’s Possible for Your Business →](https://app.usemotion.com/meet/devo-perez/meeting)
+<p class="centered"> No matter your size or sector, we tailor Salesforce solutions that fit your unique needs.
+<br>
+<a href="https://app.usemotion.com/meet/devo-perez/meeting">See What's Possible for Your Business</a>
+</p>
 
 ---
 
