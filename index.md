@@ -6,7 +6,7 @@ header:
   overlay_image: assets/images/Untitled design.gif
   actions:
     - label: "LET'S DISCUSS HOW TO IMPROVE YOUR INSTANCE"
-      url: "https://app.usemotion.com/meet/devo-perez/meeting"
+      url: "https://www.loveunited.solutions/#contact"
 excerpt: "**Love unITed Solutions** is here to help you maximize your Salesforce investment—so you can focus on what really matters: growing your business."
 feature_row1:
   - image_path: /assets/images/User Adoption Checklist Design.png
@@ -110,6 +110,24 @@ A: Typically within a week after our initial consultation.<br>
 <strong>Q: What if I’m new to Salesforce?</strong><br>
 A: No problem! We specialize in making Salesforce easy and accessible for any experience level.
 </p>
+
+<script>
+  function openForm() {
+    document.getElementById('contact-modal').style.display = 'flex';
+  }
+
+  function closeForm() {
+    document.getElementById('contact-modal').style.display = 'none';
+  }
+  
+  // Auto-open form if URL has #contact
+  window.addEventListener('DOMContentLoaded', () => {
+    if (window.location.hash === '#contact') {
+      openForm();
+    }
+  });
+</script>
+
 
 <meta name="description" content="love united Solutions, LLC offers personalized Salesforce consulting services to help companies maximize their CRM investment through user adoption, analytics, and tailored solutions.">
 
