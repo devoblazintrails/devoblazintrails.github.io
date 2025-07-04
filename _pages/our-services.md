@@ -22,7 +22,6 @@ Whether you need a small fix, process automation, or want to test-drive a bigger
 
 **No strings.** Just *smart, strategic* Salesforce help – when and how you need it.
 
-<br>
 <a href="https://balo.expert/profile/devo-pm" target="_blank" rel="noopener noreferrer">
   <button class="medium-centered-button">
     Claim your credit and start now!
@@ -49,15 +48,15 @@ We help you launch Salesforce with the essentials tailored to your business. Per
 💡 <em>Ideal for businesses ready to ditch spreadsheets and centralize their customer info.</em>
 <br>
 <strong>Starting at $3,500</strong><br>
-<a href="https://app.usemotion.com/meet/devo-perez/meeting">Request a Free Quote</a>
-</p>
-<br>
-<br>
-<a href="https://app.formbricks.com/s/w673bin19s21ams8gylzlhlc" target="_blank" rel="noopener noreferrer">
-  <button class="medium-centered-button">
-    Take our Salesforce Implementation Readiness Quiz
-  </button>
-</a><br>
+<div class="button-container">
+  <a href="https://app.usemotion.com/meet/devo-perez/meeting" target="_blank" rel="noopener noreferrer">
+    <button class="medium-centered-button">Request a Free Quote</button>
+  </a>
+  <a href="https://app.formbricks.com/s/w673bin19s21ams8gylzlhlc" target="_blank" rel="noopener noreferrer">
+  <button class="medium-centered-button">Take our Salesforce Implementation Readiness Quiz</button>
+  </a>
+</div>
+
 ---
 
 <div class="row">
@@ -126,7 +125,7 @@ We help you launch Salesforce with the essentials tailored to your business. Per
       🛠️ <em>We specialize in helping businesses simplify complex operations.</em>
       <br>
       <a href="https://app.usemotion.com/meet/devo-perez/meeting" target="_blank" rel="noopener noreferrer">
-        <button class="medium-centered-button">
+        <button class="medium-right-button">
           Let's Optimize Your CRM
         </button>
         </a>
@@ -168,19 +167,8 @@ Let’s build something meaningful—together.
 
 ---
 
-<p class="centered"> No matter your size or sector, we tailor Salesforce solutions that fit your unique needs.
+<h2 class="centered"> Ready to Get Started? Fill out the form below, and we'll reach out!</h2>
 <br>
-<a href="https://app.usemotion.com/meet/devo-perez/meeting">See What's Possible for Your Business</a>
-</p>
-
----
-
-<h2 class="centered"> Ready to Get Started?</h2>
-<br>
-<p class="centered">Whether you need setup, support, or just have questions—we’re here.
-<br>
-<a href="https://app.usemotion.com/meet/devo-perez/meeting">Book a Discovery Call</a>
-</p>
 
 <div style="position: relative; height:80dvh; overflow:auto;"> 
   <iframe 
