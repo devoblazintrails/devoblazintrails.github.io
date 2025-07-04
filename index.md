@@ -51,8 +51,6 @@ Or maybe you need a trusted guide to streamline your sales, service, and operati
 
 **Love unITed Solutions** is here to help you maximize your Salesforce investment—so you can focus on what really matters: growing your business.
 
----
-
 <div class="row">
   <div class="column">
     <h3>Why Work With Us?</h3>
