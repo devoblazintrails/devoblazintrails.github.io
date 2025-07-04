@@ -26,7 +26,7 @@ Now’s your chance to **trial a project with me** or get **bite-sized expert su
 
 ## 🚀 Quick-Start Salesforce Setup  
 
-**Get up and running in weeks, not months.** {: .right}
+**Get up and running in weeks, not months.** {: style="text-align: right;"}
 
 We help you launch Salesforce with the essentials tailored to your business. Perfect for first-time users.{: .text-justify}
 
