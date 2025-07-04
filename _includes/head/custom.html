@@ -16,87 +16,86 @@
 <link rel="manifest" href="/assets/images/site.webmanifest" />
 
 <style>
-#promoBanner {
+#promoOverlay {
   display: none;
   position: fixed;
-  bottom: 0;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: #fff;
-  border-top: 3px solid #133f69;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  height: 100%;
+  background: rgba(0,0,0,0.6);
   z-index: 9999;
-  padding: 1rem;
+  justify-content: center;
+  align-items: center;
   font-family: sans-serif;
 }
 
-#promoBanner .promo-banner-inner {
-  max-width: 960px;
-  margin: 0 auto;
+#promoOverlay .popup-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
   position: relative;
+  text-align: center;
 }
 
-#promoBanner .promo-banner-close {
+#promoOverlay .popup-close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 16px;
   font-size: 1.5rem;
   cursor: pointer;
-  padding: 0.5rem;
 }
 
-#promoBanner h3 {
-  margin-top: 0;
-  font-size: 1.2rem;
+#promoOverlay h3 {
   color: #133f69;
+  margin-top: 0;
 }
 
-#promoBanner .medium-centered-button {
+#promoOverlay .medium-centered-button {
   background-color: #133f69;
   color: #c2b280;
   border: none;
   padding: 12px 24px;
   font-size: 1rem;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 </style>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  if (localStorage.getItem("promo_banner_shown")) return;
+  if (localStorage.getItem("promo_overlay_shown")) return;
 
-  // Create promo banner element
-  const banner = document.createElement("div");
-  banner.id = "promoBanner";
-  banner.innerHTML = `
-    <div class="promo-banner-inner">
-      <span class="promo-banner-close" onclick="this.parentElement.parentElement.style.display='none'">&times;</span>
-      <div class="promo-banner-content">
-        <h3>Want to trial our services?</h3>
-        <p>
-          Curious about what Salesforce can really do for your business – without the big commitment?
-          Trial a project or get bite-sized expert support with a <strong>AUD$300 credit</strong> on 
-          <a href="https://balo.expert/profile/devo-pm" target="_blank" rel="noopener noreferrer">Balo</a> using promo code <strong>EOFY25BALO</strong>.
-        </p>
-        <a href="https://balo.expert/profile/devo-pm" target="_blank" rel="noopener noreferrer">
-          <button class="medium-centered-button">Claim your credit and start now!</button>
-        </a>
-      </div>
+  // Create overlay element
+  const overlay = document.createElement("div");
+  overlay.id = "promoOverlay";
+  overlay.innerHTML = `
+    <div class="popup-box">
+      <span class="popup-close" onclick="document.getElementById('promoOverlay').style.display='none'">&times;</span>
+      <h3>Want to trial our services?</h3>
+      <p>
+        Curious about what Salesforce can really do for your business – without the big commitment?
+        Trial a project or get bite-sized expert support with a <strong>AUD$300 credit</strong> on 
+        <a href="https://balo.expert/profile/devo-pm" target="_blank" rel="noopener noreferrer">Balo</a>
+        using promo code <strong>EOFY25BALO</strong>.
+      </p>
+      <p><strong>No strings.</strong> Just <em>smart, strategic</em> Salesforce help – when and how you need it.</p>
+      <a href="https://balo.expert/profile/devo-pm" target="_blank" rel="noopener noreferrer">
+        <button class="medium-centered-button">Claim your credit and start now!</button>
+      </a>
     </div>
   `;
-  document.body.appendChild(banner);
+  document.body.appendChild(overlay);
 
-  // Scroll-triggered show
-  const revealOnScroll = () => {
-    const scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-    if (scrolled > 0.5) {
-      banner.style.display = "block";
-      localStorage.setItem("promo_banner_shown", "true");
-      window.removeEventListener("scroll", revealOnScroll);
-    }
-  };
-  window.addEventListener("scroll", revealOnScroll, { passive: true });
+  // Show after delay
+  setTimeout(() => {
+    overlay.style.display = "flex";
+    localStorage.setItem("promo_overlay_shown", "true");
+  }, 5000); // delay in milliseconds (5000 = 5s)
 });
 </script>
 
