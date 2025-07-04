@@ -48,6 +48,53 @@ We help you launch Salesforce with the essentials tailored to your business. Per
 </p>
 
 ---
+<div class="row">
+  <div class="column">
+    <h2> 🔄 Admin Support & Enhancements </h2>
+    <p> <strong>Ongoing help to keep Salesforce humming.</strong><br>
+    <br>
+    Need regular support but not full-time staff?<br>
+    Our <strong>Fractional Admin Services</strong> give you certified Salesforce expertise when and how you need it.
+    <br>
+    <br>
+    <strong>Common tasks we handle:</strong><br>
+    → User setup and role management<br>
+    → Reports & dashboards<br>
+    → Workflow automation (Flows, Rules, Alerts)<br>
+    → AppExchange app support<br>
+    → Data import and cleanup<br>
+    → Quarterly health checks<br>
+    </p>
+    <h3> Flexible Pricing for Every Stage</h3>
+
+| Tier       | Monthly Hours | Best For                                  | Price (USD)                                                               |
+|------------|----------------|-------------------------------------------|---------------------------------------------------------------------------|
+| **Starter** | 5 hrs/month     | Light-touch ongoing help                  | [**$600/month**](https://app.usemotion.com/meet/devo-perez/starter-admin)       |
+| **Growth**  | 10 hrs/month    | Regular admin + enhancement support       | [**$1,150/month**](https://app.usemotion.com/meet/devo-perez/growth-admin)     |
+| **Custom**  | Flexible        | Projects or tailored partnerships         | [**Let's Talk 💬**](https://app.usemotion.com/meet/devo-perez/custom-admin-support)     |
+  </div>
+  <div class="column">
+    <h2 class="right"> 📈 Sales & Service Optimization </h2>
+    <p class="right"> <strong>Turn Salesforce into your growth engine.</strong>
+    <br>
+    Already using Salesforce but not sure you're getting full value?<br>
+    We help fine-tune your system to align with your team’s workflows and business goals.
+    <br>
+    <br>
+    <strong>Examples of what we deliver:</strong><br>
+    → Quote-to-close automation<br>
+    → Service ticket tracking<br>
+    → SMS & email integration<br>
+    → Marketing list segmentation<br>
+    → Customer journey mapping<br>
+    → Field service scheduling<br>
+    <br>
+    🛠️ <em>We specialize in helping businesses simplify complex operations.</em>
+    <br>
+    <a href="https://app.usemotion.com/meet/devo-perez/meeting">Let's Optimize Your CRM</a>
+    </p>
+  </div>
+</div>
 
 ## 🔄 Admin Support & Enhancements  
 
