@@ -52,31 +52,48 @@ Or maybe you need a trusted guide to streamline your sales, service, and operati
 **Love unITed Solutions** is here to help you maximize your Salesforce investment—so you can focus on what really matters: growing your business.
 
 ---
-
-### Why Work With Us?
-
-- **Tailored Salesforce Expertise**  
-  We customize Salesforce to fit your unique business needs — no cookie-cutter solutions here.  
-
-- **Fractional Admin & Consulting**  
-  Get expert Salesforce help on-demand, from quick fixes to strategic projects — without the cost of a full-time employee.  
-
-- **Real-World Business Experience**  
+<div class="row">
+  <div class="column">
+    <h3>Why Work With Us?</h3>
+    <p>→ <strong>Tailored Salesforce Expertise</strong><br>  
+    We customize Salesforce to fit your unique business needs — no cookie-cutter solutions here.  
+    <br>
+      → <strong>Fractional Admin & Consulting</strong><br> 
+  Get expert Salesforce help on-demand, from quick fixes to strategic projects — without the cost of a full-time employee.
+    <br>
+      → <strong>Real-World Business Experience</strong><br>
   We understand the challenges of retail, services, and trades businesses and translate those into effective Salesforce solutions.
-
-- **Ongoing Support & Training**  
+    <br>
+      → <strong>Ongoing Support & Training</strong><br>  
   We don’t just set up Salesforce and leave you hanging. We provide continuous support and empower your team to succeed.
+  </div>
+  <div class="column">
+    <h4>How We Help You Win</h4>
+    <table>
+      <tr>
+        <th>Service</th>
+        <th>What You Get</th>
+      </tr>
+      <tr>
+        <td><a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%9A%80%20Quick%2DStart%20Salesforce%20Setup">Salesforce Setup & Configuration</a></td>
+        <td>Customized CRM tailored to your business workflows</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%94%84%20Admin%20Support%20%26%20Enhancements">Admin Support (Fractional)</a></td>
+        <td>On-demand admin help for updates, reports, and fixes</td>
+      </tr>
+      <tr>
+        <td><a href="https://app.usemotion.com/meet/devo-perez/meeting">Salesforce Training & Adoption</a></td>
+        <td>Hands-on coaching and resources to empower your team</td>
+      </tr>
+      <tr>
+        <td><a href="https://app.usemotion.com/meet/devo-perez/meeting">Automation & Integration</a></td>
+        <td>Streamline tasks with workflow automation and app integrations</td>
+      </tr>
+    </table>
+  </div>
+</div>
 
----
-
-### How We Help You Win
-
-| Service                      | What You Get                                               |
-|------------------------------|------------------------------------------------------------|
-| [Salesforce Setup & Configuration](https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%9A%80%20Quick%2DStart%20Salesforce%20Setup) | Customized CRM tailored to your business workflows         |
-| [Admin Support (Fractional)](https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%94%84%20Admin%20Support%20%26%20Enhancements)   | On-demand admin help for updates, reports, and fixes        |
-| [Salesforce Training & Adoption](https://app.usemotion.com/meet/devo-perez/meeting)| Hands-on coaching and resources to empower your team       |
-| [Automation & Integration](https://app.usemotion.com/meet/devo-perez/meeting)     | Streamline tasks with workflow automation and app integrations |
 
 ---
 
@@ -90,7 +107,7 @@ Or maybe you need a trusted guide to streamline your sales, service, and operati
   <a href="https://app.usemotion.com/meet/devo-perez/meeting?d=15" target="_blank" rel="noopener noreferrer">
     <button class="large-centered-button">Book a Call</button>
   </a>
-  <a href="https://app.formbricks.com/s/cmatz49ts052zu2014tacgoxc" target="_blank" rel="noopener noreferrer">
+  <a href="#" onclick="openForm(); return false;">
     <button class="large-centered-button">Inquire About Services</button>
   </a>
 </div><br>
