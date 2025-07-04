@@ -38,12 +38,6 @@ We can help you:
     btn_class: "btn--primary"
 ---
 
-# Love unITed Solutions
-
-## Your Partner for Smarter Salesforce Solutions & Business Growth
-
----
-
 ### Unlock the Power of Salesforce Without the Overwhelm
 
 Is your business struggling to get the most out of Salesforce?  
@@ -89,8 +83,7 @@ Or maybe you need a trusted guide to streamline your sales, service, and operati
         <td><a href="https://app.usemotion.com/meet/devo-perez/meeting">Automation & Integration</a></td>
         <td>Streamline tasks with workflow automation and app integrations</td>
       </tr>
-    </table>
-    
+    </table>    
   </div>
 </div>
 
@@ -101,6 +94,14 @@ Or maybe you need a trusted guide to streamline your sales, service, and operati
 
 <p class="centered"> <strong>Schedule a free 15-minute discovery call</strong> to discuss your needs and explore how we can help your business thrive.</p>
 
+<div class="button-container">
+  <a href="https://app.usemotion.com/meet/devo-perez/meeting?d=15" target="_blank" rel="noopener noreferrer">
+    <button class="large-centered-button">Book a Call</button>
+  </a>
+  <a href="#" onclick="openForm(); return false;">
+    <button class="large-centered-button">Inquire About Services</button>
+  </a>
+</div>
 <br>
 
 {% include feature_row id="feature_row2" type="right" %}
