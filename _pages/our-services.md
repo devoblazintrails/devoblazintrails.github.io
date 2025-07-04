@@ -66,8 +66,6 @@ We help you launch Salesforce with the essentials tailored to your business. Per
     → Quarterly health checks<br>
     </p>
     <h3> Flexible Pricing for Every Stage</h3>
-    <br>
-    <br>
     <table>
       <tr>
         <th>Tier</th>
@@ -76,106 +74,61 @@ We help you launch Salesforce with the essentials tailored to your business. Per
         <th>Price (USD)</th>
       </tr>
       <tr>
-        <th><strong>Starter</strong></th>
-        <th>5 hr/month</th>
-        <th>Light-touch ongoing help</th>
-        <th><a href="https://app.usemotion.com/meet/devo-perez/starter-admin">$600/month</a></th>
+        <td><strong>Starter</strong></td>
+        <td>5 hr/month</td>
+        <td>Light-touch ongoing help</td>
+        <td><a href="https://app.usemotion.com/meet/devo-perez/starter-admin">$600/month</a></td>
       </tr>
       <tr>
-        <th><strong>Growth</strong></th>
-        <th>10 hr/month</th>
-        <th>Regular admin + enhancement support</th>
-        <th><a href="https://app.usemotion.com/meet/devo-perez/growth-admin">$1,150/month</a></th>
+        <td><strong>Growth</strong></td>
+        <td>10 hr/month</td>
+        <td>Regular admin + enhancement support</td>
+        <td><a href="https://app.usemotion.com/meet/devo-perez/growth-admin">$1,150/month</a></td>
       </tr>
       <tr>
-        <th><strong>Custom</strong></th>
-        <th>Flexible</th>
-        <th>Projects or tailored partnerships</th>
-        <th><a href="https://app.usemotion.com/meet/devo-perez/custom-admin-support">Let's Talk💬</a></th>
+        <td><strong>Custom</strong></td>
+        <td>Flexible</td>
+        <td>Projects or tailored partnerships</td>
+        <td><a href="https://app.usemotion.com/meet/devo-perez/custom-admin-support">Let's Talk💬</a></td>
       </tr>
     </table>
   </div>
   <div class="column">
-    <h2 class="right"> 📈 Sales & Service Optimization </h2>
-    <p class="right"> <strong>Turn Salesforce into your growth engine.</strong>
-    <br>
-    Already using Salesforce but not sure you're getting full value?<br>
-    We help fine-tune your system to align with your team’s workflows and business goals.
-    <br>
-    <br>
-    <strong>Examples of what we deliver:</strong><br>
-    → Quote-to-close automation<br>
-    → Service ticket tracking<br>
-    → SMS & email integration<br>
-    → Marketing list segmentation<br>
-    → Customer journey mapping<br>
-    → Field service scheduling<br>
-    <br>
-    🛠️ <em>We specialize in helping businesses simplify complex operations.</em>
-    <br>
-    <a href="https://app.usemotion.com/meet/devo-perez/meeting">Let's Optimize Your CRM</a>
-    </p>
+      <h2 class="right"> 📈 Sales & Service Optimization </h2>
+      <p class="right"> <strong>Turn Salesforce into your growth engine.</strong>
+      <br>
+      <br>
+      Already using Salesforce but not sure you're getting full value?<br>
+      We help fine-tune your system to align with your team’s workflows and business goals.
+      <br>
+      <br>
+      <strong>Examples of what we deliver:</strong><br>
+      → Quote-to-close automation<br>
+      → Service ticket tracking<br>
+      → SMS & email integration<br>
+      → Marketing list segmentation<br>
+      → Customer journey mapping<br>
+      → Field service scheduling<br>
+      <br>
+      🛠️ <em>We specialize in helping businesses simplify complex operations.</em>
+      <br>
+      <a href="https://app.usemotion.com/meet/devo-perez/meeting">Let's Optimize Your CRM</a>
+      </p>
   </div>
 </div>
 
-## 🔄 Admin Support & Enhancements  
-
-**Ongoing help to keep Salesforce humming.**
-
-Need regular support but not full-time staff?<br>
-Our **Fractional Admin Services** give you certified Salesforce expertise when and how you need it.
-
-**Common tasks we handle:**
-- User setup and role management  
-- Reports & dashboards  
-- Workflow automation (Flows, Rules, Alerts)  
-- AppExchange app support  
-- Data import and cleanup  
-- Quarterly health checks
-
-### Flexible Pricing for Every Stage
-
-| Tier       | Monthly Hours | Best For                                  | Price (USD)                                                               |
-|------------|----------------|-------------------------------------------|---------------------------------------------------------------------------|
-| **Starter** | 5 hrs/month     | Light-touch ongoing help                  | [**$600/month**](https://app.usemotion.com/meet/devo-perez/starter-admin)       |
-| **Growth**  | 10 hrs/month    | Regular admin + enhancement support       | [**$1,150/month**](https://app.usemotion.com/meet/devo-perez/growth-admin)     |
-| **Custom**  | Flexible        | Projects or tailored partnerships         | [**Let's Talk 💬**](https://app.usemotion.com/meet/devo-perez/custom-admin-support)     |
-
-[Book Admin Services →](https://app.usemotion.com/meet/devo-perez/consultation)
-
----
-
-<h2 class="centered"> 📈 Sales & Service Optimization </h2>
-
-<p class="centered"> <strong>Turn Salesforce into your growth engine.</strong>
-<br>
-Already using Salesforce but not sure you're getting full value?<br>
-We help fine-tune your system to align with your team’s workflows and business goals.
-<br>
-<br>
-<strong>Examples of what we deliver:</strong><br>
-→ Quote-to-close automation<br>
-→ Service ticket tracking<br>
-→ SMS & email integration<br>
-→ Marketing list segmentation<br>
-→ Customer journey mapping<br>
-→ Field service scheduling<br>
-<br>
-🛠️ <em>We specialize in helping businesses simplify complex operations.</em>
-<br>
-<a href="https://app.usemotion.com/meet/devo-perez/meeting">Let's Optimize Your CRM</a>
-</p>
 
 ---
 <div class="row">
   <div class="column">
-    <h2 class="centered">❤️ Who We Help</h2>
-    <p class="centered">We partner with businesses of all sizes—from small teams to medium and enterprise organizations—looking to leverage Salesforce to streamline operations and deepen customer relationships.
-<br>
-We’ve supported clients by:
+      <h2 class="centered">❤️ Who We Help</h2>
+      <p class="centered">We partner with businesses of all sizes—from small teams to medium and enterprise organizations—looking to leverage Salesforce to streamline operations and deepen customer relationships.
+      <br>
+      <br>
+We’ve supported clients by:<br>
 → Assisting <strong>service-based teams</strong> with appointment scheduling and customer follow-ups<br>
 → Enabling <strong>trades businesses</strong> to manage jobs, estimates, and crews<br>
-→ Optimizing processes for <strong>manufacturing firms</strong> to enhance supply chain tracking<br>
+→ Optimizing <strong>manufacturing firms</strong> supply chain tracking<br>
 → Supporting <strong>healthcare and life sciences organizations</strong> with compliance and patient management<br>
 <br>
 </p>
