@@ -7,7 +7,7 @@ header:
   actions:
     - label: "LET'S DISCUSS HOW TO IMPROVE YOUR INSTANCE"
       url: "https://app.usemotion.com/meet/devo-perez/meeting"
-excerpt: "Providing custom solutions to help companies overcome problems and gain the most from their CRM."
+excerpt: "**Love unITed Solutions** is here to help you maximize your Salesforce investment—so you can focus on what really matters: growing your business."
 feature_row1:
   - image_path: /assets/images/User Adoption Checklist Design.png
     alt: "Get Our User Adoption Enhancer Checklist"
@@ -43,7 +43,6 @@ We can help you:
 Is your business struggling to get the most out of Salesforce?  
 Or maybe you need a trusted guide to streamline your sales, service, and operations?  
 
-**Love unITed Solutions** is here to help you maximize your Salesforce investment—so you can focus on what really matters: growing your business.
 
 <h3>Why Work With Us?</h3>
 <p>→ <strong>Tailored Salesforce Expertise</strong><br>  
@@ -90,10 +89,10 @@ We customize Salesforce to fit your unique business needs — no cookie-cutter s
 
 <div class="button-container">
   <a href="https://app.usemotion.com/meet/devo-perez/meeting?d=15" target="_blank" rel="noopener noreferrer">
-    <button class="large-centered-button">Book a Call</button>
+    <button class="btn--primary">Book a Call</button>
   </a>
   <a href="#" onclick="openForm(); return false;">
-    <button class="large-centered-button">Inquire About Services</button>
+    <button class="btn--primary">Inquire About Services</button>
   </a>
 </div>
 <br>
