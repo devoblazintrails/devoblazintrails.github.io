@@ -15,13 +15,13 @@ feature_row1:
     excerpt: 'If your team avoids Salesforce, you’re not alone.  
 Let’s fix that together with:
 
-- Guided training and easy-to-follow documentation
+  Guided training and easy-to-follow documentation
   
-- Lightning page layouts that actually make sense
+  Lightning page layouts that actually make sense
 
-- Dashboards and reports your team *wants* to use
+  Dashboards and reports your team *wants* to use
 
-- A reimagined CRM experience that works how you do'
+  A reimagined CRM experience that works how you do'
     url: "/user-adoption-checklist/"
     btn_label: "Get Checklist"
     btn_class: "btn--primary"
@@ -32,13 +32,14 @@ feature_row2:
     excerpt: 'Duplicate records, outdated fields, and messy reports aren’t just annoying—they cost time and money.  
 We can help you:
 
-- Clean up your database and eliminate duplicates
+  Clean up your database and eliminate duplicates
   
-- Streamline record types, picklists, and fields
+  Streamline record types, picklists, and fields
 
-- Automate data entry and validation
+  Automate data entry and validation
 
-- Set up scalable rules to keep data clean over time'
+  Set up scalable rules to keep data clean over time'
+  
     url: "/data-quality-checklist/"
     btn_label: "Get Checklist"
     btn_class: "btn--primary"
@@ -67,6 +68,22 @@ We customize Salesforce to fit your unique business needs — no cookie-cutter s
   We don’t just set up Salesforce and leave you hanging. We provide continuous support and empower your team to succeed.
 
   <h4>How We Help You Win</h4>
+  <div class="row">
+  <div class="column">
+    <stong>Service</stong><br>
+    <a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%9A%80%20Quick%2DStart%20Salesforce%20Setup">Salesforce Setup & Configuration</a><br>
+    <a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%94%84%20Admin%20Support%20%26%20Enhancements">Admin Support (Fractional)</a><br>
+    <a href="https://app.usemotion.com/meet/devo-perez/meeting">Salesforce Training & Adoption</a><br>
+    <a href="https://app.usemotion.com/meet/devo-perez/meeting">Automation & Integration</a>
+  </div>
+  <div class="column">
+    <stong>What You Get</stong><br>
+    Customized CRM tailored to your business workflows<br>
+    On-demand admin help for updates, reports, and fixes<br>
+    Hands-on coaching and resources to empower your team<br>
+    Streamline tasks with workflow automation and app integrations
+  </div>
+</div>
 <table>
 <tr>
   <th>Service</th>
