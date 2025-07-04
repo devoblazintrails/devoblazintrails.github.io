@@ -7,18 +7,14 @@ header:
   actions:
     - label: "LET'S DISCUSS HOW TO IMPROVE YOUR INSTANCE"
       url: "https://app.usemotion.com/meet/devo-perez/meeting?d=15"
-excerpt: "**Love unITed Solutions** is here to help you maximize your Salesforce investment—so you can focus on what really matters: growing your business."
+excerpt: >
+  **Love unITed Solutions** is here to help you maximize your Salesforce investment—so you can focus on what really matters: growing your business.
 feature_row1:
   - image_path: /assets/images/User Adoption Checklist Design.png
     alt: "Get Our User Adoption Enhancer Checklist"
     title: "Struggling with low Salesforce engagement?"
-    excerpt: > 'If your team avoids Salesforce, you’re not alone—and you’re definitely not stuck that way. We can help you turn things around with a smarter, user-first approach: from guided training and clean Lightning layouts, to dashboards your team actually wants to use.
-<br><br>
-Curious how to make that shift stick?
-<br><br>
-We’ve put together a practical guide that reveals <strong>4 proven steps to boost user adoption</strong>—the same ones we use with our clients to transform their CRM into a tool their team relies on daily.
-<br><br>
-👉 <em>Discover how to get buy-in, simplify workflows, and make analytics truly matter to your users.</em>'
+    excerpt: >
+      If your team avoids Salesforce, you’re not alone—and you’re definitely not stuck that way. We can help you turn things around with a smarter, user-first approach: from guided training and clean Lightning layouts, to dashboards your team actually wants to use.<br><br>Curious how to make that shift stick?<br><br>We’ve put together a practical guide that reveals <strong>4 proven steps to boost user adoption</strong>—the same ones we use with our clients to transform their CRM into a tool their team relies on daily.<br><br>👉 <em>Discover how to get buy-in, simplify workflows, and make analytics truly matter to your users.</em>
     url: "/user-adoption-checklist/"
     btn_label: "Get Checklist"
     btn_class: "btn--primary"
@@ -26,16 +22,13 @@ feature_row2:
   - image_path: /assets/images/Data Enhancement Checklist Design.png
     alt: "Get Our Data Enrichment Checklist"
     title: "Tired of dirty data dragging you down?"
-    excerpt: > 'Tired of second-guessing your Salesforce data? Whether it's duplicate records, outdated info, or chaotic page layouts—messy data slows everyone down.
-<br><br>
-Our <strong>Data Enhancement Checklist</strong> gives you a fresh, actionable approach to improving data quality right at the source. Learn how to clean up clutter, streamline layouts by role, track changes that matter, and build a stewardship plan that sticks.
-<br><br>
-👉 <em>Take control of your CRM with practical steps to boost clarity, trust, and performance in your data.</em>'
-
+    excerpt: >
+      Tired of second-guessing your Salesforce data? Whether it's duplicate records, outdated info, or chaotic page layouts—messy data slows everyone down.<br><br>Our <strong>Data Enhancement Checklist</strong> gives you a fresh, actionable approach to improving data quality right at the source. Learn how to clean up clutter, streamline layouts by role, track changes that matter, and build a stewardship plan that sticks.<br><br>👉 <em>Take control of your CRM with practical steps to boost clarity, trust, and performance in your data.</em>
     url: "/data-quality-checklist/"
     btn_label: "Get Checklist"
     btn_class: "btn--primary"
 ---
+
 
 ## Unlock the Power of Salesforce Without the Overwhelm
 
