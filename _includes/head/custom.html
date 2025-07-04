@@ -15,4 +15,89 @@
 <meta name="apple-mobile-web-app-title" content="MyWebSite" />
 <link rel="manifest" href="/assets/images/site.webmanifest" />
 
+<style>
+#promoBanner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 3px solid #133f69;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  z-index: 9999;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+#promoBanner .promo-banner-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#promoBanner .promo-banner-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+#promoBanner h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #133f69;
+}
+
+#promoBanner .medium-centered-button {
+  background-color: #133f69;
+  color: #c2b280;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  if (localStorage.getItem("promo_banner_shown")) return;
+
+  // Create promo banner element
+  const banner = document.createElement("div");
+  banner.id = "promoBanner";
+  banner.innerHTML = `
+    <div class="promo-banner-inner">
+      <span class="promo-banner-close" onclick="this.parentElement.parentElement.style.display='none'">&times;</span>
+      <div class="promo-banner-content">
+        <h3>Want to trial our services?</h3>
+        <p>
+          Curious about what Salesforce can really do for your business – without the big commitment?
+          Trial a project or get bite-sized expert support with a <strong>AUD$300 credit</strong> on 
+          <a href="https://balo.expert/profile/devo-pm" target="_blank" rel="noopener noreferrer">Balo</a> using promo code <strong>EOFY25BALO</strong>.
+        </p>
+        <a href="https://balo.expert/profile/devo-pm" target="_blank" rel="noopener noreferrer">
+          <button class="medium-centered-button">Claim your credit and start now!</button>
+        </a>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(banner);
+
+  // Scroll-triggered show
+  const revealOnScroll = () => {
+    const scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+    if (scrolled > 0.5) {
+      banner.style.display = "block";
+      localStorage.setItem("promo_banner_shown", "true");
+      window.removeEventListener("scroll", revealOnScroll);
+    }
+  };
+  window.addEventListener("scroll", revealOnScroll, { passive: true });
+});
+</script>
+
 <!-- end custom head snippets -->
