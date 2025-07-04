@@ -51,7 +51,7 @@ Is your business struggling to get the most out of Salesforce?
 Or maybe you need a trusted guide to streamline your sales, service, and operations?  
 
 
-<h3>Why Work With Us?</h3>
+<h3 class="centered">Why Work With Us?</h3>
 <p>→ <strong>Tailored Salesforce Expertise</strong><br>  
 We customize Salesforce to fit your unique business needs — no cookie-cutter solutions here.  
 <br>
@@ -67,45 +67,23 @@ We customize Salesforce to fit your unique business needs — no cookie-cutter s
       → <strong>Ongoing Support & Training</strong><br>  
   We don’t just set up Salesforce and leave you hanging. We provide continuous support and empower your team to succeed.
 
-  <h4>How We Help You Win</h4>
+  <h4 class="centered">How We Help You Win</h4>
   <div class="row">
   <div class="column">
-    <stong>Service</stong><br>
+    <h5>Service</h5><br>
     <a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%9A%80%20Quick%2DStart%20Salesforce%20Setup">Salesforce Setup & Configuration</a><br>
     <a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%94%84%20Admin%20Support%20%26%20Enhancements">Admin Support (Fractional)</a><br>
     <a href="https://app.usemotion.com/meet/devo-perez/meeting">Salesforce Training & Adoption</a><br>
     <a href="https://app.usemotion.com/meet/devo-perez/meeting">Automation & Integration</a>
   </div>
   <div class="column">
-    <stong>What You Get</stong><br>
+    <h5>What You Get</h5><br>
     Customized CRM tailored to your business workflows<br>
     On-demand admin help for updates, reports, and fixes<br>
     Hands-on coaching and resources to empower your team<br>
     Streamline tasks with workflow automation and app integrations
   </div>
 </div>
-<table>
-<tr>
-  <th>Service</th>
-  <th>What You Get</th>
-</tr>
-<tr>
-    <td><a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%9A%80%20Quick%2DStart%20Salesforce%20Setup">Salesforce Setup & Configuration</a></td>
-    <td>Customized CRM tailored to your business workflows</td>
-</tr>
-<tr>
-    <td><a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%94%84%20Admin%20Support%20%26%20Enhancements">Admin Support (Fractional)</a></td>
-    <td>On-demand admin help for updates, reports, and fixes</td>
-</tr>
-      <tr>
-        <td><a href="https://app.usemotion.com/meet/devo-perez/meeting">Salesforce Training & Adoption</a></td>
-        <td>Hands-on coaching and resources to empower your team</td>
-      </tr>
-      <tr>
-        <td><a href="https://app.usemotion.com/meet/devo-perez/meeting">Automation & Integration</a></td>
-        <td>Streamline tasks with workflow automation and app integrations</td>
-      </tr>
-    </table>    
 <hr>
 {% include feature_row id="feature_row1" type="left" %}
 
