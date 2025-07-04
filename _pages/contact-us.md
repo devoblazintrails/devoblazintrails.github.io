@@ -22,8 +22,6 @@ author_profile: false
 
 ---
 
-Need help right away? [Grab time with us within the next 24 hours.](https://balo.expert/profile/devo-pm)
-
 ## 💬 Send Us a Message
 
 Fill out the form below and we'll get back to you within 1 business day.
@@ -94,6 +92,8 @@ Fill out the form below and we'll get back to you within 1 business day.
 <!-- End Embedded Contact Form -->
 
 ---
+
+Need help right away? [Grab time with us within the next 24 hours.](https://balo.expert/profile/devo-pm)
 
 ## 🤝 Let’s Collaborate
 
