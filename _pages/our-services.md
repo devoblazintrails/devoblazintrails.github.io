@@ -5,55 +5,123 @@ permalink: /our-services/
 author_profile: false
 ---
 
-## Services we provide include:
+# Our Salesforce Services  
+**Helping businesses run smarter, faster, and more connected with Salesforce.**
 
-<h3 class="centered-heading">Salesforce Implementation</h3> <br>
-![image-right](/assets/images/Salesforce Implementation Graphic Design (1).png){: .align-right}
-We provide full-service Salesforce implementation, tailored to meet the unique needs of your organization. From discovery and planning to deployment and post-go-live support, we guide you through every step. Whether you're launching Salesforce for the first time or enhancing your current setup, we ensure alignment with your business goals and long-term scalability. Our expertise spans Sales Cloud, Service Cloud, Experience Cloud, and custom solutions. 
-<br>
-<br>
-<a href="https://app.formbricks.com/s/w673bin19s21ams8gylzlhlc" target="_blank" rel="noopener noreferrer">
-  <button class="medium-centered-button">
-    Take our Salesforce Implementation Readiness Quiz
-  </button>
-</a><br>
+At Love unITed Solutions, we specialize in bringing Salesforce to life for businesses of all sizes. Whether you're looking to set it up from scratch, get more out of what you already have, or need an admin partner without the full-time cost—we've got you covered.
 
-<h3 class="centered-heading">Report & Dashboard Enhancement</h3> <br>
-![image-left](/assets/images/Report & Dashboard Design Enhancements.png){: .align-left}
-Transform raw data into actionable insights. We specialize in designing and optimizing Salesforce reports and dashboards to give your teams the visibility they need. Whether you require executive-level KPIs or detailed operational reporting, we tailor visualizations that are intuitive, real-time, and aligned with business priorities. Expect better decision-making through clearer, more accessible metrics.<br>
-<br>
-<h3 class="centered-heading">Process Optimization</h3> <br>
-![image-right](/assets/images/Process Optimization Flowchart Icon.png){: .align-right}
-Your business processes should work for you, not against you. We analyze current workflows and identify gaps, redundancies, or inefficiencies. From lead management to case resolution, we redesign processes within Salesforce to maximize productivity and accuracy. Our approach ensures smoother operations, faster turnaround times, and improved customer satisfaction—all while reducing manual tasks and overhead. <br>
-<br>
-<h3 class="centered-heading">Increase User Adoption</h3> <br>
-![image-left](/assets/images/Increasing User Adoption Concept.png){: .align-left}
-A great system only succeeds when your team uses it effectively. We drive Salesforce user adoption through targeted training, intuitive interface design, and thoughtful change management strategies. From onboarding new users to revitalizing engagement among seasoned teams, we ensure your staff has the tools, support, and motivation needed to embrace Salesforce in their day-to-day work.<br>
-<br>
-<h3 class="centered-heading">Training and Documentation</h3> <br>
-![image-right](/assets/images/Training and Documentation Icon.png){: .align-right}
-We don’t just build systems—we empower your team to use them effectively. Our training services are tailored to your users’ roles and needs, whether they’re admins, sales reps, or customer service agents. We also provide clear, comprehensive documentation and user guides to support onboarding, troubleshooting, and long-term knowledge retention.<br>
-<br>
-<a href="https://app.formbricks.com/s/cmatvv10m0pbrss0114xx27af" target="_blank" rel="noopener noreferrer">
-  <button class="medium-centered-button">
-    Ready to Level Up Your Salesforce Org?
-  </button>
-</a><br>
+We empower and collaborate with teams who want big results from a simple CRM strategy.
 
-## We specialize in the following clouds/products:
-* Sales Cloud
-* Service Cloud
-* Experience Cloud
-* Media Cloud
-* Health Cloud
-* Manufacturing Cloud
-* Nonprofit Success Pack (NPSP)
-* CRM Analytics
-* Agentforce
-* Einstein
-* CPQ
-* Marketing Cloud Account Engagement
-* Salesforce Starter Suite (formerly Salesforce Essentials)
+---
+## Want to trial our services?
+Curious about what Salesforce can really do for your business – without the big commitment?
+
+Now’s your chance to **trial a project with me** or get **bite-sized expert support** with a **AUD$300 credit** on [Balo](https://balo.expert/profile/devo-pm). Just use the promo code **EOFY25BALO**.
+
+🔧 Whether you need a small fix, process automation, or want to test-drive a bigger idea — this is the perfect low-risk way to start.
+
+✨ No strings. Just smart, strategic Salesforce help – when and how you need it.
+
+👉 [Claim your credit and start now](https://balo.expert/profile/devo-pm)
+
+## 🚀 Quick-Start Salesforce Setup  
+**Get up and running in weeks, not months.**
+
+We help you launch Salesforce with the essentials tailored to your business. Perfect for first-time users.
+
+**What’s included:**
+- Salesforce environment setup
+- Lead, Contact, Account, and Opportunity customization
+- Email templates & activity tracking
+- Product & pricebook setup (if needed)
+- Mobile setup and user onboarding
+- 30-day post-go-live support
+
+> 💡 *Ideal for businesses ready to ditch spreadsheets and centralize their customer info.*
+
+**Starting at $3,500**  
+[Request a Free Quote →](https://app.usemotion.com/meet/devo-perez/meeting)
+
+---
+
+## 🔄 Admin Support & Enhancements  
+**Ongoing help to keep Salesforce humming.**
+
+Need regular support but not full-time staff? Our **Fractional Admin Services** give you certified Salesforce expertise when and how you need it.
+
+**Common tasks we handle:**
+- User setup and role management  
+- Reports & dashboards  
+- Workflow automation (Flows, Rules, Alerts)  
+- AppExchange app support  
+- Data import and cleanup  
+- Quarterly health checks
+
+### Flexible Pricing for Every Stage
+
+| Tier       | Monthly Hours | Best For                                  | Price (USD)                                                               |
+|------------|----------------|-------------------------------------------|---------------------------------------------------------------------------|
+| **Starter** | 5 hrs/month     | Light-touch ongoing help                  | [**$600/month**](https://app.usemotion.com/meet/devo-perez/starter-admin)       |
+| **Growth**  | 10 hrs/month    | Regular admin + enhancement support       | [**$1,150/month**](https://app.usemotion.com/meet/devo-perez/growth-admin)     |
+| **Custom**  | Flexible        | Projects or tailored partnerships         | [**Let's Talk 💬**](https://app.usemotion.com/meet/devo-perez/custom-admin-support)     |
+
+[Book Admin Services →](https://app.usemotion.com/meet/devo-perez/consultation)
+
+---
+
+## 📈 Sales & Service Optimization  
+**Turn Salesforce into your growth engine.**
+
+Already using Salesforce but not sure you're getting full value? We help fine-tune your system to align with your team’s workflows and business goals.
+
+**Examples of what we deliver:**
+- Quote-to-close automation  
+- Service ticket tracking  
+- SMS & email integration  
+- Marketing list segmentation  
+- Customer journey mapping  
+- Field service scheduling  
+
+> 🛠️ *We specialize in helping businesses simplify complex operations.*
+
+[Let’s Optimize Your CRM →](https://app.usemotion.com/meet/devo-perez/meeting)
+
+---
+
+## ❤️ Who We Help
+
+We partner with businesses of all sizes—from small teams to medium and enterprise organizations—looking to leverage Salesforce to streamline operations and deepen customer relationships. Our experience spans diverse industries including **manufacturing**, **healthcare and life sciences**, **media**, as well as **retail**, **services**, and **trades**.
+
+We’ve supported clients by:  
+- Helping **retail shops** improve loyalty and inventory visibility  
+- Assisting **service-based teams** with appointment scheduling and customer follow-ups  
+- Enabling **trades businesses** to manage jobs, estimates, and crews  
+- Optimizing processes for **manufacturing firms** to enhance supply chain tracking  
+- Supporting **healthcare and life sciences organizations** with compliance and patient management  
+- Streamlining content workflows and advertising operations for **media companies**
+
+No matter your size or sector, we tailor Salesforce solutions that fit your unique needs.
+
+[See What’s Possible for Your Business →](https://app.usemotion.com/meet/devo-perez/meeting)
+
+---
+
+## ⭐ Why Love unITed?
+
+✔️ Minority-founded, values-led consultancy  
+✔️ Deep Salesforce expertise, human-first approach  
+✔️ Flexible engagements for small budgets  
+✔️ Trusted partner, not just a contractor  
+
+Let’s build something meaningful—together.
+
+---
+
+## Ready to Get Started?
+
+Whether you need setup, support, or just have questions—we’re here.
+
+[**Book a Free Discovery Call →**](https://app.usemotion.com/meet/devo-perez/meeting)
 
 <div style="position: relative; height:80dvh; overflow:auto;"> 
   <iframe 
