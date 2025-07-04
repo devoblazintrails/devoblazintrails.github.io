@@ -45,12 +45,10 @@ Or maybe you need a trusted guide to streamline your sales, service, and operati
 
 **Love unITed Solutions** is here to help you maximize your Salesforce investment—so you can focus on what really matters: growing your business.
 
-<div class="grid__wrapper">
-  <div class="grid__item one-half">
-    <h3>Why Work With Us?</h3>
-    <p>→ <strong>Tailored Salesforce Expertise</strong><br>  
-    We customize Salesforce to fit your unique business needs — no cookie-cutter solutions here.  
-    <br>
+<h3>Why Work With Us?</h3>
+<p>→ <strong>Tailored Salesforce Expertise</strong><br>  
+We customize Salesforce to fit your unique business needs — no cookie-cutter solutions here.  
+<br>
       → <strong>Fractional Admin & Consulting</strong><br> 
   Get expert Salesforce help on-demand, from quick fixes to strategic projects — without the cost of a full-time employee.
     <br>
@@ -59,22 +57,21 @@ Or maybe you need a trusted guide to streamline your sales, service, and operati
     <br>
       → <strong>Ongoing Support & Training</strong><br>  
   We don’t just set up Salesforce and leave you hanging. We provide continuous support and empower your team to succeed.
-  </div>
-  <div class="grid__item one-half">
-    <h4>How We Help You Win</h4>
-    <table>
-      <tr>
-        <th>Service</th>
-        <th>What You Get</th>
-      </tr>
-      <tr>
-        <td><a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%9A%80%20Quick%2DStart%20Salesforce%20Setup">Salesforce Setup & Configuration</a></td>
-        <td>Customized CRM tailored to your business workflows</td>
-      </tr>
-      <tr>
-        <td><a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%94%84%20Admin%20Support%20%26%20Enhancements">Admin Support (Fractional)</a></td>
-        <td>On-demand admin help for updates, reports, and fixes</td>
-      </tr>
+
+  <h4>How We Help You Win</h4>
+<table>
+<tr>
+  <th>Service</th>
+  <th>What You Get</th>
+</tr>
+<tr>
+    <td><a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%9A%80%20Quick%2DStart%20Salesforce%20Setup">Salesforce Setup & Configuration</a></td>
+    <td>Customized CRM tailored to your business workflows</td>
+</tr>
+<tr>
+    <td><a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%94%84%20Admin%20Support%20%26%20Enhancements">Admin Support (Fractional)</a></td>
+    <td>On-demand admin help for updates, reports, and fixes</td>
+</tr>
       <tr>
         <td><a href="https://app.usemotion.com/meet/devo-perez/meeting">Salesforce Training & Adoption</a></td>
         <td>Hands-on coaching and resources to empower your team</td>
@@ -84,9 +81,6 @@ Or maybe you need a trusted guide to streamline your sales, service, and operati
         <td>Streamline tasks with workflow automation and app integrations</td>
       </tr>
     </table>    
-  </div>
-</div>
-
 <hr>
 {% include feature_row id="feature_row1" type="left" %}
 
