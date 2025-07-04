@@ -15,9 +15,9 @@ feature_row1:
     excerpt: 'If your team avoids Salesforce, you’re not alone—and you’re definitely not stuck that way. We can help you turn things around with a smarter, user-first approach: from guided training and clean Lightning layouts, to dashboards your team actually wants to use.
 <br><br>
 Curious how to make that shift stick?
-<br>
+<br><br>
 We’ve put together a practical guide that reveals <strong>4 proven steps to boost user adoption</strong>—the same ones we use with our clients to transform their CRM into a tool their team relies on daily.
-
+<br><br>
 👉 <em>Discover how to get buy-in, simplify workflows, and make analytics truly matter to your users.</em>'
     url: "/user-adoption-checklist/"
     btn_label: "Get Checklist"
@@ -26,17 +26,11 @@ feature_row2:
   - image_path: /assets/images/Data Enhancement Checklist Design.png
     alt: "Get Our Data Enrichment Checklist"
     title: "Tired of dirty data dragging you down?"
-    excerpt: 'Duplicate records, outdated fields, and messy reports aren’t just annoying—they cost time and money.  
-We can help you:
-
-  Clean up your database and eliminate duplicates
-  
-  Streamline record types, picklists, and fields
-
-  Automate data entry and validation
-
-  Set up scalable rules to keep data clean over time'
-  
+    excerpt: 'Tired of second-guessing your Salesforce data? Whether it's duplicate records, outdated info, or chaotic page layouts—messy data slows everyone down.
+<br><br>
+Our <strong>Data Enhancement Checklist</strong> gives you a fresh, actionable approach to improving data quality right at the source. Learn how to clean up clutter, streamline layouts by role, track changes that matter, and build a stewardship plan that sticks.
+<br><br>
+👉 <em>Take control of your CRM with practical steps to boost clarity, trust, and performance in your data.</em>'
     url: "/data-quality-checklist/"
     btn_label: "Get Checklist"
     btn_class: "btn--primary"
