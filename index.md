@@ -31,6 +31,7 @@ feature_row2:
 Our <strong>Data Enhancement Checklist</strong> gives you a fresh, actionable approach to improving data quality right at the source. Learn how to clean up clutter, streamline layouts by role, track changes that matter, and build a stewardship plan that sticks.
 <br><br>
 👉 <em>Take control of your CRM with practical steps to boost clarity, trust, and performance in your data.</em>'
+
     url: "/data-quality-checklist/"
     btn_label: "Get Checklist"
     btn_class: "btn--primary"
