@@ -100,61 +100,33 @@ We help fine-tune your system to align with your team’s workflows and business
 ---
 <div class="row">
   <div class="column">
-    ## ❤️ Who We Help
+    <h2 class="centered">❤️ Who We Help</h2>
+    <p class="centered">We partner with businesses of all sizes—from small teams to medium and enterprise organizations—looking to leverage Salesforce to streamline operations and deepen customer relationships.
 
-We partner with businesses of all sizes—from small teams to medium and enterprise organizations—looking to leverage Salesforce to streamline operations and deepen customer relationships. Our experience spans diverse industries including **manufacturing**, **healthcare and life sciences**, **media**, as well as **retail**, **services**, and **trades**.
-
-We’ve supported clients by:  
-- Helping **retail shops** improve loyalty and inventory visibility  
-- Assisting **service-based teams** with appointment scheduling and customer follow-ups  
-- Enabling **trades businesses** to manage jobs, estimates, and crews  
-- Optimizing processes for **manufacturing firms** to enhance supply chain tracking  
-- Supporting **healthcare and life sciences organizations** with compliance and patient management  
-- Streamlining content workflows and advertising operations for **media companies**
-
-No matter your size or sector, we tailor Salesforce solutions that fit your unique needs.
-
-[See What’s Possible for Your Business →](https://app.usemotion.com/meet/devo-perez/meeting)
+We’ve supported clients by:
+→ Assisting <strong>service-based teams</strong> with appointment scheduling and customer follow-ups<br>
+→ Enabling <strong>trades businesses</strong> to manage jobs, estimates, and crews<br>
+→ Optimizing processes for <strong>manufacturing firms</strong> to enhance supply chain tracking<br>
+→ Supporting <strong>healthcare and life sciences organizations</strong> with compliance and patient management<br>
+<br>
+</p>
   </div>
   <div class="column">
-    ## ⭐ Why Love unITed?
+    <h2 class="centered"> ⭐ Why Love unITed? </h2>
 
-✔️ Minority-founded, values-led consultancy  
-✔️ Deep Salesforce expertise, human-first approach  
-✔️ Flexible engagements for small budgets  
-✔️ Trusted partner, not just a contractor  
-
+<p class="centered">✔️ Minority-founded, values-led consultancy<br>
+✔️ Deep Salesforce expertise, human-first approach<br>
+✔️ Flexible engagements for small budgets<br>
+✔️ Trusted partner, not just a contractor<br>
+<br>
 Let’s build something meaningful—together.
-
+</p>
   </div>
 </div>
 
-## ❤️ Who We Help
-
-We partner with businesses of all sizes—from small teams to medium and enterprise organizations—looking to leverage Salesforce to streamline operations and deepen customer relationships. Our experience spans diverse industries including **manufacturing**, **healthcare and life sciences**, **media**, as well as **retail**, **services**, and **trades**.
-
-We’ve supported clients by:  
-- Helping **retail shops** improve loyalty and inventory visibility  
-- Assisting **service-based teams** with appointment scheduling and customer follow-ups  
-- Enabling **trades businesses** to manage jobs, estimates, and crews  
-- Optimizing processes for **manufacturing firms** to enhance supply chain tracking  
-- Supporting **healthcare and life sciences organizations** with compliance and patient management  
-- Streamlining content workflows and advertising operations for **media companies**
-
 No matter your size or sector, we tailor Salesforce solutions that fit your unique needs.
 
 [See What’s Possible for Your Business →](https://app.usemotion.com/meet/devo-perez/meeting)
-
----
-
-## ⭐ Why Love unITed?
-
-✔️ Minority-founded, values-led consultancy  
-✔️ Deep Salesforce expertise, human-first approach  
-✔️ Flexible engagements for small budgets  
-✔️ Trusted partner, not just a contractor  
-
-Let’s build something meaningful—together.
 
 ---
 
