@@ -17,3 +17,75 @@
 
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title }}</a> | All rights reserved | <a href="https://devoblazintrails.github.io/privacy-policy/">Privacy Policy</a> | {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
+<!-- Modal container (hidden by default) -->
+<div id="contact-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+     background:rgba(0,0,0,0.6); z-index:9999; align-items:center; justify-content:center;">
+  <div style="background:white; padding:2em; max-width:500px; width:90%; border-radius:10px; position:relative;">
+    <button onclick="closeForm()" style="position:absolute; top:10px; right:10px; font-size:1.5rem;">&times;</button>
+
+    <!-- Your form HTML here -->
+    <form id="custom-form" action="YOUR_SCRIPT_URL" method="POST">
+  <label for="name">Your Name:</label><br>
+  <input type="text" name="name" id="name" required><br><br>
+
+  <label for="email">Your Email:</label><br>
+  <input type="email" name="email" id="email" required><br><br>
+
+  <label for="message">Your Message:</label><br>
+  <textarea name="message" id="message" rows="4" required></textarea><br><br>
+
+  <label for="edition">What edition of Salesforce are you using?</label><br>
+  <input type="text" name="edition" id="edition"><br><br>
+
+  <label for="users">How many users?</label><br>
+  <input type="number" name="users" id="users"><br><br>
+
+  <label for="needs">What are your top 3 admin needs?</label><br>
+  <textarea name="needs" id="needs" rows="3"></textarea><br><br>
+
+  <!-- reCAPTCHA -->
+  <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div><br>
+
+  <button type="submit">Send Message</button>
+  <p id="response-message"></p>
+</form>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<script>
+  const form = document.getElementById('custom-form');
+  const responseMessage = document.getElementById('response-message');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Validate reCAPTCHA
+    const token = grecaptcha.getResponse();
+    if (!token) {
+      responseMessage.textContent = "Please complete the reCAPTCHA.";
+      return;
+    }
+
+    const formData = new FormData(form);
+    formData.append("g-recaptcha-response", token);
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: formData
+      });
+      if (res.ok) {
+        responseMessage.textContent = "Thanks! We'll be in touch soon.";
+        form.reset();
+        grecaptcha.reset();
+      } else {
+        responseMessage.textContent = "Oops! Something went wrong.";
+      }
+    } catch {
+      responseMessage.textContent = "Network error. Please try again.";
+    }
+  });
+</script>
+    </form>
+  </div>
+</div>
