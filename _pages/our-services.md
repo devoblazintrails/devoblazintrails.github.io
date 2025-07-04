@@ -25,7 +25,7 @@ Now’s your chance to **trial a project with me** or get **bite-sized expert su
 👉 [Claim your credit and start now](https://balo.expert/profile/devo-pm)
 
 ## 🚀 Quick-Start Salesforce Setup  
-<p style="text-align: right"> **Get up and running in weeks, not months.**
+<p style='text-align: right;'> **Get up and running in weeks, not months.**
 
 We help you launch Salesforce with the essentials tailored to your business. Perfect for first-time users.
 
@@ -45,7 +45,7 @@ We help you launch Salesforce with the essentials tailored to your business. Per
 ---
 
 ## 🔄 Admin Support & Enhancements  
-**Ongoing help to keep Salesforce humming.**
+<p style='text-align: justify;'>**Ongoing help to keep Salesforce humming.**
 
 Need regular support but not full-time staff? Our **Fractional Admin Services** give you certified Salesforce expertise when and how you need it.
 
@@ -56,7 +56,7 @@ Need regular support but not full-time staff? Our **Fractional Admin Services** 
 - AppExchange app support  
 - Data import and cleanup  
 - Quarterly health checks
-
+</p>
 ### Flexible Pricing for Every Stage
 
 | Tier       | Monthly Hours | Best For                                  | Price (USD)                                                               |
