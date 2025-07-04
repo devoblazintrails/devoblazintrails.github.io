@@ -31,8 +31,9 @@ Now’s your chance to **trial a project with me** or get **bite-sized expert su
   
 We help you launch Salesforce with the essentials tailored to your business. Perfect for first-time users.
 <br>
-
+<br>
 <strong>What’s included:</strong>
+</p>
 <ul class="ULCentered">
   <li>Salesforce environment setup</li>
   <li>Lead, Contact, Account, and Opportunity customization</li>
@@ -41,7 +42,7 @@ We help you launch Salesforce with the essentials tailored to your business. Per
   <li>Mobile setup and user onboarding</li>
   <li>30-day post-go-live support</li>
 </ul>
-💡 <em>Ideal for businesses ready to ditch spreadsheets and centralize their customer info.</em>
+<p class="centered">💡 <em>Ideal for businesses ready to ditch spreadsheets and centralize their customer info.</em>
 <br>
 <strong>Starting at $3,500</strong><br>
 <a href="https://app.usemotion.com/meet/devo-perez/meeting">Request a Free Quote</a>
