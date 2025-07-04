@@ -34,6 +34,7 @@ We help you launch Salesforce with the essentials tailored to your business. Per
 <br>
 <strong>What’s included:</strong>
 </p>
+<div class="container">
 <ul class="ULCentered">
   <li>Salesforce environment setup</li>
   <li>Lead, Contact, Account, and Opportunity customization</li>
@@ -42,6 +43,7 @@ We help you launch Salesforce with the essentials tailored to your business. Per
   <li>Mobile setup and user onboarding</li>
   <li>30-day post-go-live support</li>
 </ul>
+</div>
 <p class="centered">💡 <em>Ideal for businesses ready to ditch spreadsheets and centralize their customer info.</em>
 <br>
 <strong>Starting at $3,500</strong><br>
