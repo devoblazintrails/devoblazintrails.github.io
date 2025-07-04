@@ -6,7 +6,7 @@ header:
   overlay_image: assets/images/Untitled design.gif
   actions:
     - label: "LET'S DISCUSS HOW TO IMPROVE YOUR INSTANCE"
-      url: "https://www.loveunited.solutions/contact"
+      url: "https://app.usemotion.com/meet/devo-perez/meeting?d=15"
 excerpt: "**Love unITed Solutions** is here to help you maximize your Salesforce investment—so you can focus on what really matters: growing your business."
 feature_row1:
   - image_path: /assets/images/User Adoption Checklist Design.png
@@ -15,13 +15,10 @@ feature_row1:
     excerpt: 'If your team avoids Salesforce, you’re not alone.  
 Let’s fix that together with:
 
-  Guided training and easy-to-follow documentation
-  
-  Lightning page layouts that actually make sense
-
-  Dashboards and reports your team *wants* to use
-
-  A reimagined CRM experience that works how you do'
+ → Guided training and easy-to-follow documentation
+ → Lightning page layouts that actually make sense
+ → Dashboards and reports your team *wants* to use
+ → A reimagined CRM experience that works how you do'
     url: "/user-adoption-checklist/"
     btn_label: "Get Checklist"
     btn_class: "btn--primary"
@@ -51,7 +48,7 @@ Is your business struggling to get the most out of Salesforce?
 Or maybe you need a trusted guide to streamline your sales, service, and operations?  
 
 
-<h2 class="centered">Why Work With Us?</h2>
+<h2>Why Work With Us?</h2>
 <p>→ <strong>Tailored Salesforce Expertise</strong><br>  
 We customize Salesforce to fit your unique business needs — no cookie-cutter solutions here.  
 <br>
@@ -67,20 +64,20 @@ We customize Salesforce to fit your unique business needs — no cookie-cutter s
       → <strong>Ongoing Support & Training</strong><br>  
   We don’t just set up Salesforce and leave you hanging. We provide continuous support and empower your team to succeed.
 
-  <h2 class="centered">How We Help You Win</h2>
+  <h2>How We Help You Win</h2>
   <div class="row">
   <div class="column">
     <h5>Service</h5>
-    <a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%9A%80%20Quick%2DStart%20Salesforce%20Setup">Salesforce Setup & Configuration</a><br>
-    <a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%94%84%20Admin%20Support%20%26%20Enhancements">Admin Support (Fractional)</a><br>
-    <a href="https://app.usemotion.com/meet/devo-perez/meeting">Salesforce Training & Adoption</a><br>
+    <a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%9A%80%20Quick%2DStart%20Salesforce%20Setup">Salesforce Setup & Configuration</a><br><br>
+    <a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%94%84%20Admin%20Support%20%26%20Enhancements">Admin Support (Fractional)</a><br><br>
+    <a href="https://app.usemotion.com/meet/devo-perez/meeting">Salesforce Training & Adoption</a><br><br>
     <a href="https://app.usemotion.com/meet/devo-perez/meeting">Automation & Integration</a>
   </div>
   <div class="column">
     <h5>What You Get</h5>
-    Customized CRM tailored to your business workflows<br>
-    On-demand admin help for updates, reports, and fixes<br>
-    Hands-on coaching and resources to empower your team<br>
+    Customized CRM tailored to your business workflows<br><br>
+    On-demand admin help for updates, reports, and fixes<br><br>
+    Hands-on coaching and resources to empower your team<br><br>
     Streamline tasks with workflow automation and app integrations
   </div>
 </div>
