@@ -12,13 +12,13 @@ feature_row1:
   - image_path: /assets/images/User Adoption Checklist Design.png
     alt: "Get Our User Adoption Enhancer Checklist"
     title: "Struggling with low Salesforce engagement?"
-    excerpt: 'If your team avoids Salesforce, you’re not alone.  
-Let’s fix that together with:
+    excerpt: 'If your team avoids Salesforce, you’re not alone—and you’re definitely not stuck that way. We can help you turn things around with a smarter, user-first approach: from guided training and clean Lightning layouts, to dashboards your team actually wants to use.
 
- → Guided training and easy-to-follow documentation
- → Lightning page layouts that actually make sense
- → Dashboards and reports your team *wants* to use
- → A reimagined CRM experience that works how you do'
+Curious how to make that shift stick?
+
+We’ve put together a practical guide that reveals **4 proven steps to boost user adoption**—the same ones we use with our clients to transform their CRM into a tool their team relies on daily.
+
+👉 *Discover how to get buy-in, simplify workflows, and make analytics truly matter to your users.*'
     url: "/user-adoption-checklist/"
     btn_label: "Get Checklist"
     btn_class: "btn--primary"
