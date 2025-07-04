@@ -25,7 +25,7 @@ Now’s your chance to **trial a project with me** or get **bite-sized expert su
 👉 [Claim your credit and start now](https://balo.expert/profile/devo-pm)
 
 ## 🚀 Quick-Start Salesforce Setup  
-**Get up and running in weeks, not months.**
+<div style="text-align: right"> **Get up and running in weeks, not months.**
 
 We help you launch Salesforce with the essentials tailored to your business. Perfect for first-time users.
 
@@ -41,7 +41,7 @@ We help you launch Salesforce with the essentials tailored to your business. Per
 
 **Starting at $3,500**  
 [Request a Free Quote →](https://app.usemotion.com/meet/devo-perez/meeting)
-
+</div>
 ---
 
 ## 🔄 Admin Support & Enhancements  
