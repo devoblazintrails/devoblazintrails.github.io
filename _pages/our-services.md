@@ -33,18 +33,15 @@ We help you launch Salesforce with the essentials tailored to your business. Per
 <br>
 <br>
 <strong>What’s included:</strong>
-</p>
-<div class="container">
-<ul class="ULCentered">
-  <li>Salesforce environment setup</li>
-  <li>Lead, Contact, Account, and Opportunity customization</li>
-  <li>Email templates & activity tracking</li>
-  <li>Product & pricebook setup (if needed)</li>
-  <li>Mobile setup and user onboarding</li>
-  <li>30-day post-go-live support</li>
-</ul>
-</div>
-<p class="centered">💡 <em>Ideal for businesses ready to ditch spreadsheets and centralize their customer info.</em>
+
+→ Salesforce environment setup<br>
+→ Lead, Contact, Account, and Opportunity customization<br>
+→ Email templates & activity tracking<br>
+→ Product & pricebook setup (if needed)<br>
+→ Mobile setup and user onboarding<br>
+→ 30-day post-go-live support<br>
+<br>
+💡 <em>Ideal for businesses ready to ditch spreadsheets and centralize their customer info.</em>
 <br>
 <strong>Starting at $3,500</strong><br>
 <a href="https://app.usemotion.com/meet/devo-perez/meeting">Request a Free Quote</a>
