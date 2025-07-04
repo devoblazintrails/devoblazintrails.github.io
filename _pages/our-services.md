@@ -66,12 +66,34 @@ We help you launch Salesforce with the essentials tailored to your business. Per
     → Quarterly health checks<br>
     </p>
     <h3> Flexible Pricing for Every Stage</h3>
-
-| Tier       | Monthly Hours | Best For                                  | Price (USD)                                                               |
-|------------|----------------|-------------------------------------------|---------------------------------------------------------------------------|
-| **Starter** | 5 hrs/month     | Light-touch ongoing help                  | [**$600/month**](https://app.usemotion.com/meet/devo-perez/starter-admin)       |
-| **Growth**  | 10 hrs/month    | Regular admin + enhancement support       | [**$1,150/month**](https://app.usemotion.com/meet/devo-perez/growth-admin)     |
-| **Custom**  | Flexible        | Projects or tailored partnerships         | [**Let's Talk 💬**](https://app.usemotion.com/meet/devo-perez/custom-admin-support)     |
+    <br>
+    <br>
+    <table>
+      <tr>
+        <th>Tier</th>
+        <th>Monthly Hours</th>
+        <th>Best For</th>
+        <th>Price (USD)</th>
+      </tr>
+      <tr>
+        <th><strong>Starter</strong></th>
+        <th>5 hr/month</th>
+        <th>Light-touch ongoing help</th>
+        <th><a href="https://app.usemotion.com/meet/devo-perez/starter-admin">$600/month</a></th>
+      </tr>
+      <tr>
+        <th><strong>Growth</strong></th>
+        <th>10 hr/month</th>
+        <th>Regular admin + enhancement support</th>
+        <th><a href="https://app.usemotion.com/meet/devo-perez/growth-admin">$1,150/month</a></th>
+      </tr>
+      <tr>
+        <th><strong>Custom</strong></th>
+        <th>Flexible</th>
+        <th>Projects or tailored partnerships</th>
+        <th><a href="https://app.usemotion.com/meet/devo-perez/custom-admin-support">Let's Talk💬</a></th>
+      </tr>
+    </table>
   </div>
   <div class="column">
     <h2 class="right"> 📈 Sales & Service Optimization </h2>
