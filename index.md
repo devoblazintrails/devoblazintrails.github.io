@@ -33,8 +33,11 @@ feature_row2:
 We can help you:
 
 - Clean up your database and eliminate duplicates
+  
 - Streamline record types, picklists, and fields
+
 - Automate data entry and validation
+
 - Set up scalable rules to keep data clean over time'
     url: "/data-quality-checklist/"
     btn_label: "Get Checklist"
