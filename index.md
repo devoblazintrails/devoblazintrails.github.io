@@ -6,7 +6,7 @@ header:
   overlay_image: assets/images/Untitled design.gif
   actions:
     - label: "LET'S DISCUSS HOW TO IMPROVE YOUR INSTANCE"
-      url: "https://www.loveunited.solutions/#"
+      url: "https://www.loveunited.solutions/contact"
 excerpt: "**Love unITed Solutions** is here to help you maximize your Salesforce investment—so you can focus on what really matters: growing your business."
 feature_row1:
   - image_path: /assets/images/User Adoption Checklist Design.png
