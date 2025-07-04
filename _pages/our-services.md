@@ -18,22 +18,22 @@ Curious about what Salesforce can really do for your business – without the bi
 
 Now’s your chance to **trial a project with me** or get **bite-sized expert support** with a **AUD$300 credit** on [Balo](https://balo.expert/profile/devo-pm). Just use the promo code **EOFY25BALO**.
 
-🔧 Whether you need a small fix, process automation, or want to test-drive a bigger idea — this is the perfect low-risk way to start.
+Whether you need a small fix, process automation, or want to test-drive a bigger idea — this is the perfect low-risk way to start.
 
-✨ No strings. Just smart, strategic Salesforce help – when and how you need it.
+**No strings.** Just *smart, strategic* Salesforce help – when and how you need it.
 
-👉 [Claim your credit and start now](https://balo.expert/profile/devo-pm)
+→ [Claim your credit and start now](https://balo.expert/profile/devo-pm)
 
-<h2 class="centered"> 🚀 Quick-Start Salesforce Setup </h2>
+<h2 class="right"> 🚀 Quick-Start Salesforce Setup </h2>
 
-<p class="centered"> <strong>Get up and running in weeks, not months.</strong>
+<p class="right"> <strong>Get up and running in weeks, not months.</strong>
 <br>
   
 We help you launch Salesforce with the essentials tailored to your business. Perfect for first-time users.
 <br>
 <br>
 <strong>What’s included:</strong>
-
+<br>
 → Salesforce environment setup<br>
 → Lead, Contact, Account, and Opportunity customization<br>
 → Email templates & activity tracking<br>
@@ -53,7 +53,8 @@ We help you launch Salesforce with the essentials tailored to your business. Per
 
 **Ongoing help to keep Salesforce humming.**
 
-Need regular support but not full-time staff? Our **Fractional Admin Services** give you certified Salesforce expertise when and how you need it.
+Need regular support but not full-time staff?
+Our **Fractional Admin Services** give you certified Salesforce expertise when and how you need it.
 
 **Common tasks we handle:**
 - User setup and role management  
@@ -75,22 +76,26 @@ Need regular support but not full-time staff? Our **Fractional Admin Services** 
 
 ---
 
-## 📈 Sales & Service Optimization  
-**Turn Salesforce into your growth engine.**
+<h2 class="right"> 📈 Sales & Service Optimization </h2>
 
-Already using Salesforce but not sure you're getting full value? We help fine-tune your system to align with your team’s workflows and business goals.
-
-**Examples of what we deliver:**
-- Quote-to-close automation  
-- Service ticket tracking  
-- SMS & email integration  
-- Marketing list segmentation  
-- Customer journey mapping  
-- Field service scheduling  
-
-> 🛠️ *We specialize in helping businesses simplify complex operations.*
-
-[Let’s Optimize Your CRM →](https://app.usemotion.com/meet/devo-perez/meeting)
+<p class="right"> <strong>Turn Salesforce into your growth engine.</strong>
+<br>
+Already using Salesforce but not sure you're getting full value?<br>
+We help fine-tune your system to align with your team’s workflows and business goals.
+<br>
+<br>
+<strong>Examples of what we deliver:</strong><br>
+→ Quote-to-close automation<br>
+→ Service ticket tracking<br>
+→ SMS & email integration<br>
+→ Marketing list segmentation<br>
+→ Customer journey mapping<br>
+→ Field service scheduling<br>
+<br>
+🛠️ <em>We specialize in helping businesses simplify complex operations.</em>
+<br>
+<a href="https://app.usemotion.com/meet/devo-perez/meeting">Let's Optimize Your CRM</a>
+</p>
 
 ---
 
@@ -123,11 +128,12 @@ Let’s build something meaningful—together.
 
 ---
 
-## Ready to Get Started?
-
-Whether you need setup, support, or just have questions—we’re here.
-
-[**Book a Free Discovery Call →**](https://app.usemotion.com/meet/devo-perez/meeting)
+<h2 class="centered"> Ready to Get Started?</h2>
+<br>
+<p class="centered">Whether you need setup, support, or just have questions—we’re here.
+<br>
+[**Book a Free Discovery Call**](https://app.usemotion.com/meet/devo-perez/meeting)
+</p>
 
 <div style="position: relative; height:80dvh; overflow:auto;"> 
   <iframe 
