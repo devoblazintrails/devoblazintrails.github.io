@@ -21,7 +21,7 @@ Let’s fix that together with:
 - A reimagined CRM experience that works how you do'
     url: "/user-adoption-checklist/"
     btn_label: "Get Checklist"
-    btn_class: "btn--primary"
+    btn_class: "medium-centered-button"
 feature_row2:
   - image_path: /assets/images/Data Enhancement Checklist Design.png
     alt: "Get Our Data Enrichment Checklist"
@@ -35,7 +35,7 @@ We can help you:
 - Set up scalable rules to keep data clean over time'
     url: "/data-quality-checklist/"
     btn_label: "Get Checklist"
-    btn_class: "btn--primary"
+    btn_class: "medium-centered-button"
 ---
 
 # Love unITed Solutions
@@ -52,6 +52,7 @@ Or maybe you need a trusted guide to streamline your sales, service, and operati
 **Love unITed Solutions** is here to help you maximize your Salesforce investment—so you can focus on what really matters: growing your business.
 
 ---
+
 <div class="row">
   <div class="column">
     <h3>Why Work With Us?</h3>
@@ -94,14 +95,11 @@ Or maybe you need a trusted guide to streamline your sales, service, and operati
   </div>
 </div>
 
-
----
-
 {% include feature_row id="feature_row1" type="left" %}
 
-### Ready to Transform Your Salesforce Experience?
+<h3 class="centered"> Ready to Transform Your Salesforce Experience?</h3>
 
-**Schedule a free 15-minute discovery call** to discuss your needs and explore how we can help your business thrive.  
+<p class="centered"> <strong>Schedule a free 15-minute discovery call</strong> to discuss your needs and explore how we can help your business thrive.</p>
 
 <div class="button-container">
   <a href="https://app.usemotion.com/meet/devo-perez/meeting?d=15" target="_blank" rel="noopener noreferrer">
@@ -114,27 +112,17 @@ Or maybe you need a trusted guide to streamline your sales, service, and operati
 
 {% include feature_row id="feature_row2" type="right" %}
 
----
+<h3 class="centered"> Quick FAQ </h3>
 
-### Quick FAQ
-
-**Q: Who do you work with?**  
-A: We partner with businesses of all sizes—from small teams to medium and enterprise organizations.
-
-**Q: How quickly can you start?**  
-A: Typically within a week after our initial consultation.
-
-**Q: What if I’m new to Salesforce?**  
+<p class="centered"><strong>Q: Who do you work with?</strong><br> 
+A: We partner with businesses of all sizes—from small teams to medium and enterprise organizations.<br>
+<br>
+<strong>Q: How quickly can you start?</strong><br>
+A: Typically within a week after our initial consultation.<br>
+<br>
+<strong>Q: What if I’m new to Salesforce?</strong><br>
 A: No problem! We specialize in making Salesforce easy and accessible for any experience level.
-
----
-
-## Stay Connected
-
-Follow us for Salesforce tips, updates, and success stories:  
-
-[LinkedIn](https://linkedin.com/company/loveunitedsolutions) | [Instagram](https://instagram.com/loveunitedsolutions)
-
+</p>
 
 <meta name="description" content="love united Solutions, LLC offers personalized Salesforce consulting services to help companies maximize their CRM investment through user adoption, analytics, and tailored solutions.">
 
