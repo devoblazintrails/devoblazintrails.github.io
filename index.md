@@ -38,11 +38,11 @@ Or maybe you need a trusted guide to streamline your sales, service, and operati
 
 <h2>Why Work With Us?</h2>
 <p>→ <strong>Tailored Salesforce Expertise</strong><br>  
-We customize Salesforce to fit your unique business needs — no cookie-cutter solutions here.  
+We customize Salesforce to fit your unique business needs no cookie-cutter solutions here.  
 <br>
     <br>
       → <strong>Fractional Admin & Consulting</strong><br> 
-  Get expert Salesforce help on-demand, from quick fixes to strategic projects — without the cost of a full-time employee.
+  Get expert Salesforce help on-demand, from quick fixes to strategic projects without the cost of a full-time employee.
     <br>
     <br>
       → <strong>Real-World Business Experience</strong><br>
