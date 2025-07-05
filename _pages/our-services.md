@@ -9,18 +9,18 @@ author_profile: false
 # Our Salesforce Services  
 ### Helping businesses run smarter, faster, and more connected with Salesforce.
 
-At Love unITed Solutions, we specialize in bringing Salesforce to life for businesses of all sizes. Whether you're looking to set it up from scratch, get more out of what you already have, or need an admin partner without the full-time cost—we've got you covered.
+At Love unITed Solutions, we specialize in bringing Salesforce to life for businesses of all sizes. Whether you're looking to set it up from scratch, get more out of what you already have, or need an admin partner without the full-time cost, we've got you covered.
 
 We empower and collaborate with teams who want big results from a simple CRM strategy.
 
 ### Want to trial our services?
-Curious about what Salesforce can really do for your business – without the big commitment?
+Curious about what Salesforce can really do for your business, without the big commitment?
 
 Now’s your chance to **trial a project with me** or get **bite-sized expert support** with a **AUD$300 credit** on [Balo](https://balo.expert/profile/devo-pm). Just use the promo code **EOFY25BALO**.
 
-Whether you need a small fix, process automation, or want to test-drive a bigger idea — this is the perfect low-risk way to start.
+Whether you need a small fix, process automation, or want to test-drive a bigger idea, this is the perfect low-risk way to start.
 
-**No strings.** Just *smart, strategic* Salesforce help – when and how you need it.
+**No strings.** Just *smart, strategic* Salesforce help when and how you need it.
 
 <a href="https://balo.expert/profile/devo-pm" target="_blank" rel="noopener noreferrer">
   <button class="medium-centered-button">
@@ -135,7 +135,7 @@ We help you launch Salesforce with the essentials tailored to your business. Per
 <div class="row">
   <div class="column">
       <h2 class="centered">❤️ Who We Help</h2>
-      <p class="centered">We partner with businesses of all sizes—from small teams to medium and enterprise organizations—looking to leverage Salesforce to streamline operations and deepen customer relationships.
+      <p class="centered">We partner with businesses of all sizes, from small teams to medium and enterprise organizations, looking to leverage Salesforce to streamline operations and deepen customer relationships.
       <br>
       <br>
 We’ve supported clients by:<br>
@@ -150,7 +150,7 @@ We’ve supported clients by:<br>
   <div class="column">
     <h2 class="centered"> ⭐ Why Love unITed? </h2>
 
-<p class="centered"> When you work with Love unITed Solutions, you're not just hiring a consultant—you’re gaining a committed partner who understands the balance between technology, people, and business growth. We bring hands-on Salesforce expertise with a personal touch and a deep understanding of what makes organizations work smarter.<br>
+<p class="centered"> When you work with Love unITed Solutions, you're not just hiring a consultant, you’re gaining a committed partner who understands the balance between technology, people, and business growth. We bring hands-on Salesforce expertise with a personal touch and a deep understanding of what makes organizations work smarter.<br>
 <br>
 ✔️ Minority-founded, values-led consultancy<br>
 ✔️ Deep Salesforce expertise, human-first approach<br>
