@@ -25,6 +25,7 @@ I hold multiple Salesforce certifications that reflect my breadth and depth acro
 * Marketing Cloud Account Engagement Specialist
 * Agentforce Specialist
 * Process Automation Accredited Professional <br>
+
 These credentials underscore my expertise in Salesforce’s core capabilities and advanced skills in automation, data architecture, analytics, and user-centered design.
 
 Today, my certifications align with key domains in the Salesforce Architect ecosystem, particularly Data Architecture & Management and Solution Architecture. These areas demand deep expertise in data governance, integration, and customer-centric design—all of which I’ve demonstrated through both practical experience and formal credentials.
