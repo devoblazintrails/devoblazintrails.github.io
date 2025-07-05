@@ -10,19 +10,18 @@
 
 # Site settings
 logo: "assets/images/LU-logo-FINAL.png"
-masthead_title: "love unITed Solutions"
+masthead_title: "Love unITed Solutions"
 
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: love unITed Solutions, LLC
+title: Love unITed Solutions, LLC
 email: contact@loveunited.solutions
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
+  Google search results) and in your feed.xml site description
 github_username: username
 minimal_mistakes_skin: dirt
 search: true
@@ -79,7 +78,7 @@ author:
       url: "mailto:contact@loveunited.solutions"
     - label: "Free Consultation"
       icon: "fa-solid fa-calendar-days"
-      url: "https://calendar.app.google/kbYDtnBk5uyyGWL77"
+      url: "https://app.usemotion.com/meet/devo-perez/meeting"
 
 footer:
   links:
@@ -88,7 +87,7 @@ footer:
       url: "https://www.salesforce.com/trailblazer/devomoore"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/devo-pm/"
+      url: "https://www.linkedin.com/company/loveunitedsolutions/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/devoblazintrails"
