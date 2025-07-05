@@ -10,7 +10,7 @@ header:
 excerpt: >
   **Love unITed Solutions** is here to help you maximize your Salesforce investment—so you can focus on what really matters: growing your business.
 feature_row1:
-  - image_path: /assets/images/User Adoption Checklist Design.png
+  - image_path: /assets/images/BOOST YOUR USER ADOPTION.png
     alt: "Get Our User Adoption Enhancer Checklist"
     title: "Struggling with low Salesforce engagement?"
     excerpt: >
@@ -19,7 +19,7 @@ feature_row1:
     btn_label: "Get Checklist"
     btn_class: "btn--primary"
 feature_row2:
-  - image_path: /assets/images/Data Enhancement Checklist Design.png
+  - image_path: /assets/images/Data Enhancement Checklist.png
     alt: "Get Our Data Enrichment Checklist"
     title: "Tired of dirty data dragging you down?"
     excerpt: >
