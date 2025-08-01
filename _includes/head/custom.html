@@ -67,36 +67,151 @@
 </style>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  if (localStorage.getItem("promo_overlay_shown")) return;
-
-  // Create overlay element
-  const overlay = document.createElement("div");
-  overlay.id = "promoOverlay";
-  overlay.innerHTML = `
-    <div class="popup-box">
-      <span class="popup-close" onclick="document.getElementById('promoOverlay').style.display='none'">&times;</span>
-      <h3>Want to trial our services?</h3>
-      <p>
-        Curious about what Salesforce can really do for your business – without the big commitment?
-        Trial a project or get bite-sized expert support with a <strong>AUD$300 credit</strong> on 
-        <a href="https://balo.expert/profile/devo-pm" target="_blank" rel="noopener noreferrer">Balo</a>
-        using promo code <strong>EOFY25BALO</strong>.
-      </p>
-      <p><strong>No strings.</strong> Just <em>smart, strategic</em> Salesforce help – when and how you need it.</p>
-      <a href="https://balo.expert/profile/devo-pm" target="_blank" rel="noopener noreferrer">
-        <button class="medium-centered-button">Claim your credit and start now!</button>
-      </a>
-    </div>
-  `;
-  document.body.appendChild(overlay);
-
-  // Show after delay
-  setTimeout(() => {
-    overlay.style.display = "flex";
-    localStorage.setItem("promo_overlay_shown", "true");
-  }, 5000); // delay in milliseconds (5000 = 5s)
-});
-</script>
+        // In-memory storage to track if overlay has been shown
+        let overlayShown = false;
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            if (overlayShown) return;
+            
+            // Show overlay after delay
+            setTimeout(() => {
+                showOverlay();
+            }, 5000); // 5 second delay
+        });
+        
+        function showOverlay() {
+            const overlay = document.getElementById('promoOverlay');
+            overlay.style.display = 'flex';
+            overlayShown = true;
+        }
+        
+        function closeOverlay() {
+            const overlay = document.getElementById('promoOverlay');
+            overlay.style.display = 'none';
+        }
+        
+        function resetOverlay() {
+            overlayShown = false;
+            closeOverlay();
+            alert('Overlay memory reset! It will show again after 5 seconds.');
+        }
+        
+        // Form validation and submission
+        document.getElementById('promoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('userFirstName').value.trim();
+            const lastName = document.getElementById('userLastName').value.trim();
+            const email = document.getElementById('userEmail').value.trim();
+            let isValid = true;
+            
+            // Reset previous errors
+            document.getElementById('userFirstName').classList.remove('error');
+            document.getElementById('userLastName').classList.remove('error');
+            document.getElementById('userEmail').classList.remove('error');
+            document.getElementById('firstNameError').style.display = 'none';
+            document.getElementById('lastNameError').style.display = 'none';
+            document.getElementById('emailError').style.display = 'none';
+            
+            // Validate first name
+            if (!firstName || firstName.length < 1) {
+                document.getElementById('userFirstName').classList.add('error');
+                document.getElementById('firstNameError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validate last name
+            if (!lastName || lastName.length < 1) {
+                document.getElementById('userLastName').classList.add('error');
+                document.getElementById('lastNameError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validate email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailRegex.test(email)) {
+                document.getElementById('userEmail').classList.add('error');
+                document.getElementById('emailError').textContent = !email ? 'Please enter your email address' : 'Please enter a valid email address';
+                document.getElementById('emailError').style.display = 'block';
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // Show loading state
+                const submitBtn = document.getElementById('submitBtn');
+                const submitText = document.getElementById('submitText');
+                const submitLoader = document.getElementById('submitLoader');
+                
+                submitBtn.disabled = true;
+                submitText.style.display = 'none';
+                submitLoader.style.display = 'inline';
+                
+                // Submit to Google Sheets
+                submitToGoogleSheets(firstName, lastName, email)
+                    .then(() => {
+                        // Show success message
+                        document.getElementById('formContent').style.display = 'none';
+                        document.getElementById('successContent').style.display = 'block';
+                    })
+                    .catch((error) => {
+                        console.error('Submission error:', error);
+                        alert('There was an error submitting your information. Please try again.');
+                        
+                        // Reset button state
+                        submitBtn.disabled = false;
+                        submitText.style.display = 'inline';
+                        submitLoader.style.display = 'none';
+                    });
+            }
+        });
+        
+        // Function to submit data to Google Sheets
+        async function submitToGoogleSheets(firstName, lastName, email) {
+            // Google Apps Script web app URL
+            const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby_hWFbBvQiIHwyQDh1MGwkm-tvKiZoA5p7pg0JlDJJmXUK89fgkyQm2zNqTiH3mNj9/exec';
+            
+            const data = {
+                firstName: firstName,
+                lastName: lastName,
+                email: email,
+                offer: '500 credit for first project',
+                timestamp: new Date().toISOString()
+            };
+            
+            try {
+                const response = await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors', // Required for Google Apps Script
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                // Note: With no-cors mode, we can't read the response
+                // We'll assume success if no error is thrown
+                console.log('Data submitted to Google Sheets:', data);
+                return Promise.resolve();
+                
+            } catch (error) {
+                console.error('Error submitting to Google Sheets:', error);
+                throw error;
+            }
+        }
+        
+        // Close overlay when clicking outside the popup box
+        document.getElementById('promoOverlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeOverlay();
+            }
+        });
+        
+        // Close overlay with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeOverlay();
+            }
+        });
+    </script>
 
 <!-- end custom head snippets -->
