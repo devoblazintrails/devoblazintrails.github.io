@@ -66,152 +66,207 @@
 }
 </style>
 
-<script>
-        // In-memory storage to track if overlay has been shown
-        let overlayShown = false;
+<!-- Lead Capture Overlay - Add this to your _includes/head.html or main layout file -->
+<div id="promoOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 1000; justify-content: center; align-items: center;">
+    <div style="background: white; padding: 30px; border-radius: 8px; max-width: 400px; width: 90%; position: relative;">
+        <span style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer;" onclick="closeOverlay()">&times;</span>
         
-        document.addEventListener("DOMContentLoaded", function () {
-            if (overlayShown) return;
+        <div id="formContent">
+            <h3>Get $500 off your first project!</h3>
+            <p>Ready to see what our Salesforce expertise can do for your business? Get started with a $500 credit on your first project with us.</p>
             
-            // Show overlay after delay
-            setTimeout(() => {
-                showOverlay();
-            }, 5000); // 5 second delay
-        });
+            <form id="promoForm">
+                <div>
+                    <label for="userFirstName">First Name *</label><br>
+                    <input type="text" id="userFirstName" name="firstName" required style="width: 100%; padding: 8px; margin: 5px 0 10px 0; box-sizing: border-box;">
+                    <div id="firstNameError" style="color: red; font-size: 14px; display: none;">Please enter your first name</div>
+                </div>
+                <div>
+                    <label for="userLastName">Last Name *</label><br>
+                    <input type="text" id="userLastName" name="lastName" required style="width: 100%; padding: 8px; margin: 5px 0 10px 0; box-sizing: border-box;">
+                    <div id="lastNameError" style="color: red; font-size: 14px; display: none;">Please enter your last name</div>
+                </div>
+                <div>
+                    <label for="userEmail">Email Address *</label><br>
+                    <input type="email" id="userEmail" name="email" required style="width: 100%; padding: 8px; margin: 5px 0 10px 0; box-sizing: border-box;">
+                    <div id="emailError" style="color: red; font-size: 14px; display: none;">Please enter a valid email address</div>
+                </div>
+                <button type="submit" id="submitBtn" style="width: 100%; padding: 12px; background: #007cba; color: white; border: none; cursor: pointer; margin-top: 10px;">
+                    <span id="submitText">Claim Your $500 Credit!</span>
+                    <span id="submitLoader" style="display: none;">Submitting...</span>
+                </button>
+            </form>
+        </div>
         
-        function showOverlay() {
-            const overlay = document.getElementById('promoOverlay');
+        <div id="successContent" style="display: none;">
+            <h3>Thank You!</h3>
+            <p>We'll be in touch within 24 hours to discuss your $500 credit and how we can help with your Salesforce project.</p>
+            <button onclick="closeOverlay()" style="width: 100%; padding: 12px; background: #007cba; color: white; border: none; cursor: pointer;">Close</button>
+        </div>
+    </div>
+</div>
+
+<script>
+// Lead capture overlay functionality
+(function() {
+    // Prevent multiple overlays if script runs multiple times
+    if (window.leadCaptureInitialized) return;
+    window.leadCaptureInitialized = true;
+    
+    // In-memory storage to track if overlay has been shown
+    let overlayShown = sessionStorage.getItem('promoOverlayShown') === 'true';
+
+    document.addEventListener("DOMContentLoaded", function () {
+        if (overlayShown) return;
+        
+        // Show overlay after 5 seconds
+        setTimeout(() => {
+            showOverlay();
+        }, 5000);
+    });
+
+    function showOverlay() {
+        const overlay = document.getElementById('promoOverlay');
+        if (overlay) {
             overlay.style.display = 'flex';
             overlayShown = true;
+            sessionStorage.setItem('promoOverlayShown', 'true');
         }
-        
-        function closeOverlay() {
-            const overlay = document.getElementById('promoOverlay');
+    }
+
+    window.closeOverlay = function() {
+        const overlay = document.getElementById('promoOverlay');
+        if (overlay) {
             overlay.style.display = 'none';
         }
-        
-        function resetOverlay() {
-            overlayShown = false;
-            closeOverlay();
-            alert('Overlay memory reset! It will show again after 5 seconds.');
+    }
+
+    // Form validation and submission
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('promoForm');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const firstName = document.getElementById('userFirstName').value.trim();
+                const lastName = document.getElementById('userLastName').value.trim();
+                const email = document.getElementById('userEmail').value.trim();
+                let isValid = true;
+                
+                // Reset previous errors
+                document.getElementById('userFirstName').style.borderColor = '';
+                document.getElementById('userLastName').style.borderColor = '';
+                document.getElementById('userEmail').style.borderColor = '';
+                document.getElementById('firstNameError').style.display = 'none';
+                document.getElementById('lastNameError').style.display = 'none';
+                document.getElementById('emailError').style.display = 'none';
+                
+                // Validate first name
+                if (!firstName || firstName.length < 1) {
+                    document.getElementById('userFirstName').style.borderColor = 'red';
+                    document.getElementById('firstNameError').style.display = 'block';
+                    isValid = false;
+                }
+                
+                // Validate last name
+                if (!lastName || lastName.length < 1) {
+                    document.getElementById('userLastName').style.borderColor = 'red';
+                    document.getElementById('lastNameError').style.display = 'block';
+                    isValid = false;
+                }
+                
+                // Validate email
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email || !emailRegex.test(email)) {
+                    document.getElementById('userEmail').style.borderColor = 'red';
+                    document.getElementById('emailError').textContent = !email ? 'Please enter your email address' : 'Please enter a valid email address';
+                    document.getElementById('emailError').style.display = 'block';
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    // Show loading state
+                    const submitBtn = document.getElementById('submitBtn');
+                    const submitText = document.getElementById('submitText');
+                    const submitLoader = document.getElementById('submitLoader');
+                    
+                    submitBtn.disabled = true;
+                    submitText.style.display = 'none';
+                    submitLoader.style.display = 'inline';
+                    
+                    // Submit to Google Sheets
+                    submitToGoogleSheets(firstName, lastName, email)
+                        .then(() => {
+                            // Show success message
+                            document.getElementById('formContent').style.display = 'none';
+                            document.getElementById('successContent').style.display = 'block';
+                        })
+                        .catch((error) => {
+                            console.error('Submission error:', error);
+                            alert('There was an error submitting your information. Please try again.');
+                            
+                            // Reset button state
+                            submitBtn.disabled = false;
+                            submitText.style.display = 'inline';
+                            submitLoader.style.display = 'none';
+                        });
+                }
+            });
         }
+    });
+
+    // Function to submit data to Google Sheets
+    async function submitToGoogleSheets(firstName, lastName, email) {
+        // Google Apps Script web app URL
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby_hWFbBvQiIHwyQDh1MGwkm-tvKiZoA5p7pg0JlDJJmXUK89fgkyQm2zNqTiH3mNj9/exec';
         
-        // Form validation and submission
-        document.getElementById('promoForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const firstName = document.getElementById('userFirstName').value.trim();
-            const lastName = document.getElementById('userLastName').value.trim();
-            const email = document.getElementById('userEmail').value.trim();
-            let isValid = true;
-            
-            // Reset previous errors
-            document.getElementById('userFirstName').classList.remove('error');
-            document.getElementById('userLastName').classList.remove('error');
-            document.getElementById('userEmail').classList.remove('error');
-            document.getElementById('firstNameError').style.display = 'none';
-            document.getElementById('lastNameError').style.display = 'none';
-            document.getElementById('emailError').style.display = 'none';
-            
-            // Validate first name
-            if (!firstName || firstName.length < 1) {
-                document.getElementById('userFirstName').classList.add('error');
-                document.getElementById('firstNameError').style.display = 'block';
-                isValid = false;
-            }
-            
-            // Validate last name
-            if (!lastName || lastName.length < 1) {
-                document.getElementById('userLastName').classList.add('error');
-                document.getElementById('lastNameError').style.display = 'block';
-                isValid = false;
-            }
-            
-            // Validate email
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!email || !emailRegex.test(email)) {
-                document.getElementById('userEmail').classList.add('error');
-                document.getElementById('emailError').textContent = !email ? 'Please enter your email address' : 'Please enter a valid email address';
-                document.getElementById('emailError').style.display = 'block';
-                isValid = false;
-            }
-            
-            if (isValid) {
-                // Show loading state
-                const submitBtn = document.getElementById('submitBtn');
-                const submitText = document.getElementById('submitText');
-                const submitLoader = document.getElementById('submitLoader');
-                
-                submitBtn.disabled = true;
-                submitText.style.display = 'none';
-                submitLoader.style.display = 'inline';
-                
-                // Submit to Google Sheets
-                submitToGoogleSheets(firstName, lastName, email)
-                    .then(() => {
-                        // Show success message
-                        document.getElementById('formContent').style.display = 'none';
-                        document.getElementById('successContent').style.display = 'block';
-                    })
-                    .catch((error) => {
-                        console.error('Submission error:', error);
-                        alert('There was an error submitting your information. Please try again.');
-                        
-                        // Reset button state
-                        submitBtn.disabled = false;
-                        submitText.style.display = 'inline';
-                        submitLoader.style.display = 'none';
-                    });
-            }
-        });
+        const data = {
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
+            offer: '500 credit for first project',
+            timestamp: new Date().toISOString()
+        };
         
-        // Function to submit data to Google Sheets
-        async function submitToGoogleSheets(firstName, lastName, email) {
-            // Google Apps Script web app URL
-            const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby_hWFbBvQiIHwyQDh1MGwkm-tvKiZoA5p7pg0JlDJJmXUK89fgkyQm2zNqTiH3mNj9/exec';
+        try {
+            const response = await fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            });
             
-            const data = {
-                firstName: firstName,
-                lastName: lastName,
-                email: email,
-                offer: '500 credit for first project',
-                timestamp: new Date().toISOString()
-            };
+            console.log('Data submitted to Google Sheets:', data);
+            return Promise.resolve();
             
-            try {
-                const response = await fetch(GOOGLE_SCRIPT_URL, {
-                    method: 'POST',
-                    mode: 'no-cors', // Required for Google Apps Script
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data)
-                });
-                
-                // Note: With no-cors mode, we can't read the response
-                // We'll assume success if no error is thrown
-                console.log('Data submitted to Google Sheets:', data);
-                return Promise.resolve();
-                
-            } catch (error) {
-                console.error('Error submitting to Google Sheets:', error);
-                throw error;
-            }
+        } catch (error) {
+            console.error('Error submitting to Google Sheets:', error);
+            throw error;
         }
-        
+    }
+
+    // Event listeners for closing overlay
+    document.addEventListener('DOMContentLoaded', function() {
         // Close overlay when clicking outside the popup box
-        document.getElementById('promoOverlay').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeOverlay();
-            }
-        });
-        
-        // Close overlay with Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeOverlay();
-            }
-        });
-    </script>
+        const overlay = document.getElementById('promoOverlay');
+        if (overlay) {
+            overlay.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    window.closeOverlay();
+                }
+            });
+        }
+    });
+
+    // Close overlay with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            window.closeOverlay();
+        }
+    });
+})();
+</script>
 
 <!-- end custom head snippets -->
