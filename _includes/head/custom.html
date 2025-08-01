@@ -66,7 +66,7 @@
 }
 </style>
 
-<!-- Lead Capture Overlay - Add this to your _includes/head.html or main layout file -->
+<!-- Lead Capture Overlay -->
 <div id="promoOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 1000; justify-content: center; align-items: center;">
     <div style="background: white; padding: 30px; border-radius: 8px; max-width: 400px; width: 90%; position: relative;">
         <span style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer;" onclick="closeOverlay()">&times;</span>
@@ -185,38 +185,19 @@
                 }
                 
                 if (isValid) {
-                    // Show loading state
-                    const submitBtn = document.getElementById('submitBtn');
-                    const submitText = document.getElementById('submitText');
-                    const submitLoader = document.getElementById('submitLoader');
+                    // Immediately show success message for better UX
+                    document.getElementById('formContent').style.display = 'none';
+                    document.getElementById('successContent').style.display = 'block';
                     
-                    submitBtn.disabled = true;
-                    submitText.style.display = 'none';
-                    submitLoader.style.display = 'inline';
-                    
-                    // Submit to Google Sheets
-                    submitToGoogleSheets(firstName, lastName, email)
-                        .then(() => {
-                            // Show success message
-                            document.getElementById('formContent').style.display = 'none';
-                            document.getElementById('successContent').style.display = 'block';
-                        })
-                        .catch((error) => {
-                            console.error('Submission error:', error);
-                            alert('There was an error submitting your information. Please try again.');
-                            
-                            // Reset button state
-                            submitBtn.disabled = false;
-                            submitText.style.display = 'inline';
-                            submitLoader.style.display = 'none';
-                        });
+                    // Submit to Google Sheets asynchronously in background
+                    submitToGoogleSheetsAsync(firstName, lastName, email);
                 }
             });
         }
     });
 
-    // Function to submit data to Google Sheets
-    async function submitToGoogleSheets(firstName, lastName, email) {
+    // Function to submit data to Google Sheets asynchronously
+    function submitToGoogleSheetsAsync(firstName, lastName, email) {
         // Google Apps Script web app URL
         const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby_hWFbBvQiIHwyQDh1MGwkm-tvKiZoA5p7pg0JlDJJmXUK89fgkyQm2zNqTiH3mNj9/exec';
         
@@ -228,23 +209,20 @@
             timestamp: new Date().toISOString()
         };
         
-        try {
-            const response = await fetch(GOOGLE_SCRIPT_URL, {
-                method: 'POST',
-                mode: 'no-cors',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data)
-            });
-            
+        // Fire and forget - don't wait for response
+        fetch(GOOGLE_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        }).then(() => {
             console.log('Data submitted to Google Sheets:', data);
-            return Promise.resolve();
-            
-        } catch (error) {
-            console.error('Error submitting to Google Sheets:', error);
-            throw error;
-        }
+        }).catch((error) => {
+            console.error('Background submission error:', error);
+            // Could implement retry logic here if needed
+        });
     }
 
     // Event listeners for closing overlay
