@@ -27,7 +27,7 @@ author_profile: false
 Fill out the form below and we'll get back to you within 1 business day.
 
 <!-- Begin Embedded Contact Form -->
-<form id="custom-form" action="https://script.google.com/macros/s/AKfycbzvL9Fb3Yt8H25WUgWeh1J_d4yy-7hXIxzo5KJVsa0l2l1svwPPhaM-gwsLgw8gxl8R/exec" method="POST">
+<form id="custom-form" action="https://script.google.com/macros/s/AKfycbzq2w-TfVi5ntZg4zEO2kE-Y0lR2_ijwdGxKCajgCh2P1MGYleQ23VK7Ul-vtuwPShR/exec" method="POST">
   <label for="name">Your Name:</label><br>
   <input type="text" name="name" id="name" required><br><br>
 
