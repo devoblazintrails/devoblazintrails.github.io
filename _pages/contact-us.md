@@ -56,30 +56,31 @@ Fill out the form below and we'll get back to you within 1 business day.
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <script>
-  const form = document.getElementById('custom-form');
+  // ✅ Avoid naming conflict by changing 'form' to 'contactForm'
+  const contactForm = document.getElementById('custom-form');
   const responseMessage = document.getElementById('response-message');
 
-  form.addEventListener('submit', async (e) => {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Validate reCAPTCHA
     const token = grecaptcha.getResponse();
     if (!token) {
       responseMessage.textContent = "Please complete the reCAPTCHA.";
       return;
     }
 
-    const formData = new FormData(form);
+    const formData = new FormData(contactForm);
     formData.append("g-recaptcha-response", token);
 
     try {
-      const res = await fetch(form.action, {
+      const res = await fetch(contactForm.action, {
         method: 'POST',
         body: formData
       });
       if (res.ok) {
+        const text = await res.text(); // Optional: show returned value
         responseMessage.textContent = "Thanks! We'll be in touch soon.";
-        form.reset();
+        contactForm.reset();
         grecaptcha.reset();
       } else {
         responseMessage.textContent = "Oops! Something went wrong.";
