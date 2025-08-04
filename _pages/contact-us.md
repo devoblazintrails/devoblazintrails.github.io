@@ -58,14 +58,14 @@ Fill out the form below and we'll get back to you within 1 business day.
 <script>
   // ✅ Avoid naming conflict by changing 'form' to 'contactForm'
   const contactForm = document.getElementById('custom-form');
-  const responseMessage = document.getElementById('response-message');
+  const responseMsg = document.getElementById('response-message');
 
   contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const token = grecaptcha.getResponse();
     if (!token) {
-      responseMessage.textContent = "Please complete the reCAPTCHA.";
+      responseMsg.textContent = "Please complete the reCAPTCHA.";
       return;
     }
 
@@ -79,14 +79,14 @@ Fill out the form below and we'll get back to you within 1 business day.
       });
       if (res.ok) {
         const text = await res.text(); // Optional: show returned value
-        responseMessage.textContent = "Thanks! We'll be in touch soon.";
+        responseMsg.textContent = "Thanks! We'll be in touch soon.";
         contactForm.reset();
         grecaptcha.reset();
       } else {
-        responseMessage.textContent = "Oops! Something went wrong.";
+        responseMsg.textContent = "Oops! Something went wrong.";
       }
     } catch {
-      responseMessage.textContent = "Network error. Please try again.";
+      responseMsg.textContent = "Network error. Please try again.";
     }
   });
 </script>
