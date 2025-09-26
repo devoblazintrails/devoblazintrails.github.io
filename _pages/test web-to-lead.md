@@ -4,11 +4,16 @@ layout: splash
 permalink: /CECweb-to-lead/
 author_profile: false
 ---
-
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
 <!--  character set of your HTML page.                                        -->
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!-- reCAPTCHA Script -->
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+ function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+</script>
 
 <!-- Success message (initially hidden) -->
 <div id="successMessage" style="display: none; background-color: #d4edda; color: #155724; padding: 20px; border-radius: 8px; border: 1px solid #c3e6cb; margin-bottom: 20px; text-align: center;">
@@ -18,6 +23,7 @@ author_profile: false
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <div id="formContent">
     <form id="webToLeadForm" action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DRt00000GxBuM" method="POST">
+        <input type="hidden" name='captcha_settings' value='{"keyname":"CEC_Main","fallback":"true","orgId":"00DRt00000GxBuM","ts":""}'>
         <input type="hidden" name="oid" value="00DRt00000GxBuM">
         <input type="hidden" name="retURL" id="dynamicRetURL" value="">
         
@@ -53,7 +59,10 @@ author_profile: false
         <input id="00NHs00000G6r8g" name="00NHs00000G6r8g" type="hidden"/>
         <input id="00NHs00000G6o24" name="00NHs00000G6o24" type="hidden"/>
         
-        <input type="submit" name="submit" value="Submit">
+        <!-- reCAPTCHA Widget -->
+        <div class="g-recaptcha" data-sitekey="6LfP5ncrAAAAAKteCgCl1uFl8CPxX6-jhdIVORVE"></div><br>
+        
+        <input type="submit" name="submit" value="Submit Request">
     </form>
 </div>
 
