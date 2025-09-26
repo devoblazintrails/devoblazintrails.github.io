@@ -1,3 +1,10 @@
+---
+title: "Test Form"
+layout: splash
+permalink: /CECweb-to-lead/
+author_profile: false
+---
+
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
 <!--  character set of your HTML page.                                        -->
