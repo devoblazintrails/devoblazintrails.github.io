@@ -11,10 +11,8 @@ author_profile: false
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
 <!-- Success message (initially hidden) -->
-<div id="successMessage" style="display: none; background-color: #d4edda; color: #155724; padding: 20px; border-radius: 8px; border: 1px solid #c3e6cb; margin-bottom: 20px;">
-    <h3 style="margin-top: 0; color: #155724;">Thank You!</h3>
-    <p>Your information has been successfully submitted. We'll be in touch with you soon about your certification interest.</p>
-    <button onclick="resetForm()" style="margin-top: 10px; padding: 8px 16px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer;">Submit Another Request</button>
+<div id="successMessage" style="display: none; background-color: #d4edda; color: #155724; padding: 20px; border-radius: 8px; border: 1px solid #c3e6cb; margin-bottom: 20px; text-align: center;">
+    <h3 style="margin: 0; color: #155724;">Thank you for subscribing</h3>
 </div>
 
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
@@ -55,7 +53,7 @@ author_profile: false
         <input id="00NHs00000G6r8g" name="00NHs00000G6r8g" type="hidden"/>
         <input id="00NHs00000G6o24" name="00NHs00000G6o24" type="hidden"/>
         
-        <input type="submit" name="submit" value="Submit Request">
+        <input type="submit" name="submit" value="Submit">
     </form>
 </div>
 
