@@ -23,7 +23,7 @@ author_profile: false
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <div id="formContent">
     <form id="webToLeadForm" action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DRt00000GxBuM" method="POST">
-        <input type="hidden" name='captcha_settings' value='{"keyname":"CEC_Main","fallback":"true","orgId":"00DRt00000GxBuM","ts":""}'>
+        <input type="hidden" name='captcha_settings' value='{"keyname":"LUS","fallback":"true","orgId":"00DRt00000GxBuM","ts":""}'>
         <input type="hidden" name="oid" value="00DRt00000GxBuM">
         <input type="hidden" name="retURL" id="dynamicRetURL" value="">
         
