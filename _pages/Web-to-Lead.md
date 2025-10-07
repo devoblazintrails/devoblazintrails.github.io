@@ -7,6 +7,7 @@ author_profile: true
 ---
 
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -416,18 +417,26 @@ author_profile: true
             const form = document.getElementById('webToLeadForm');
             if (form) {
                 form.addEventListener('submit', function(e) {
-                    // Show loading overlay immediately when form is submitted
+                    // Prevent default form submission temporarily
+                    e.preventDefault();
+                    
+                    // Show loading overlay immediately
                     document.getElementById('loadingOverlay').style.display = 'block';
                     
-                    // After a brief moment, show success before redirect
+                    // After 0.8 seconds, show success
                     setTimeout(function() {
                         document.getElementById('loadingSpinner').style.display = 'none';
                         document.getElementById('checkmark').style.display = 'block';
                         document.getElementById('submittingText').textContent = 'Success!';
+                        
+                        // Wait 1.5 seconds showing success, then submit the form
+                        setTimeout(function() {
+                            // Now actually submit the form
+                            setDynamicReturnURL();
+                            captureURLParameters();
+                            form.submit();
+                        }, 1500);
                     }, 800);
-                    
-                    setDynamicReturnURL();
-                    captureURLParameters();
                 });
             }
         });
