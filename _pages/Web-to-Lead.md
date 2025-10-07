@@ -181,6 +181,7 @@ author_profile: true
                 <input type="hidden" name="oid" value="00DRt00000GxBuM">
                 <input type="hidden" name="retURL" id="dynamicRetURL" value="">
                 <input type="hidden" name="lead_source" value="Newsletter"/>
+                <input type="hidden" name="00NUV00000qK4fq" id="00NUV00000qK4fq" value=true/>                
                 <input type="hidden" name="00NHs00000G6o1p" id="gad_source"/>
                 <input type="hidden" name="00NHs00000G6o1u" id="gad_campaignid"/>
                 <input type="hidden" name="00NHs00000G6o24" id="gclid"/>
