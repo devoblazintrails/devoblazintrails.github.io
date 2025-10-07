@@ -177,7 +177,7 @@ author_profile: true
             <h2>Subscribe to Our Newsletter</h2>
             
             <form id="webToLeadForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D300000001Zrp" method="POST">
-                <input type="hidden" name='captcha_settings' value='{"keyname":"LU_TestSite","fallback":"true","orgId":"00D300000001Zrp","ts":""}'>
+                <input type="hidden" name='captcha_settings' value='{"keyname":"LUS_TestSite","fallback":"true","orgId":"00D300000001Zrp","ts":""}'>
                 <input type="hidden" name="oid" value="00D300000001Zrp">
                 <input type="hidden" name="retURL" id="dynamicRetURL" value="">
                 <input type="hidden" name="lead_source" value="Newsletter"/>
