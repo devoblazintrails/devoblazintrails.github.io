@@ -18,9 +18,26 @@ author_profile: true
 </script>
 
 <!-- Success message (initially hidden) -->
-<div id="successMessage" style="display: none; padding: 20px; border-radius: 8px; border: 1px solid; margin-bottom: 20px; text-align: center;">
-    <h3 style="margin: 0;">Thank you for subscribing</h3>
+<div id="successMessage" style="display: none; padding: 40px 20px; text-align: center; animation: fadeIn 0.3s ease-in;">
+    <h3 style="margin: 0 0 10px 0; font-size: 24px;">Thank you for subscribing</h3>
+    <p style="margin: 10px 0 0 0; color: #666;">We'll be in touch soon with more information about our certification programs.</p>
 </div>
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-10px); }
+}
+
+.fade-out {
+    animation: fadeOut 0.3s ease-out forwards;
+}
+</style>
 
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <div id="formContent">
@@ -190,11 +207,17 @@ function checkForSuccess() {
         const success = urlParams.get('success');
         
         if (success === 'true') {
-            // Show success message and hide form
-            document.getElementById('successMessage').style.display = 'block';
-            document.getElementById('formContent').style.display = 'none';
+            // Add fade-out animation to form
+            const formContent = document.getElementById('formContent');
+            formContent.classList.add('fade-out');
             
-            // Clean up URL (remove success parameter)
+            // Wait for fade-out to complete, then show success message
+            setTimeout(function() {
+                formContent.style.display = 'none';
+                document.getElementById('successMessage').style.display = 'block';
+            }, 300);
+            
+            // Clean up URL (remove success parameter) without page refresh
             if (window.history && window.history.replaceState) {
                 const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
                 window.history.replaceState({path: newUrl}, '', newUrl);
