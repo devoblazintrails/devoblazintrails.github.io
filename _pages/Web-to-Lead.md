@@ -6,7 +6,6 @@ classes: wide
 author_profile: true
 ---
 
-
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
 <!--  character set of your HTML page.                                        -->
@@ -87,6 +86,102 @@ function setDynamicReturnURL() {
     }
 }
 
+// Function to capture URL parameters (Google Ads & UTM)
+function captureURLParameters() {
+    try {
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        // Google Ads parameters to capture
+        const googleAdsParams = {
+            'gclid': 'gclid',
+            'gad_source': 'gad_source',
+            'gad_campaignid': 'gad_campaignid',
+            'gbraid': 'gbraid'
+        };
+        
+        // UTM parameters to capture
+        const utmParams = {
+            'utm_source': 'utm_source',
+            'utm_medium': 'utm_medium',
+            'utm_campaign': 'utm_campaign',
+            'utm_term': 'utm_term',
+            'utm_content': 'utm_content'
+        };
+        
+        // Capture Google Ads parameters
+        for (const [param, fieldId] of Object.entries(googleAdsParams)) {
+            const value = urlParams.get(param);
+            const field = document.getElementById(fieldId);
+            
+            if (field && value) {
+                field.value = value;
+                console.log('Captured ' + param + ': ' + value);
+            }
+        }
+        
+        // Capture UTM parameters
+        for (const [param, fieldId] of Object.entries(utmParams)) {
+            const value = urlParams.get(param);
+            const field = document.getElementById(fieldId);
+            
+            if (field && value) {
+                field.value = value;
+                console.log('Captured ' + param + ': ' + value);
+            }
+        }
+    } catch (error) {
+        console.log('Error capturing URL parameters:', error);
+    }
+}
+
+// Function to capture URL parameters (Google Ads & UTM)
+function captureURLParameters() {
+    try {
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        // Google Ads parameters to capture
+        const googleAdsParams = {
+            'gclid': 'gclid',
+            'gad_source': 'gad_source',
+            'gad_campaignid': 'gad_campaignid',
+            'gbraid': 'gbraid'
+        };
+        
+        // UTM parameters to capture
+        const utmParams = {
+            'utm_source': 'utm_source',
+            'utm_medium': 'utm_medium',
+            'utm_campaign': 'utm_campaign',
+            'utm_term': 'utm_term',
+            'utm_content': 'utm_content'
+        };
+        
+        // Capture Google Ads parameters
+        for (const [param, fieldId] of Object.entries(googleAdsParams)) {
+            const value = urlParams.get(param);
+            const field = document.getElementById(fieldId);
+            
+            if (field && value) {
+                field.value = value;
+                console.log('Captured ' + param + ': ' + value);
+            }
+        }
+        
+        // Capture UTM parameters
+        for (const [param, fieldId] of Object.entries(utmParams)) {
+            const value = urlParams.get(param);
+            const field = document.getElementById(fieldId);
+            
+            if (field && value) {
+                field.value = value;
+                console.log('Captured ' + param + ': ' + value);
+            }
+        }
+    } catch (error) {
+        console.log('Error capturing URL parameters:', error);
+    }
+}
+
 // Check if success parameter is in URL
 function checkForSuccess() {
     try {
@@ -118,26 +213,29 @@ function resetForm() {
     // Clear form fields
     document.getElementById('webToLeadForm').reset();
     
-    // Reset the return URL
+    // Reset the return URL and capture parameters again
     setDynamicReturnURL();
+    captureURLParameters();
 }
 
 // Initialize when page loads
 window.addEventListener('load', function() {
     setDynamicReturnURL();
+    captureURLParameters();
     checkForSuccess();
 });
 
-// Set return URL right before form submission
+// Set return URL and capture parameters right before form submission
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('webToLeadForm');
     if (form) {
         form.addEventListener('submit', function() {
             setDynamicReturnURL();
+            captureURLParameters();
         });
     }
 });
 
-// Backup: Set return URL immediately when script runs
+// Backup: Set return URL and capture parameters immediately when script runs
 setDynamicReturnURL();
-</script>
+captureURLParameters();
