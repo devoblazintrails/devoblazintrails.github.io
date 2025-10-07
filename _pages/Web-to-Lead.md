@@ -6,10 +6,12 @@ classes: wide
 author_profile: true
 ---
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page</title>
     
     <!-- reCAPTCHA Script -->
     <script src="https://www.google.com/recaptcha/api.js"></script>
@@ -414,30 +416,16 @@ author_profile: true
             const form = document.getElementById('webToLeadForm');
             if (form) {
                 form.addEventListener('submit', function(e) {
-                    // Prevent default form submission temporarily
-                    e.preventDefault();
-                    
-                    // Capture parameters before showing loading
-                    setDynamicReturnURL();
-                    captureURLParameters();
-                    
                     // Show loading overlay immediately
                     document.getElementById('loadingOverlay').style.display = 'block';
                     
+                    // Set return URL
+                    setDynamicReturnURL();
+                    captureURLParameters();
+                    
                     console.log('Form submitting with retURL:', document.getElementById('dynamicRetURL').value);
                     
-                    // After 0.8 seconds, show success
-                    setTimeout(function() {
-                        document.getElementById('loadingSpinner').style.display = 'none';
-                        document.getElementById('checkmark').style.display = 'block';
-                        document.getElementById('submittingText').textContent = 'Success!';
-                        
-                        // Wait 1.5 seconds showing success, then actually submit the form
-                        setTimeout(function() {
-                            // Submit the form for real now
-                            e.target.submit();
-                        }, 1500);
-                    }, 800);
+                    // Let the form submit normally - no preventDefault, no delays
                 });
             }
         });
