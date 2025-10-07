@@ -6,259 +6,367 @@ classes: wide
 author_profile: true
 ---
 
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-
-<!-- reCAPTCHA Script -->
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
- function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-</script>
-
-<!-- Success message (initially hidden) -->
-<div id="successMessage" style="display: none; padding: 40px 20px; text-align: center; animation: fadeIn 0.3s ease-in;">
-    <h3 style="margin: 0 0 10px 0; font-size: 24px;">Thank you for subscribing</h3>
-    <p style="margin: 10px 0 0 0; color: #666;">We'll be in touch soon with more information about our certification programs.</p>
-</div>
-
-<style>
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeOut {
-    from { opacity: 1; transform: translateY(0); }
-    to { opacity: 0; transform: translateY(-10px); }
-}
-
-.fade-out {
-    animation: fadeOut 0.3s ease-out forwards;
-}
-</style>
-
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<div id="formContent">
-    <form id="webToLeadForm" action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DRt00000GxBuM" method="POST">
-        <input type="hidden" name='captcha_settings' value='{"keyname":"LUS","fallback":"true","orgId":"00DRt00000GxBuM","ts":""}'>
-        <input type="hidden" name="oid" value="00DRt00000GxBuM">
-        <input type="hidden" name="retURL" id="dynamicRetURL" value="">
-        
-        <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-        <!--  these lines if you wish to test in debug mode.                          -->
-        <!-- <input type="hidden" name="debug" value="1">                               -->
-        <!--  <input type="hidden" name="debugEmail"                                  -->
-        <!--  value="devo.perezm@loveunited.solutions">                               -->
-        
-        <label for="last_name">First Name</label>
-        <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required/><br>
-        
-        <label for="email">Email Address</label>
-        <input id="email" maxlength="80" name="email" size="20" type="email" required/><br>
-        
-        Certification Interest:
-        <select id="00NUV00000P9iuf" name="00NUV00000P9iuf" title="Area of Interest" required>
-            <option value="">--None--</option>
-            <option value="Self-paced Executive Coaching Certification Programs">Self-paced Executive Coaching Certification Programs</option>
-            <option value="ICF Executive Coaching Certification Programs">ICF Executive Coaching Certification Programs</option>
-            <option value="Team Coaching Certification">Team Coaching Certification</option>
-            <option value="In-Person Seminars for Executive Coaching Certification">In-Person Seminars for Executive Coaching Certification</option>
-            <option value="Accelerated Executive Coaching Certification Programs">Accelerated Executive Coaching Certification Programs</option>
-            <option value="Internal Coach Training">Internal Coach Training</option>
-            <option value="Coach Training for Management Consultants">Coach Training for Management Consultants</option>
-            <option value="Upgrade to PCC">Upgrade to PCC</option>
-        </select><br>
-        
-        <input id="lead_source" name="lead_source" type="hidden" value="Newsletter"/>
-        <input id="gad_source" name="00NHs00000G6o1p" type="hidden"/>
-        <input id="gad_campaignid" name="00NHs00000G6o1u" type="hidden"/>
-        <input id="gclid" name="00NHs00000G6o24" type="hidden"/>
-        
-        <!-- reCAPTCHA Widget -->
-        <div class="g-recaptcha" data-sitekey="6LfP5ncrAAAAAKteCgCl1uFl8CPxX6-jhdIVORVE"></div><br>
-        
-        <input type="submit" name="submit" value="Submit Request">
-    </form>
-</div>
-
-<script>
-// Function to set dynamic return URL
-function setDynamicReturnURL() {
-    try {
-        // Get current page URL without any existing parameters
-        const currentUrl = window.location.protocol + '//' + window.location.host + window.location.pathname;
-        
-        // Add success parameter
-        const returnUrl = currentUrl + '?success=true';
-        
-        // Set the return URL in the hidden field
-        const retUrlField = document.getElementById('dynamicRetURL');
-        if (retUrlField) {
-            retUrlField.value = returnUrl;
-        }
-    } catch (error) {
-        console.log('Error setting return URL:', error);
-    }
-}
-
-// Function to capture URL parameters (Google Ads & UTM)
-function captureURLParameters() {
-    try {
-        const urlParams = new URLSearchParams(window.location.search);
-        
-        // Google Ads parameters to capture
-        const googleAdsParams = {
-            'gclid': 'gclid',
-            'gad_source': 'gad_source',
-            'gad_campaignid': 'gad_campaignid',
-            'gbraid': 'gbraid'
-        };
-        
-        // UTM parameters to capture
-        const utmParams = {
-            'utm_source': 'utm_source',
-            'utm_medium': 'utm_medium',
-            'utm_campaign': 'utm_campaign',
-            'utm_term': 'utm_term',
-            'utm_content': 'utm_content'
-        };
-        
-        // Capture Google Ads parameters
-        for (const [param, fieldId] of Object.entries(googleAdsParams)) {
-            const value = urlParams.get(param);
-            const field = document.getElementById(fieldId);
-            
-            if (field && value) {
-                field.value = value;
-                console.log('Captured ' + param + ': ' + value);
-            }
-        }
-        
-        // Capture UTM parameters
-        for (const [param, fieldId] of Object.entries(utmParams)) {
-            const value = urlParams.get(param);
-            const field = document.getElementById(fieldId);
-            
-            if (field && value) {
-                field.value = value;
-                console.log('Captured ' + param + ': ' + value);
-            }
-        }
-    } catch (error) {
-        console.log('Error capturing URL parameters:', error);
-    }
-}
-
-// Function to capture URL parameters (Google Ads & UTM)
-function captureURLParameters() {
-    try {
-        const urlParams = new URLSearchParams(window.location.search);
-        
-        // Google Ads parameters to capture
-        const googleAdsParams = {
-            'gclid': 'gclid',
-            'gad_source': 'gad_source',
-            'gad_campaignid': 'gad_campaignid',
-            'gbraid': 'gbraid'
-        };
-        
-        // UTM parameters to capture
-        const utmParams = {
-            'utm_source': 'utm_source',
-            'utm_medium': 'utm_medium',
-            'utm_campaign': 'utm_campaign',
-            'utm_term': 'utm_term',
-            'utm_content': 'utm_content'
-        };
-        
-        // Capture Google Ads parameters
-        for (const [param, fieldId] of Object.entries(googleAdsParams)) {
-            const value = urlParams.get(param);
-            const field = document.getElementById(fieldId);
-            
-            if (field && value) {
-                field.value = value;
-                console.log('Captured ' + param + ': ' + value);
-            }
-        }
-        
-        // Capture UTM parameters
-        for (const [param, fieldId] of Object.entries(utmParams)) {
-            const value = urlParams.get(param);
-            const field = document.getElementById(fieldId);
-            
-            if (field && value) {
-                field.value = value;
-                console.log('Captured ' + param + ': ' + value);
-            }
-        }
-    } catch (error) {
-        console.log('Error capturing URL parameters:', error);
-    }
-}
-
-// Check if success parameter is in URL
-function checkForSuccess() {
-    try {
-        // Check for success parameter in URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const success = urlParams.get('success');
-        
-        if (success === 'true') {
-            // Add fade-out animation to form
-            const formContent = document.getElementById('formContent');
-            formContent.classList.add('fade-out');
-            
-            // Wait for fade-out to complete, then show success message
-            setTimeout(function() {
-                formContent.style.display = 'none';
-                document.getElementById('successMessage').style.display = 'block';
-            }, 300);
-            
-            // Clean up URL (remove success parameter) without page refresh
-            if (window.history && window.history.replaceState) {
-                const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-                window.history.replaceState({path: newUrl}, '', newUrl);
-            }
-        }
-    } catch (error) {
-        console.log('Error checking for success parameter:', error);
-    }
-}
-
-// Function to reset form and show it again
-function resetForm() {
-    document.getElementById('successMessage').style.display = 'none';
-    document.getElementById('formContent').style.display = 'block';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page</title>
     
-    // Clear form fields
-    document.getElementById('webToLeadForm').reset();
+    <!-- reCAPTCHA Script -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+     function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+    </script>
     
-    // Reset the return URL and capture parameters again
-    setDynamicReturnURL();
-    captureURLParameters();
-}
+    <style>
+        /* Your page styles */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        /* Modal Overlay */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            animation: fadeIn 0.3s ease-in;
+        }
+        
+        .modal-overlay.show {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Modal Container */
+        .modal-container {
+            background: white;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            animation: slideIn 0.3s ease-out;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Close Button */
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #999;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+            line-height: 1;
+            z-index: 1;
+        }
+        
+        .modal-close:hover {
+            color: #333;
+        }
+        
+        /* Modal Content */
+        .modal-content {
+            padding: 40px 30px 30px 30px;
+        }
+        
+        .modal-content h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        /* Form Styles */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            font-weight: bold;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        
+        .disclaimer {
+            font-size: 11px;
+            color: #666;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 1.4;
+        }
+        
+        /* Success Message */
+        #successMessage {
+            display: none;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        #successMessage h3 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+            color: #28a745;
+        }
+        
+        #successMessage p {
+            margin: 10px 0 0 0;
+            color: #666;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideIn {
+            from { 
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeOut {
+            from { opacity: 1; transform: translateY(0); }
+            to { opacity: 0; transform: translateY(-10px); }
+        }
+        
+        .fade-out {
+            animation: fadeOut 0.3s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your page content -->
+    <h1>Welcome to Our Site</h1>
+    <p>This is your main page content. The modal will appear after 5 seconds.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-// Initialize when page loads
-window.addEventListener('load', function() {
-    setDynamicReturnURL();
-    captureURLParameters();
-    checkForSuccess();
-});
+    <!-- Modal Overlay -->
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            
+            <div class="modal-content">
+                <!-- Success message (initially hidden) -->
+                <div id="successMessage">
+                    <h3>Thank you for subscribing</h3>
+                    <p>We'll be in touch soon with more information about our certification programs.</p>
+                </div>
 
-// Set return URL and capture parameters right before form submission
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('webToLeadForm');
-    if (form) {
-        form.addEventListener('submit', function() {
+                <!-- Form Content -->
+                <div id="formContent">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    
+                    <form id="webToLeadForm" action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DRt00000GxBuM" method="POST">
+                        <input type="hidden" name='captcha_settings' value='{"keyname":"LUS","fallback":"true","orgId":"00DRt00000GxBuM","ts":""}'>
+                        <input type="hidden" name="oid" value="00DRt00000GxBuM">
+                        <input type="hidden" name="retURL" id="dynamicRetURL" value="">
+                        
+                        <label for="last_name">First Name</label>
+                        <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required/>
+                        
+                        <label for="email">Email Address</label>
+                        <input id="email" maxlength="80" name="email" size="20" type="email" required/>
+                        
+                        <label for="00NUV00000P9iuf">Certification Interest</label>
+                        <select id="00NUV00000P9iuf" name="00NUV00000P9iuf" title="Area of Interest" required>
+                            <option value="">--None--</option>
+                            <option value="Self-paced Executive Coaching Certification Programs">Self-paced Executive Coaching Certification Programs</option>
+                            <option value="ICF Executive Coaching Certification Programs">ICF Executive Coaching Certification Programs</option>
+                            <option value="Team Coaching Certification">Team Coaching Certification</option>
+                            <option value="In-Person Seminars for Executive Coaching Certification">In-Person Seminars for Executive Coaching Certification</option>
+                            <option value="Accelerated Executive Coaching Certification Programs">Accelerated Executive Coaching Certification Programs</option>
+                            <option value="Internal Coach Training">Internal Coach Training</option>
+                            <option value="Coach Training for Management Consultants">Coach Training for Management Consultants</option>
+                            <option value="Upgrade to PCC">Upgrade to PCC</option>
+                        </select>
+                        
+                        <input id="lead_source" name="lead_source" type="hidden" value="Newsletter"/>
+                        <input id="gad_source" name="00NHs00000G6o1p" type="hidden"/>
+                        <input id="gad_campaignid" name="00NHs00000G6o1u" type="hidden"/>
+                        <input id="gclid" name="00NHs00000G6o24" type="hidden"/>
+                        
+                        <!-- reCAPTCHA Widget -->
+                        <div class="g-recaptcha" data-sitekey="6LfP5ncrAAAAAKteCgCl1uFl8CPxX6-jhdIVORVE"></div><br>
+                        
+                        <input type="submit" name="submit" value="Submit Request">
+                        
+                        <p class="disclaimer">
+                            By submitting this form, you'll be briefly redirected to confirm your submission.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal functions
+        function openModal() {
+            document.getElementById('modalOverlay').classList.add('show');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+        
+        function closeModal() {
+            document.getElementById('modalOverlay').classList.remove('show');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+        
+        // Close modal when clicking outside the modal container
+        document.getElementById('modalOverlay').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closeModal();
+            }
+        });
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+        
+        // Show modal after 5 seconds (only if success message isn't showing)
+        setTimeout(function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const success = urlParams.get('success');
+            
+            // Only open modal if not showing success message
+            if (success !== 'true') {
+                openModal();
+            }
+        }, 5000);
+
+        // Form submission functions
+        function setDynamicReturnURL() {
+            try {
+                const currentUrl = window.location.protocol + '//' + window.location.host + window.location.pathname;
+                const returnUrl = currentUrl + '?success=true';
+                const retUrlField = document.getElementById('dynamicRetURL');
+                if (retUrlField) {
+                    retUrlField.value = returnUrl;
+                }
+            } catch (error) {
+                console.log('Error setting return URL:', error);
+            }
+        }
+
+        function captureURLParameters() {
+            try {
+                const urlParams = new URLSearchParams(window.location.search);
+                
+                const googleAdsParams = {
+                    'gclid': 'gclid',
+                    'gad_source': 'gad_source',
+                    'gad_campaignid': 'gad_campaignid',
+                    'gbraid': 'gbraid'
+                };
+                
+                for (const [param, fieldId] of Object.entries(googleAdsParams)) {
+                    const value = urlParams.get(param);
+                    const field = document.getElementById(fieldId);
+                    
+                    if (field && value) {
+                        field.value = value;
+                        console.log('Captured ' + param + ': ' + value);
+                    }
+                }
+            } catch (error) {
+                console.log('Error capturing URL parameters:', error);
+            }
+        }
+
+        function checkForSuccess() {
+            try {
+                const urlParams = new URLSearchParams(window.location.search);
+                const success = urlParams.get('success');
+                
+                if (success === 'true') {
+                    // Open modal and show success message
+                    openModal();
+                    
+                    const formContent = document.getElementById('formContent');
+                    formContent.classList.add('fade-out');
+                    
+                    setTimeout(function() {
+                        formContent.style.display = 'none';
+                        document.getElementById('successMessage').style.display = 'block';
+                    }, 300);
+                    
+                    // Clean up URL
+                    if (window.history && window.history.replaceState) {
+                        const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                        window.history.replaceState({path: newUrl}, '', newUrl);
+                    }
+                }
+            } catch (error) {
+                console.log('Error checking for success parameter:', error);
+            }
+        }
+
+        // Initialize
+        window.addEventListener('load', function() {
             setDynamicReturnURL();
             captureURLParameters();
+            checkForSuccess();
         });
-    }
-});
 
-// Backup: Set return URL and capture parameters immediately when script runs
-setDynamicReturnURL();
-captureURLParameters();
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('webToLeadForm');
+            if (form) {
+                form.addEventListener('submit', function() {
+                    setDynamicReturnURL();
+                    captureURLParameters();
+                });
+            }
+        });
+
+        setDynamicReturnURL();
+        captureURLParameters();
+    </script>
+</body>
+</html>
