@@ -10,7 +10,6 @@ author_profile: true
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page</title>
     
     <!-- reCAPTCHA Script -->
     <script src="https://www.google.com/recaptcha/api.js"></script>
@@ -418,8 +417,14 @@ author_profile: true
                     // Prevent default form submission temporarily
                     e.preventDefault();
                     
+                    // Capture parameters before showing loading
+                    setDynamicReturnURL();
+                    captureURLParameters();
+                    
                     // Show loading overlay immediately
                     document.getElementById('loadingOverlay').style.display = 'block';
+                    
+                    console.log('Form submitting with retURL:', document.getElementById('dynamicRetURL').value);
                     
                     // After 0.8 seconds, show success
                     setTimeout(function() {
@@ -427,12 +432,10 @@ author_profile: true
                         document.getElementById('checkmark').style.display = 'block';
                         document.getElementById('submittingText').textContent = 'Success!';
                         
-                        // Wait 1.5 seconds showing success, then submit the form
+                        // Wait 1.5 seconds showing success, then actually submit the form
                         setTimeout(function() {
-                            // Now actually submit the form
-                            setDynamicReturnURL();
-                            captureURLParameters();
-                            form.submit();
+                            // Submit the form for real now
+                            e.target.submit();
                         }, 1500);
                     }, 800);
                 });
