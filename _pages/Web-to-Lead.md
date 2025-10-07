@@ -6,10 +6,12 @@ classes: wide
 author_profile: true
 ---
 
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page</title>
     
     <!-- reCAPTCHA Script -->
     <script src="https://www.google.com/recaptcha/api.js"></script>
@@ -298,7 +300,6 @@ author_profile: true
                         <div class="g-recaptcha" data-sitekey="6LfP5ncrAAAAAKteCgCl1uFl8CPxX6-jhdIVORVE"></div><br>
                         
                         <input type="submit" name="submit" value="Submit Request">
-                        
                     </form>
                 </div>
             </div>
@@ -331,22 +332,36 @@ author_profile: true
             }
         });
         
-        // Show modal after 5 seconds (only if success message isn't showing)
-        setTimeout(function() {
+        // Check if user is returning from form submission
+        function checkIfReturningFromSubmission() {
             const urlParams = new URLSearchParams(window.location.search);
             const success = urlParams.get('success');
             
-            // Only open modal if not returning from submission
-            if (success !== 'true') {
-                openModal();
-            } else {
-                // Clean up URL if returning from submission
+            if (success === 'true') {
+                // User just submitted - clean URL and DON'T show modal
                 if (window.history && window.history.replaceState) {
                     const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
                     window.history.replaceState({path: newUrl}, '', newUrl);
                 }
+                
+                // Reset form for next time
+                document.getElementById('webToLeadForm').reset();
+                document.getElementById('loadingOverlay').style.display = 'none';
+                
+                return true; // Returning from submission
+            }
+            return false; // Normal page load
+        }
+        
+        // Show modal after 5 seconds ONLY if not returning from submission
+        setTimeout(function() {
+            if (!checkIfReturningFromSubmission()) {
+                openModal();
             }
         }, 5000);
+        
+        // Also check immediately on page load
+        checkIfReturningFromSubmission();
 
         // Form submission functions
         function setDynamicReturnURL() {
