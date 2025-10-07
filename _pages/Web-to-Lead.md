@@ -250,14 +250,16 @@ author_profile: true
             <button class="modal-close" onclick="closeModal()">&times;</button>
             
             <div class="modal-content">
-                <!-- Success message (initially hidden) -->
-                <div id="successMessage">
-                    <div class="spinner" id="loadingSpinner"></div>
-                    <svg class="checkmark" id="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" style="display: none;">
-                        <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
-                        <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-                    </svg>
-                    <h3 id="submittingText">Submitting...</h3>
+                <!-- Loading/Success overlay (initially hidden) -->
+                <div id="loadingOverlay" style="display: none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: white; border-radius: 8px; z-index: 10;">
+                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 40px;">
+                        <div class="spinner" id="loadingSpinner"></div>
+                        <svg class="checkmark" id="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" style="display: none;">
+                            <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                            <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                        </svg>
+                        <h3 id="submittingText" style="margin: 20px 0 0 0;">Submitting...</h3>
+                    </div>
                 </div>
 
                 <!-- Form Content -->
@@ -297,10 +299,6 @@ author_profile: true
                         <div class="g-recaptcha" data-sitekey="6LfP5ncrAAAAAKteCgCl1uFl8CPxX6-jhdIVORVE"></div><br>
                         
                         <input type="submit" name="submit" value="Submit Request">
-                        
-                        <p class="disclaimer">
-                            By submitting this form, you'll be briefly redirected to confirm your submission.
-                        </p>
                     </form>
                 </div>
             </div>
@@ -389,61 +387,40 @@ author_profile: true
                 const success = urlParams.get('success');
                 
                 if (success === 'true') {
-                    // Open modal and show loading/success
-                    openModal();
+                    // Clean up URL immediately
+                    if (window.history && window.history.replaceState) {
+                        const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                        window.history.replaceState({path: newUrl}, '', newUrl);
+                    }
                     
-                    const formContent = document.getElementById('formContent');
-                    const successMessage = document.getElementById('successMessage');
-                    const loadingSpinner = document.getElementById('loadingSpinner');
-                    const checkmark = document.getElementById('checkmark');
-                    const submittingText = document.getElementById('submittingText');
-                    
-                    // Hide form, show loading
-                    formContent.style.display = 'none';
-                    successMessage.style.display = 'block';
-                    
-                    // After 1 second, show checkmark and change text
+                    // Modal is already closed from redirect, so we're done!
+                    // Form will be reset for next time modal opens
                     setTimeout(function() {
-                        loadingSpinner.style.display = 'none';
-                        checkmark.style.display = 'block';
-                        submittingText.textContent = 'Submitted!';
-                        
-                        // After another 1.5 seconds, close modal and clean URL
-                        setTimeout(function() {
-                            closeModal();
-                            
-                            // Clean up URL
-                            if (window.history && window.history.replaceState) {
-                                const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-                                window.history.replaceState({path: newUrl}, '', newUrl);
-                            }
-                            
-                            // Reset the form for next time
-                            formContent.style.display = 'block';
-                            successMessage.style.display = 'none';
-                            loadingSpinner.style.display = 'block';
-                            checkmark.style.display = 'none';
-                            submittingText.textContent = 'Submitting...';
-                            document.getElementById('webToLeadForm').reset();
-                        }, 1500);
-                    }, 1000);
+                        document.getElementById('webToLeadForm').reset();
+                        document.getElementById('loadingOverlay').style.display = 'none';
+                    }, 100);
                 }
             } catch (error) {
                 console.log('Error checking for success parameter:', error);
             }
         }
+        
+        // Check for success on page load
+        checkForSuccess();
 
         // Initialize
         window.addEventListener('load', function() {
             setDynamicReturnURL();
             captureURLParameters();
-            checkForSuccess();
         });
 
         document.addEventListener('DOMContentLoaded', function() {
             const form = document.getElementById('webToLeadForm');
             if (form) {
                 form.addEventListener('submit', function() {
+                    // Show loading overlay immediately when form is submitted
+                    document.getElementById('loadingOverlay').style.display = 'block';
+                    
                     setDynamicReturnURL();
                     captureURLParameters();
                 });
