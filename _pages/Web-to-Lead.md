@@ -300,6 +300,10 @@ author_profile: true
                         <div class="g-recaptcha" data-sitekey="6LfP5ncrAAAAAKteCgCl1uFl8CPxX6-jhdIVORVE"></div><br>
                         
                         <input type="submit" name="submit" value="Submit Request">
+                        
+                        <p class="disclaimer">
+                            By submitting this form, you'll be briefly redirected to confirm your submission.
+                        </p>
                     </form>
                 </div>
             </div>
@@ -411,9 +415,16 @@ author_profile: true
         document.addEventListener('DOMContentLoaded', function() {
             const form = document.getElementById('webToLeadForm');
             if (form) {
-                form.addEventListener('submit', function() {
+                form.addEventListener('submit', function(e) {
                     // Show loading overlay immediately when form is submitted
                     document.getElementById('loadingOverlay').style.display = 'block';
+                    
+                    // After a brief moment, show success before redirect
+                    setTimeout(function() {
+                        document.getElementById('loadingSpinner').style.display = 'none';
+                        document.getElementById('checkmark').style.display = 'block';
+                        document.getElementById('submittingText').textContent = 'Success!';
+                    }, 800);
                     
                     setDynamicReturnURL();
                     captureURLParameters();
