@@ -6,7 +6,6 @@ classes: wide
 author_profile: true
 ---
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -416,16 +415,18 @@ author_profile: true
             const form = document.getElementById('webToLeadForm');
             if (form) {
                 form.addEventListener('submit', function(e) {
-                    // Show loading overlay immediately
+                    // Show loading overlay immediately when form is submitted
                     document.getElementById('loadingOverlay').style.display = 'block';
                     
-                    // Set return URL
+                    // After a brief moment, show success before redirect
+                    setTimeout(function() {
+                        document.getElementById('loadingSpinner').style.display = 'none';
+                        document.getElementById('checkmark').style.display = 'block';
+                        document.getElementById('submittingText').textContent = 'Success!';
+                    }, 800);
+                    
                     setDynamicReturnURL();
                     captureURLParameters();
-                    
-                    console.log('Form submitting with retURL:', document.getElementById('dynamicRetURL').value);
-                    
-                    // Let the form submit normally - no preventDefault, no delays
                 });
             }
         });
