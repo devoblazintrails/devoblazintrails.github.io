@@ -10,7 +10,6 @@ author_profile: true
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page</title>
     
     <!-- reCAPTCHA Script -->
     <script src="https://www.google.com/recaptcha/api.js"></script>
@@ -299,6 +298,7 @@ author_profile: true
                         <div class="g-recaptcha" data-sitekey="6LfP5ncrAAAAAKteCgCl1uFl8CPxX6-jhdIVORVE"></div><br>
                         
                         <input type="submit" name="submit" value="Submit Request">
+                        
                     </form>
                 </div>
             </div>
@@ -336,9 +336,15 @@ author_profile: true
             const urlParams = new URLSearchParams(window.location.search);
             const success = urlParams.get('success');
             
-            // Only open modal if not showing success message
+            // Only open modal if not returning from submission
             if (success !== 'true') {
                 openModal();
+            } else {
+                // Clean up URL if returning from submission
+                if (window.history && window.history.replaceState) {
+                    const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                    window.history.replaceState({path: newUrl}, '', newUrl);
+                }
             }
         }, 5000);
 
@@ -381,33 +387,6 @@ author_profile: true
             }
         }
 
-        function checkForSuccess() {
-            try {
-                const urlParams = new URLSearchParams(window.location.search);
-                const success = urlParams.get('success');
-                
-                if (success === 'true') {
-                    // Clean up URL immediately
-                    if (window.history && window.history.replaceState) {
-                        const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-                        window.history.replaceState({path: newUrl}, '', newUrl);
-                    }
-                    
-                    // Modal is already closed from redirect, so we're done!
-                    // Form will be reset for next time modal opens
-                    setTimeout(function() {
-                        document.getElementById('webToLeadForm').reset();
-                        document.getElementById('loadingOverlay').style.display = 'none';
-                    }, 100);
-                }
-            } catch (error) {
-                console.log('Error checking for success parameter:', error);
-            }
-        }
-        
-        // Check for success on page load
-        checkForSuccess();
-
         // Initialize
         window.addEventListener('load', function() {
             setDynamicReturnURL();
@@ -429,6 +408,7 @@ author_profile: true
 
         setDynamicReturnURL();
         captureURLParameters();
+    </script>
     </script>
 </body>
 </html>
