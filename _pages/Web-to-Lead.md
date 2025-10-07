@@ -209,7 +209,6 @@ author_profile: true
                 
                 <input type="submit" value="Submit Request">
                 
-                <p class="disclaimer">By submitting this form, you'll be briefly redirected to confirm your submission.</p>
             </form>
         </div>
     </div>
