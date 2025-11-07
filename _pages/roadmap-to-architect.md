@@ -4,7 +4,7 @@ title: "Roadmap to Architect"
 layout: splash
 author_profile: false
 ---
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,7 @@ author_profile: false
 
         body {
             font-family: 'Open Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #133f69 0%, #728ca3 100%);
+            background: #f4efe6;
             padding: 20px;
             min-height: 100vh;
         }
@@ -330,16 +330,17 @@ author_profile: false
             ctx.fillStyle = colors.background;
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            // Draw title with gradient
-            const gradient = ctx.createLinearGradient(canvas.width - 500, 0, canvas.width, 160);
-            gradient.addColorStop(0, colors.navyCore);
-            gradient.addColorStop(1, colors.warmGoldPop);
-            
-            ctx.fillStyle = gradient;
+            // Draw title in Navy Core
+            ctx.fillStyle = '#133f69';
             ctx.font = 'bold 48px Montserrat, Poppins, -apple-system, BlinkMacSystemFont, sans-serif';
             ctx.textAlign = 'right';
             ctx.fillText('MY roadmap', canvas.width - 80, 100);
             ctx.fillText('to architect', canvas.width - 80, 160);
+            
+            // Draw subtitle in Navy Core
+            ctx.fillStyle = '#133f69';
+            ctx.font = '20px "Open Sans", Inter, sans-serif';
+            ctx.fillText('commitment made 11.7.25', canvas.width - 80, 195);
 
             // Draw connecting line
             ctx.strokeStyle = colors.border;
