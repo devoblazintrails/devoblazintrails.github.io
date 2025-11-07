@@ -9,7 +9,10 @@ author_profile: false
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Roadmap to Architect - Editor</title>
+    <title>My Roadmap to Architect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -18,8 +21,8 @@ author_profile: false
         }
 
         body {
-            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive, sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Open Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #133f69 0%, #728ca3 100%);
             padding: 20px;
             min-height: 100vh;
         }
@@ -30,18 +33,21 @@ author_profile: false
             background: white;
             border-radius: 20px;
             padding: 30px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
 
         h1 {
             text-align: center;
-            color: #333;
+            color: #2c2c2c;
             margin-bottom: 30px;
             font-size: 2em;
+            font-weight: 700;
+            font-family: 'Montserrat', 'Poppins', sans-serif;
         }
 
         .instructions {
-            background: #e3f2fd;
+            background: linear-gradient(135deg, #133f69 0%, #728ca3 100%);
+            color: white;
             padding: 15px;
             border-radius: 10px;
             margin-bottom: 20px;
@@ -53,9 +59,10 @@ author_profile: false
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            background: #f0f0f0;
+            background: #f4efe6;
             border-radius: 10px;
             overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
         #roadmapCanvas {
@@ -79,38 +86,40 @@ author_profile: false
             border: none;
             border-radius: 8px;
             cursor: pointer;
-            font-weight: bold;
+            font-weight: 600;
             transition: all 0.3s;
+            font-family: inherit;
         }
 
         .download-btn {
-            background: #4CAF50;
-            color: white;
+            background: #e3c16f;
+            color: #2c2c2c;
         }
 
         .download-btn:hover {
-            background: #45a049;
+            background: #c2b280;
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+            box-shadow: 0 6px 20px rgba(227, 193, 111, 0.4);
         }
 
         .reset-btn {
-            background: #ff9800;
+            background: #133f69;
             color: white;
         }
 
         .reset-btn:hover {
-            background: #e68900;
+            background: #0f2f4f;
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);
+            box-shadow: 0 6px 20px rgba(19, 63, 105, 0.4);
         }
 
         .edit-panel {
-            background: #fff3e0;
+            background: #f4efe6;
             padding: 20px;
             border-radius: 10px;
             margin-top: 20px;
             display: none;
+            border: 2px solid #728ca3;
         }
 
         .edit-panel.active {
@@ -119,18 +128,28 @@ author_profile: false
 
         .edit-panel h3 {
             margin-bottom: 15px;
-            color: #e65100;
+            color: #2c2c2c;
+            font-weight: 700;
+            font-family: 'Montserrat', 'Poppins', sans-serif;
         }
 
         .edit-panel textarea {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             font-size: 16px;
-            border: 2px solid #ff9800;
-            border-radius: 5px;
+            border: 2px solid #728ca3;
+            border-radius: 8px;
             resize: vertical;
             font-family: inherit;
-            min-height: 80px;
+            min-height: 100px;
+            transition: border-color 0.3s;
+            background: white;
+        }
+
+        .edit-panel textarea:focus {
+            outline: none;
+            border-color: #133f69;
+            box-shadow: 0 0 0 3px rgba(19, 63, 105, 0.1);
         }
 
         .edit-panel button {
@@ -155,7 +174,7 @@ author_profile: false
 </head>
 <body>
     <div class="container">
-        <h1>🏗️ My Roadmap to Architect</h1>
+        <h1>🎯 My Roadmap to Architect</h1>
         
         <div class="instructions">
             <strong>📝 How to use:</strong> Click on any text box to edit it. When done, click "Save & Update" then "Download Image" to save your roadmap!
@@ -188,6 +207,19 @@ author_profile: false
 
         let currentEditBox = null;
 
+        // Love United Solutions official brand colors
+        const colors = {
+            navyCore: '#133f69',      // Primary brand color
+            goldenTaupe: '#c2b280',   // Secondary brand color
+            ivoryMist: '#f4efe6',     // Background color
+            steelBlue: '#728ca3',     // Accent color
+            charcoalText: '#2c2c2c',  // Text color
+            warmGoldPop: '#e3c16f',   // CTA/highlight color
+            background: '#f4efe6',
+            text: '#2c2c2c',
+            border: '#2c2c2c'
+        };
+
         // Text box data structure
         const textBoxes = [
             // Top row boxes
@@ -199,14 +231,14 @@ author_profile: false
             { x: 940, y: 480, width: 240, height: 240, text: '', type: 'rectangle' },
         ];
 
-        // Timeline hexagons (not editable, but we'll draw them)
+        // Timeline hexagons with blue gradient progression from Now to Beyond
         const hexagons = [
-            { x: 140, y: 400, text: 'Now', color: '#7ba3d6' },
-            { x: 360, y: 400, text: '6 mos - 1\nyr', color: '#6ec5c5' },
-            { x: 580, y: 400, text: '1 - 3\nYears', color: '#a8c97f' },
-            { x: 800, y: 400, text: '3 - 5\nYears', color: '#f7d977' },
-            { x: 1020, y: 400, text: '5 - 7\nYears', color: '#e8a5c9' },
-            { x: 1240, y: 400, text: 'Beyond', color: '#b9a5dc' },
+            { x: 140, y: 400, text: 'Now', color: '#133f69' },           // Navy Core (darkest)
+            { x: 360, y: 400, text: '6 mos - 1\nyr', color: '#1a5080' }, // Slightly lighter navy
+            { x: 580, y: 400, text: '1 - 3\nYears', color: '#2a6599' },  // Medium navy-blue
+            { x: 800, y: 400, text: '3 - 5\nYears', color: '#4a7aa8' },  // Medium blue
+            { x: 1020, y: 400, text: '5 - 7\nYears', color: '#5a88b5' }, // Lighter blue
+            { x: 1240, y: 400, text: 'Beyond', color: '#728ca3' },       // Steel Blue (lightest)
         ];
 
         function drawHexagon(x, y, size, color, text, dashed = false) {
@@ -225,13 +257,13 @@ author_profile: false
             
             if (dashed) {
                 ctx.setLineDash([8, 8]);
-                ctx.strokeStyle = '#333';
-                ctx.lineWidth = 2;
+                ctx.strokeStyle = colors.border;
+                ctx.lineWidth = 2.5;
                 ctx.stroke();
             } else {
                 ctx.fillStyle = color;
                 ctx.fill();
-                ctx.strokeStyle = '#333';
+                ctx.strokeStyle = colors.border;
                 ctx.lineWidth = 3;
                 ctx.stroke();
             }
@@ -239,8 +271,8 @@ author_profile: false
             ctx.setLineDash([]);
             
             // Draw text
-            ctx.fillStyle = '#000';
-            ctx.font = 'bold 22px Comic Sans MS';
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 22px Montserrat, Poppins, -apple-system, BlinkMacSystemFont, sans-serif';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
             
@@ -294,47 +326,57 @@ author_profile: false
         }
 
         function drawRoadmap() {
-            // Clear canvas
-            ctx.fillStyle = '#f0f0f0';
+            // Clear canvas with white background
+            ctx.fillStyle = colors.background;
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            // Draw title
-            ctx.fillStyle = '#000';
-            ctx.font = 'bold 48px Comic Sans MS';
+            // Draw title with gradient
+            const gradient = ctx.createLinearGradient(canvas.width - 500, 0, canvas.width, 160);
+            gradient.addColorStop(0, colors.navyCore);
+            gradient.addColorStop(1, colors.warmGoldPop);
+            
+            ctx.fillStyle = gradient;
+            ctx.font = 'bold 48px Montserrat, Poppins, -apple-system, BlinkMacSystemFont, sans-serif';
             ctx.textAlign = 'right';
             ctx.fillText('MY roadmap', canvas.width - 80, 100);
             ctx.fillText('to architect', canvas.width - 80, 160);
 
             // Draw connecting line
-            ctx.strokeStyle = '#333';
+            ctx.strokeStyle = colors.border;
             ctx.lineWidth = 3;
             ctx.beginPath();
             ctx.moveTo(60, 400);
             ctx.lineTo(canvas.width - 60, 400);
             ctx.stroke();
 
-            // Draw hexagons
+            // Draw hexagons - all solid and readable
             hexagons.forEach((hex, index) => {
-                const dashed = index === 1 || index === 3 || index === 5;
-                drawHexagon(hex.x, hex.y, 60, hex.color, hex.text, dashed);
+                drawHexagon(hex.x, hex.y, 60, hex.color, hex.text, false);
             });
 
             // Draw text boxes
             textBoxes.forEach((box, index) => {
                 ctx.save();
                 
-                // Draw rounded rectangle
-                drawRoundedRect(box.x, box.y, box.width, box.height, 20);
+                // Draw rounded rectangle with shadow
+                ctx.shadowColor = 'rgba(0, 0, 0, 0.1)';
+                ctx.shadowBlur = 10;
+                ctx.shadowOffsetX = 0;
+                ctx.shadowOffsetY = 4;
+                
+                drawRoundedRect(box.x, box.y, box.width, box.height, 15);
                 ctx.fillStyle = '#ffffff';
                 ctx.fill();
-                ctx.strokeStyle = '#333';
-                ctx.lineWidth = 3;
+                
+                ctx.shadowColor = 'transparent';
+                ctx.strokeStyle = colors.border;
+                ctx.lineWidth = 2.5;
                 ctx.stroke();
 
                 // Draw text
                 if (box.text) {
-                    ctx.fillStyle = '#000';
-                    ctx.font = '18px Comic Sans MS';
+                    ctx.fillStyle = colors.text;
+                    ctx.font = '18px "Open Sans", Inter, -apple-system, BlinkMacSystemFont, sans-serif';
                     ctx.textAlign = 'left';
                     ctx.textBaseline = 'top';
                     
