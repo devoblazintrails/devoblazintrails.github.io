@@ -27,66 +27,77 @@ author_profile: false
 Fill out the form below and we'll get back to you within 1 business day.
 
 <!-- Begin Embedded Contact Form -->
+<!-- FIX 1: data-sitekey must be the new PUBLIC site key from your fresh
+     reCAPTCHA v2 registration. The SECRET key never appears in HTML;
+     it lives only inside the Apps Script. -->
+<!-- NOTE: if the theme's footer contact modal also renders on this page
+     (it has the same fields and its own reCAPTCHA), remove that include
+     from this page or the layout. Duplicate id="custom-form" elements and
+     a second widget will break getElementById and grecaptcha.getResponse. -->
 <form id="custom-form" action="https://script.google.com/macros/s/AKfycbxWUGoIA0AbHuQhrPu-bMgWVGsFOVAqBtrVHB12mtnm6e1elM4yIB9nZuoJebohnrey/exec" method="POST">
   <label for="name">Your Name:</label><br>
   <input type="text" name="name" id="name" required><br><br>
-
   <label for="email">Your Email:</label><br>
   <input type="email" name="email" id="email" required><br><br>
-
+ 
   <label for="message">Your Message:</label><br>
   <textarea name="message" id="message" rows="4" required></textarea><br><br>
-
+ 
   <label for="edition">What edition of Salesforce are you using?</label><br>
   <input type="text" name="edition" id="edition"><br><br>
-
+ 
   <label for="users">How many users?</label><br>
   <input type="number" name="users" id="users"><br><br>
-
+ 
   <label for="needs">What are your top 3 admin needs?</label><br>
   <textarea name="needs" id="needs" rows="3"></textarea><br><br>
-
+ 
   <!-- reCAPTCHA -->
-  <div class="g-recaptcha" data-sitekey="6LfP5ncrAAAAAKteCgCl1uFl8CPxX6-jhdIVORVE"></div><br>
-
+  <div class="g-recaptcha" data-sitekey="PASTE_YOUR_NEW_SITE_KEY_HERE"></div><br>
   <button type="submit">Send Message</button>
-  <p id="response-message"></p>
+  <p id="response-message" role="status" aria-live="polite"></p>
 </form>
-
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+ 
 <script>
-  // ✅ Avoid naming conflict by changing 'form' to 'contactForm'
   const contactForm = document.getElementById('custom-form');
   const responseMsg = document.getElementById('response-message');
-
+  const submitBtn = contactForm.querySelector('button[type="submit"]');
   contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-
     const token = grecaptcha.getResponse();
     if (!token) {
       responseMsg.textContent = "Please complete the reCAPTCHA.";
       return;
     }
-
-    const formData = new FormData(contactForm);
-    formData.append("g-recaptcha-response", token);
-
+    submitBtn.disabled = true;
+    responseMsg.textContent = "Sending...";
     try {
+      // FIX 2: URLSearchParams sends application/x-www-form-urlencoded,
+      // which Apps Script's e.parameter always parses, and it avoids any
+      // CORS preflight. The reCAPTCHA token is already inside the form as
+      // a hidden field the widget injects, so no manual append is needed.
+      const body = new URLSearchParams(new FormData(contactForm));
       const res = await fetch(contactForm.action, {
         method: 'POST',
-        body: formData
+        body: body
       });
-      if (res.ok) {
-        const text = await res.text(); // Optional: show returned value
+      const text = (await res.text()).trim();
+      // FIX 3: only celebrate when the script actually says Success.
+      // Anything else (Recaptcha Failed, missing fields, sheet error)
+      // now surfaces instead of showing a false thank-you.
+      if (res.ok && text === "Success") {
         responseMsg.textContent = "Thanks! We'll be in touch soon.";
         contactForm.reset();
         grecaptcha.reset();
       } else {
-        responseMsg.textContent = "Oops! Something went wrong.";
+        responseMsg.textContent = "Something went wrong: " + (text || ("HTTP " + res.status));
+        grecaptcha.reset();
       }
-    } catch {
+    } catch (err) {
       responseMsg.textContent = "Network error. Please try again.";
+    } finally {
+      submitBtn.disabled = false;
     }
   });
 </script>
