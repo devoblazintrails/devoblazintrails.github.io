@@ -29,7 +29,7 @@ You’ll receive practical, platform-aware suggestions that are aligned with you
 We’ll outline next steps for enhancing your Salesforce setup—whether that’s quick wins, longer-term strategy, or where to get started.
 
 <!-- Motion embed begin -->
-<iframe src="https://app.usemotion.com/meet/devo-perez/meeting" title="Motion Booking Page" width="100%" height="840px" frameborder="0"></iframe>
+<iframe src="https://app.usemotion.com/meet/devo-perez/consultation" title="Motion Booking Page" width="100%" height="840px" frameborder="0"></iframe>
 <!-- Motion embed end -->
 
 ***If you are unable to find time above, reach out! We'll be glad to accommodate you with a separate time [contact@loveunited.solutions](mailto:contact@loveunited.solutions)***
