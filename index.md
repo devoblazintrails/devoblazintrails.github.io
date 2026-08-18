@@ -77,7 +77,7 @@ We customize Salesforce to fit your unique business needs no cookie-cutter solut
 <p class="centered"> <strong>Schedule a free 15-minute discovery call</strong> to discuss your needs and explore how we can help your business thrive.</p>
 
 <div class="button-container">
-  <a href="https://app.usemotion.com/meet/devo-perez/meeting?d=15" target="_blank" rel="noopener noreferrer">
+  <a href="https://app.usemotion.com/meet/devo-perez/consultation" target="_blank" rel="noopener noreferrer">
     <button class="btn--primary">Book a Call</button>
   </a>
   <a href="#" onclick="openForm(); return false;">
