@@ -6,7 +6,7 @@ header:
   overlay_image: assets/images/Untitled design.gif
   actions:
     - label: "LET'S DISCUSS HOW TO IMPROVE YOUR INSTANCE"
-      url: "https://app.usemotion.com/meet/devo-perez/meeting?d=15"
+      url: "https://app.usemotion.com/meet/devo-perez/consultation"
 excerpt: >
   **Love unITed Solutions** is here to help you maximize your Salesforce investment—so you can focus on what really matters: growing your business.
 feature_row1:
@@ -58,8 +58,8 @@ We customize Salesforce to fit your unique business needs no cookie-cutter solut
     <h5>Service</h5>
     <a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%9A%80%20Quick%2DStart%20Salesforce%20Setup">Salesforce Setup & Configuration</a><br><br>
     <a href="https://www.loveunited.solutions/our-services/#:~:text=%F0%9F%94%84%20Admin%20Support%20%26%20Enhancements">Admin Support (Fractional)</a><br><br>
-    <a href="https://app.usemotion.com/meet/devo-perez/meeting">Salesforce Training & Adoption</a><br><br>
-    <a href="https://app.usemotion.com/meet/devo-perez/meeting">Automation & Integration</a>
+    <a href="https://app.usemotion.com/meet/devo-perez/consultation">Salesforce Training & Adoption</a><br><br>
+    <a href="https://app.usemotion.com/meet/devo-perez/consultation">Automation & Integration</a>
   </div>
   <div class="column">
     <h5>What You Get</h5>
