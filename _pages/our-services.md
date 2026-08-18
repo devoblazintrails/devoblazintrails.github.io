@@ -94,7 +94,7 @@ Whether you need a small fix, process automation, or want to test-drive a bigger
       🛠️ <em>We specialize in helping businesses simplify complex operations.</em>
       <br>
         <br>
-      <a href="https://app.usemotion.com/meet/devo-perez/meeting" target="_blank" rel="noopener noreferrer">
+      <a href="https://app.usemotion.com/meet/devo-perez/consultation" target="_blank" rel="noopener noreferrer">
         <button class="medium-right-button">
           Let's Optimize Your CRM
         </button>
@@ -124,7 +124,7 @@ We help you launch Salesforce with the essentials tailored to your business. Per
 <br>
 <strong>Starting at $3,500</strong><br>
 <div class="button-container">
-  <a href="https://app.usemotion.com/meet/devo-perez/meeting" target="_blank" rel="noopener noreferrer">
+  <a href="https://app.usemotion.com/meet/devo-perez/consultation" target="_blank" rel="noopener noreferrer">
     <button class="medium-centered-button">Request a Free Quote</button>
   </a>
   <a href="https://app.formbricks.com/s/w673bin19s21ams8gylzlhlc" target="_blank" rel="noopener noreferrer">
