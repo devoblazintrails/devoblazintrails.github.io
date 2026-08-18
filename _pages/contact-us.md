@@ -53,7 +53,7 @@ Fill out the form below and we'll get back to you within 1 business day.
   <textarea name="needs" id="needs" rows="3"></textarea><br><br>
  
   <!-- reCAPTCHA -->
-  <div class="g-recaptcha" data-sitekey="PASTE_YOUR_NEW_SITE_KEY_HERE"></div><br>
+  <div class="g-recaptcha" data-sitekey="6LfP5ncrAAAAAKteCgCl1uFl8CPxX6-jhdIVORVE"></div><br>
   <button type="submit">Send Message</button>
   <p id="response-message" role="status" aria-live="polite"></p>
 </form>
