@@ -32,17 +32,17 @@
    and large marks; running body text stays charcoal for WCAG AA contrast. */
 :root{
   --bg:#f4efe6;            /* Ivory Mist */
-  --surface:#FBF8F1;
+  --surface:#FBF8F1;      /* tint of Ivory Mist for cards on Ivory Mist */
   --surface-2:#FFFFFF;
   --ink:#2c2c2c;           /* Charcoal body text */
   --brand-navy:#133f69;    /* Navy Core: headers, nav, buttons, accents */
   --gold:#e3c16f;          /* Warm Gold Pop: CTAs, hovers, pops */
   --taupe:#c2b280;         /* Golden Taupe: dividers, icon accents */
   --steel:#728ca3;         /* Steel Blue: secondary UI */
-  --muted:#5b6673;
-  --line:#ddd2b8;
-  --accent:var(--gold);
-  --accent-ink:var(--brand-navy);
+  --muted:#595650;         /* Charcoal tint for secondary text (6:1 on Ivory Mist) */
+  --line:#ddd2b8;          /* Golden Taupe tint for dividers and card borders */
+  --accent:var(--brand-navy);
+  --accent-ink:#f4efe6;
   --sec-commercial:var(--brand-navy);
   --sec-government:var(--steel);
   --sec-nonprofit:var(--taupe);
@@ -54,7 +54,7 @@
   --shadow:0 1px 2px rgba(19,63,105,.06),0 10px 28px rgba(19,63,105,.08);
   --shadow-hover:0 3px 6px rgba(19,63,105,.08),0 18px 40px rgba(19,63,105,.14);
   --display-weight:700; --display-track:-0.01em; --display-style:normal;
-  --hero-grad:radial-gradient(75% 55% at 85% 8%, rgba(227,193,111,.14), transparent 60%);
+  --hero-grad:radial-gradient(75% 55% at 85% 8%, rgba(194,178,128,.18), transparent 60%);
 }
 
 /* ============ BASE ============ */
@@ -74,7 +74,7 @@ p.lead{font-size:1.16rem;color:var(--muted);max-width:44rem}
 section{padding:88px 0}
 .section-head{max-width:46rem;margin-bottom:44px}
 .section-head p{color:var(--muted);margin-top:.5rem}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+:focus-visible{outline:2px solid var(--brand-navy);outline-offset:3px;border-radius:4px}
 .skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:var(--accent-ink);padding:10px 16px;z-index:200}
 .skip:focus{left:12px;top:12px}
 
@@ -90,15 +90,15 @@ header.site.tight .navwrap{padding-top:10px;padding-bottom:10px}
 nav.main{display:flex;align-items:center;gap:26px}
 nav.main a{text-decoration:none;font-size:.95rem;color:var(--muted);padding:4px 0;border-bottom:2px solid transparent}
 nav.main a:hover{color:var(--brand-navy)}
-nav.main a.active{color:var(--brand-navy);border-bottom-color:var(--gold)}
-nav.main a.btn{color:var(--accent-ink);border-bottom:none}
+nav.main a.active{color:var(--brand-navy);border-bottom-color:var(--steel)}
+nav.main a.btn{color:var(--brand-navy);border-bottom:none}
 /* Who We Serve dropdown */
 .vband{scroll-margin-top:84px}
 .svc-section{padding-top:56px}
 .svc-section + .svc-section{padding-top:24px}
 .card.flash{animation:svcflash 2.2s ease}
-@keyframes svcflash{0%{box-shadow:var(--shadow)}15%,70%{box-shadow:0 0 0 4px var(--gold),var(--shadow-hover)}100%{box-shadow:var(--shadow)}}
-.card.flash-static{outline:3px solid var(--gold);outline-offset:2px}
+@keyframes svcflash{0%{box-shadow:var(--shadow)}15%,70%{box-shadow:0 0 0 4px var(--steel),var(--shadow-hover)}100%{box-shadow:var(--shadow)}}
+.card.flash-static{outline:3px solid var(--steel);outline-offset:2px}
 .card.door .go{padding-top:16px;display:block}
 .card-actions{display:flex;gap:10px;margin-top:auto}
 .card-actions .btn{flex:1 1 0;text-align:center;white-space:nowrap;padding:10px 12px}
@@ -106,7 +106,7 @@ nav.main a.btn{color:var(--accent-ink);border-bottom:none}
 .dd{position:relative}
 .dd-toggle{background:none;border:none;font:inherit;font-size:.95rem;color:var(--muted);cursor:pointer;padding:4px 0;border-bottom:2px solid transparent;display:inline-flex;align-items:center;gap:6px}
 .dd-toggle:hover,.dd.open .dd-toggle{color:var(--brand-navy)}
-.dd-toggle.active{color:var(--brand-navy);border-bottom-color:var(--gold)}
+.dd-toggle.active{color:var(--brand-navy);border-bottom-color:var(--steel)}
 .dd-toggle .chev{width:10px;height:10px;transition:transform .2s ease}
 .dd.open .dd-toggle .chev{transform:rotate(180deg)}
 .dd-menu{position:absolute;top:calc(100% + 14px);left:-18px;min-width:290px;background:var(--surface-2);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-hover);padding:8px;display:none;flex-direction:column;z-index:120}
@@ -117,12 +117,16 @@ nav.main .dd-menu a{display:block;padding:10px 12px;border-radius:9px;border-bot
 nav.main .dd-menu a b{display:block;font-weight:700;font-size:.95rem}
 nav.main .dd-menu a span{display:block;font-size:.82rem;color:var(--muted);margin-top:2px}
 nav.main .dd-menu a:hover,nav.main .dd-menu a.active{background:var(--bg)}
-nav.main .dd-menu a.active{border-bottom:none;box-shadow:inset 3px 0 0 var(--gold)}
+nav.main .dd-menu a.active{border-bottom:none;box-shadow:inset 3px 0 0 var(--steel)}
 .dd-sep{height:1px;background:var(--line);margin:6px 10px}
-.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;font-size:.95rem;padding:12px 22px;border-radius:calc(var(--radius) - 2px);border:1px solid transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease,background .2s}
-.btn:hover{transform:translateY(-1px);box-shadow:var(--shadow-hover);background:#d9b458}
+.btn{display:inline-block;background:var(--brand-navy);color:#f4efe6;text-decoration:none;font-weight:600;font-size:.95rem;padding:12px 22px;border-radius:calc(var(--radius) - 2px);border:1px solid transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease,background .2s}
+.btn:hover,.btn:focus-visible{transform:translateY(-1px);box-shadow:var(--shadow-hover);background:var(--gold);border-color:var(--gold);color:var(--brand-navy)}
+.btn.cta{background:var(--gold);color:var(--brand-navy)}
+.btn.cta:hover,.btn.cta:focus-visible{background:var(--brand-navy);border-color:var(--brand-navy);color:#f4efe6}
+.band .btn,.band .btn.ghost{background:var(--surface);color:var(--brand-navy);border-color:var(--line)}
+.band .btn:hover,.band .btn:focus-visible,.band .btn.ghost:hover,.band .btn.ghost:focus-visible{background:var(--gold);border-color:var(--gold);color:var(--brand-navy)}
 .btn.ghost{background:transparent;color:var(--brand-navy);border-color:var(--steel)}
-.btn.ghost:hover{border-color:var(--brand-navy);background:rgba(114,140,163,.08)}
+.btn.ghost:hover,.btn.ghost:focus-visible{background:var(--gold);border-color:var(--gold);color:var(--brand-navy)}
 .btn.sm{padding:9px 16px;font-size:.88rem}
 .hamb{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 10px;cursor:pointer;color:var(--ink);font-size:1.05rem}
 
@@ -145,7 +149,7 @@ nav.main .dd-menu a.active{border-bottom:none;box-shadow:inset 3px 0 0 var(--gol
 /* ============ PROOF BAR ============ */
 .proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface);padding:34px 0}
 .proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
-.proof-grid b{display:block;font-family:var(--font-mono);font-size:2rem;font-weight:600}
+.proof-grid b{display:block;font-family:var(--font-mono);font-size:2rem;font-weight:700;color:var(--brand-navy)}
 .proof-grid span{font-size:.85rem;color:var(--muted)}
 
 /* ============ CARDS / DOORS ============ */
@@ -166,10 +170,10 @@ a.card{text-decoration:none}
 .go .arr{display:inline-block;transition:transform .18s ease}
 
 /* offers */
-.offer .price{font-family:var(--font-mono);font-size:1.7rem;font-weight:600;margin:14px 0 4px}
+.offer .price{font-family:var(--font-mono);font-size:1.7rem;font-weight:700;color:var(--brand-navy);margin:14px 0 4px}
 .offer .meta{font-family:var(--font-mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .offer p.desc{color:var(--muted);font-size:.95rem;margin:14px 0 18px;flex:1}
-.tag{position:absolute;top:-11px;left:24px;background:var(--accent);color:var(--accent-ink);font-family:var(--font-mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:100px}
+.tag{position:absolute;top:-11px;left:24px;background:var(--taupe);color:var(--brand-navy);font-weight:700;font-family:var(--font-mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:100px}
 
 /* ============ METHOD ============ */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:step}
@@ -179,7 +183,7 @@ a.card{text-decoration:none}
 .step p{font-size:.9rem;color:var(--muted)}
 
 /* ============ MAGNET BAND ============ */
-.band{background:var(--brand-navy);color:#f7f2e7;border-radius:var(--radius-lg);padding:52px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.band{background:var(--brand-navy);color:#f4efe6;border-radius:var(--radius-lg);padding:52px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
 
 .band h2{color:inherit}
 .band p{opacity:.75;margin-top:8px}
@@ -276,7 +280,7 @@ noscript ~ .page, .no-js .page{display:block}
       </div>
       <a href="#/about" data-route>About</a>
       <a href="/blog/">Insights</a>
-      <a class="btn sm" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book a Call</a>
+      <a class="btn sm cta" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book a Call</a>
     </nav>
   </div>
 </header>
@@ -287,19 +291,18 @@ noscript ~ .page, .no-js .page{display:block}
   <section class="hero">
     <div class="container hero-grid">
       <div class="reveal">
-        <span class="eyebrow">Technology powered by love</span>
+        <span class="eyebrow">Salesforce consulting</span>
         <h1 style="margin-top:14px">Right-sized Salesforce help, at every stage.</h1>
         <p class="lead sub">Senior expertise for companies, government teams, and nonprofits. Start small with a fixed-price review, keep things running with fractional admin support, or scope a larger project together.</p>
         <div class="actions">
           <a class="btn" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book a free 30-min consultation</a>
           <a class="btn ghost" href="#/services" data-route>Explore services</a>
         </div>
-        <div class="trust-line">10 Salesforce credentials · Architect track · NPSP experienced · Minority-owned</div>
       </div>
       <div class="reveal d1">
         <!-- Hero signature: pulse resolving into the logo heart -->
         <div class="heartcard reveal-sig">
-          <svg viewBox="0 0 600 150" aria-hidden="true"><defs><linearGradient id="pulseGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0"><stop offset="0.69" stop-color="#133f69"/><stop offset="0.71" stop-color="#e3c16f"/></linearGradient></defs><path class="pulse-path" pathLength="1" d="M0 92 H70 c4 -11 14 -11 18 0 h10 l3 5 l6 -77 l7 92 l5 -20 h14 c8 0 13 -17 20 -17 c5 0 9 17 12 17 H230 c4 -11 14 -11 18 0 h10 l3 5 l6 -77 l7 92 l5 -20 h14 c8 0 13 -17 20 -17 c5 0 9 17 12 17 H428 C428 76 441 68 452 72 C461 75 468 83 470 90 C472 83 479 75 488 72 C499 68 512 76 512 92 C512 118 470 144 470 144"/></svg>
+          <svg viewBox="0 0 600 150" aria-hidden="true"><defs><linearGradient id="pulseGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0"><stop offset="0.69" stop-color="#133f69"/><stop offset="0.71" stop-color="#c2b280"/></linearGradient></defs><path class="pulse-path" pathLength="1" d="M0 92 H70 c4 -11 14 -11 18 0 h10 l3 5 l6 -77 l7 92 l5 -20 h14 c8 0 13 -17 20 -17 c5 0 9 17 12 17 H230 c4 -11 14 -11 18 0 h10 l3 5 l6 -77 l7 92 l5 -20 h14 c8 0 13 -17 20 -17 c5 0 9 17 12 17 H428 C428 76 441 68 452 72 C461 75 468 83 470 90 C472 83 479 75 488 72 C499 68 512 76 512 92 C512 118 470 144 470 144"/></svg>
           <p class="heart-caption">Technology powered by love.</p>
           <p class="heart-sub">The pulse is the model: a health check is monitoring, and love is in the name. Every engagement keeps a finger on your org's heartbeat.</p>
         </div>
@@ -357,7 +360,7 @@ noscript ~ .page, .no-js .page{display:block}
     .vband:hover .vtrack{animation-play-state:paused}
     .vset{display:flex;align-items:center;white-space:nowrap}
     .vset span{font-family:var(--font-display);font-weight:var(--display-weight);font-size:1.35rem;padding:0 .35em}
-    .vset i{font-style:normal;color:var(--accent);opacity:.55;padding:0 .55em;font-size:1rem}
+    .vset i{font-style:normal;color:var(--taupe);opacity:1;padding:0 .55em;font-size:1rem}
     @keyframes vscroll{to{transform:translateX(-50%)}}
     @media (prefers-reduced-motion: reduce){
       .vtrack{animation:none;width:auto;flex-wrap:wrap;justify-content:center;row-gap:10px}
@@ -422,14 +425,14 @@ noscript ~ .page, .no-js .page{display:block}
     <div class="container">
       <div class="band reveal">
         <div>
-          <span class="eyebrow" style="color:var(--gold)">Free checklists</span>
+          <span class="eyebrow" style="color:var(--taupe)">Free checklists</span>
           <h2 style="margin-top:10px">Grade your own org first.</h2>
           <p>Two practical checklists from the way we work with clients: one to get your team actually using Salesforce, one to clean up the data that slows everyone down.</p>
         </div>
         <div>
           <div style="display:flex;flex-direction:column;gap:12px">
             <a class="btn" href="/user-adoption-checklist/">User Adoption Checklist</a>
-            <a class="btn ghost" style="color:#f7f2e7;border-color:rgba(247,242,231,.5)" href="/data-quality-checklist/">Data Quality Checklist</a>
+            <a class="btn ghost" href="/data-quality-checklist/">Data Quality Checklist</a>
           </div>
         </div>
       </div>
@@ -476,7 +479,7 @@ noscript ~ .page, .no-js .page{display:block}
     <div class="container">
       <div class="band">
         <div>
-          <span class="eyebrow" style="color:var(--accent)">Where to start</span>
+          <span class="eyebrow" style="color:var(--taupe)">Where to start</span>
           <h2 style="margin-top:10px" id="doorOfferH2">The Health Check</h2>
           <p id="doorOfferP"></p>
         </div>
@@ -606,14 +609,14 @@ noscript ~ .page, .no-js .page{display:block}
     <div class="container">
       <div class="band">
         <div>
-          <span class="eyebrow" style="color:var(--gold)">Not sure which fits?</span>
+          <span class="eyebrow" style="color:var(--taupe)">Not sure which fits?</span>
           <h2 style="margin-top:10px">Grade your own org first.</h2>
           <p>Start with one of our free checklists and you'll know where to focus before you spend a dollar.</p>
         </div>
         <div>
           <div style="display:flex;flex-direction:column;gap:12px">
             <a class="btn" href="/user-adoption-checklist/">User Adoption Checklist</a>
-            <a class="btn ghost" style="color:#f7f2e7;border-color:rgba(247,242,231,.5)" href="/data-quality-checklist/">Data Quality Checklist</a>
+            <a class="btn ghost" href="/data-quality-checklist/">Data Quality Checklist</a>
           </div>
         </div>
       </div>
@@ -686,14 +689,14 @@ noscript ~ .page, .no-js .page{display:block}
     <div class="container">
       <div class="band">
         <div>
-          <span class="eyebrow" style="color:var(--gold)">Let's talk</span>
+          <span class="eyebrow" style="color:var(--taupe)">Let's talk</span>
           <h2 style="margin-top:10px">Ready when you are.</h2>
           <p>Book a free 30-minute consultation, or send us a message and we'll reply within one business day.</p>
         </div>
         <div>
           <div style="display:flex;flex-direction:column;gap:12px">
             <a class="btn" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book a free 30-min consultation</a>
-            <a class="btn ghost" style="color:#f7f2e7;border-color:rgba(247,242,231,.5)" href="/contact/">Send a message</a>
+            <a class="btn ghost" href="/contact/">Send a message</a>
           </div>
         </div>
       </div>
@@ -711,7 +714,7 @@ noscript ~ .page, .no-js .page{display:block}
           love unITed Solutions
         </a>
         <p style="font-family:var(--font-accent);font-style:italic;color:var(--brand-navy)">Technology Powered by Love.</p>
-        <p>Right-sized Salesforce consulting for business, government, and nonprofit missions.</p>
+        <p>Salesforce consulting that fits you.</p>
         <p style="margin-top:10px">contact@loveunited.solutions<br>(321) 370-2301 · DeBary, FL</p>
       </div>
       <div>
@@ -731,7 +734,7 @@ noscript ~ .page, .no-js .page{display:block}
     </div>
     <div class="foot-note">
       <span>© 2026 Love unITed Solutions, LLC · Minority-owned · Values-led</span>
-      <span>Technology Powered by Love.</span>
+      <span><a href="https://devoblazintrails.github.io/privacy-policy/" style="color:inherit;font-size:inherit;display:inline;padding:0">Privacy Policy</a></span>
     </div>
   </div>
 </footer>
