@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love unITed Solutions | Right-sized Salesforce consulting for business, government, and nonprofits</title>
+<meta name="description" content="Salesforce consulting for business, government, and nonprofit teams: fixed-price health checks to get started, fractional admin support, and scoped projects. Technology Powered by Love.">
+<link rel="canonical" href="https://www.loveunited.solutions/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Love unITed Solutions">
+<meta property="og:title" content="Right-sized Salesforce help, at every stage.">
+<meta property="og:description" content="Health checks to get started, fractional admin support, and scoped projects for business, government, and nonprofit teams. Technology Powered by Love.">
+<meta property="og:url" content="https://www.loveunited.solutions/">
+<meta property="og:image" content="https://www.loveunited.solutions/assets/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSP14P5N3L"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-TSP14P5N3L');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+/* ============ LOVE UNITED SOLUTIONS OFFICIAL BRAND TOKENS ============ */
+/* Source: Brand Color Style Guide (Branding Strategy doc). Navy Core #133f69,
+   Golden Taupe #c2b280, Ivory Mist #f4efe6, Steel Blue #728ca3,
+   Charcoal #2c2c2c, Warm Gold Pop #e3c16f.
+   Accessibility note: gold and taupe are used for CTAs, borders, dividers,
+   and large marks; running body text stays charcoal for WCAG AA contrast. */
+:root{
+  --bg:#f4efe6;            /* Ivory Mist */
+  --surface:#FBF8F1;
+  --surface-2:#FFFFFF;
+  --ink:#2c2c2c;           /* Charcoal body text */
+  --brand-navy:#133f69;    /* Navy Core: headers, nav, buttons, accents */
+  --gold:#e3c16f;          /* Warm Gold Pop: CTAs, hovers, pops */
+  --taupe:#c2b280;         /* Golden Taupe: dividers, icon accents */
+  --steel:#728ca3;         /* Steel Blue: secondary UI */
+  --muted:#5b6673;
+  --line:#ddd2b8;
+  --accent:var(--gold);
+  --accent-ink:var(--brand-navy);
+  --sec-commercial:var(--brand-navy);
+  --sec-government:var(--steel);
+  --sec-nonprofit:var(--taupe);
+  --font-display:'Montserrat','Poppins',ui-sans-serif,sans-serif;
+  --font-body:'Open Sans','Inter',ui-sans-serif,sans-serif;
+  --font-mono:'Montserrat',ui-sans-serif,sans-serif; /* labels & chips: brand has no mono */
+  --font-accent:'Lora',Georgia,serif;                /* quotes & captions */
+  --radius:16px; --radius-lg:22px;
+  --shadow:0 1px 2px rgba(19,63,105,.06),0 10px 28px rgba(19,63,105,.08);
+  --shadow-hover:0 3px 6px rgba(19,63,105,.08),0 18px 40px rgba(19,63,105,.14);
+  --display-weight:700; --display-track:-0.01em; --display-style:normal;
+  --hero-grad:radial-gradient(75% 55% at 85% 8%, rgba(227,193,111,.14), transparent 60%);
+}
+
+/* ============ BASE ============ */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px;transition:background .35s ease,color .35s ease}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+.mono{font-family:var(--font-mono)}
+.eyebrow{font-family:var(--font-mono);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--brand-navy)}
+h1,h2,h3{font-family:var(--font-display);font-weight:var(--display-weight);letter-spacing:var(--display-track);line-height:1.12;color:var(--brand-navy)}
+h1{font-size:clamp(2.3rem,5vw,3.7rem)}
+h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:.6rem}
+h3{font-size:1.22rem;line-height:1.3}
+p.lead{font-size:1.16rem;color:var(--muted);max-width:44rem}
+section{padding:88px 0}
+.section-head{max-width:46rem;margin-bottom:44px}
+.section-head p{color:var(--muted);margin-top:.5rem}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:var(--accent-ink);padding:10px 16px;z-index:200}
+.skip:focus{left:12px;top:12px}
+
+
+
+/* ============ HEADER ============ */
+header.site{position:sticky;top:0;z-index:100;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:padding .25s ease}
+.navwrap{display:flex;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px;transition:padding .25s ease}
+header.site.tight .navwrap{padding-top:10px;padding-bottom:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-family:var(--font-display);font-size:1.05rem}
+.brand .mark{width:46px;height:auto;color:var(--brand-navy)}
+.brand{color:var(--brand-navy)}
+nav.main{display:flex;align-items:center;gap:26px}
+nav.main a{text-decoration:none;font-size:.95rem;color:var(--muted);padding:4px 0;border-bottom:2px solid transparent}
+nav.main a:hover{color:var(--brand-navy)}
+nav.main a.active{color:var(--brand-navy);border-bottom-color:var(--gold)}
+nav.main a.btn{color:var(--accent-ink);border-bottom:none}
+/* Who We Serve dropdown */
+.vband{scroll-margin-top:84px}
+.svc-section{padding-top:56px}
+.svc-section + .svc-section{padding-top:24px}
+.card.flash{animation:svcflash 2.2s ease}
+@keyframes svcflash{0%{box-shadow:var(--shadow)}15%,70%{box-shadow:0 0 0 4px var(--gold),var(--shadow-hover)}100%{box-shadow:var(--shadow)}}
+.card.flash-static{outline:3px solid var(--gold);outline-offset:2px}
+.card.door .go{padding-top:16px;display:block}
+.card-actions{display:flex;gap:10px;margin-top:auto}
+.card-actions .btn{flex:1 1 0;text-align:center;white-space:nowrap;padding:10px 12px}
+@media (max-width:620px){.card-actions{flex-direction:column}}
+.dd{position:relative}
+.dd-toggle{background:none;border:none;font:inherit;font-size:.95rem;color:var(--muted);cursor:pointer;padding:4px 0;border-bottom:2px solid transparent;display:inline-flex;align-items:center;gap:6px}
+.dd-toggle:hover,.dd.open .dd-toggle{color:var(--brand-navy)}
+.dd-toggle.active{color:var(--brand-navy);border-bottom-color:var(--gold)}
+.dd-toggle .chev{width:10px;height:10px;transition:transform .2s ease}
+.dd.open .dd-toggle .chev{transform:rotate(180deg)}
+.dd-menu{position:absolute;top:calc(100% + 14px);left:-18px;min-width:290px;background:var(--surface-2);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-hover);padding:8px;display:none;flex-direction:column;z-index:120}
+.dd-menu::before{content:"";position:absolute;top:-16px;left:0;right:0;height:16px}
+.dd.open .dd-menu{display:flex}
+@media (hover:hover) and (min-width:961px){.dd:hover .dd-menu{display:flex}.dd:hover .dd-toggle .chev{transform:rotate(180deg)}.dd:hover .dd-toggle{color:var(--brand-navy)}}
+nav.main .dd-menu a{display:block;padding:10px 12px;border-radius:9px;border-bottom:none;color:var(--brand-navy)}
+nav.main .dd-menu a b{display:block;font-weight:700;font-size:.95rem}
+nav.main .dd-menu a span{display:block;font-size:.82rem;color:var(--muted);margin-top:2px}
+nav.main .dd-menu a:hover,nav.main .dd-menu a.active{background:var(--bg)}
+nav.main .dd-menu a.active{border-bottom:none;box-shadow:inset 3px 0 0 var(--gold)}
+.dd-sep{height:1px;background:var(--line);margin:6px 10px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;font-size:.95rem;padding:12px 22px;border-radius:calc(var(--radius) - 2px);border:1px solid transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease,background .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:var(--shadow-hover);background:#d9b458}
+.btn.ghost{background:transparent;color:var(--brand-navy);border-color:var(--steel)}
+.btn.ghost:hover{border-color:var(--brand-navy);background:rgba(114,140,163,.08)}
+.btn.sm{padding:9px 16px;font-size:.88rem}
+.hamb{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 10px;cursor:pointer;color:var(--ink);font-size:1.05rem}
+
+/* ============ HERO ============ */
+.hero{padding:96px 0 72px;background-image:var(--hero-grad)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero .actions{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+.hero .sub{margin-top:18px}
+.trust-line{margin-top:26px;font-family:var(--font-mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+/* hero signature: pulse into heart (official tagline caption) */
+.heartcard{padding:10px 0}
+.heartcard svg{width:100%;height:auto;overflow:visible}
+.pulse-path{fill:none;stroke:url(#pulseGrad);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1}
+.in .pulse-path{animation:draw 2.6s ease-in-out forwards .3s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.heart-caption{font-family:var(--font-accent);font-style:italic;font-size:1.4rem;margin-top:20px;color:var(--brand-navy)}
+.heart-sub{font-size:.92rem;color:var(--muted);margin-top:8px}
+
+/* ============ PROOF BAR ============ */
+.proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface);padding:34px 0}
+.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
+.proof-grid b{display:block;font-family:var(--font-mono);font-size:2rem;font-weight:600}
+.proof-grid span{font-size:.85rem;color:var(--muted)}
+
+/* ============ CARDS / DOORS ============ */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:30px 28px;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;position:relative;display:flex;flex-direction:column}
+a.card{text-decoration:none}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+.door{border-top:4px solid var(--door-c,var(--accent))}
+.door .eyebrow{color:var(--brand-navy)}
+.door h3{margin:10px 0 8px}
+.door p{color:var(--muted);font-size:.97rem;flex:1}
+.door ul{list-style:none;margin:16px 0 20px;display:flex;flex-direction:column;gap:8px}
+.door li{font-size:.9rem;color:var(--muted);padding-left:20px;position:relative}
+.door li::before{content:"";position:absolute;left:0;top:.55em;width:10px;height:2px;background:var(--door-c,var(--accent))}
+.card .go{font-weight:700;font-size:.93rem;color:var(--brand-navy);margin-top:auto}
+.card .go .arr{color:var(--door-c,var(--brand-navy))}
+.card:hover .go .arr{transform:translateX(4px)}
+.go .arr{display:inline-block;transition:transform .18s ease}
+
+/* offers */
+.offer .price{font-family:var(--font-mono);font-size:1.7rem;font-weight:600;margin:14px 0 4px}
+.offer .meta{font-family:var(--font-mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.offer p.desc{color:var(--muted);font-size:.95rem;margin:14px 0 18px;flex:1}
+.tag{position:absolute;top:-11px;left:24px;background:var(--accent);color:var(--accent-ink);font-family:var(--font-mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:100px}
+
+/* ============ METHOD ============ */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:step}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px}
+.step b.n{font-family:var(--font-mono);font-weight:700;color:var(--steel);font-size:.85rem;letter-spacing:.1em}
+.step h3{margin:8px 0 6px;font-size:1.08rem}
+.step p{font-size:.9rem;color:var(--muted)}
+
+/* ============ MAGNET BAND ============ */
+.band{background:var(--brand-navy);color:#f7f2e7;border-radius:var(--radius-lg);padding:52px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+
+.band h2{color:inherit}
+.band p{opacity:.75;margin-top:8px}
+.band form{display:flex;gap:10px}
+.band input{flex:1;padding:13px 16px;border-radius:calc(var(--radius) - 2px);border:1px solid transparent;font-size:.95rem;font-family:var(--font-body)}
+.band .note{font-family:var(--font-mono);font-size:.68rem;opacity:.55;margin-top:10px;letter-spacing:.05em}
+
+/* ============ QUOTE / INSIGHTS / FAQ ============ */
+.quote{max-width:52rem;margin:0 auto;text-align:center}
+.quote .qmark{color:var(--accent);font-family:var(--font-display);font-size:4rem;line-height:.5;display:block;margin-bottom:22px}
+.quote p{font-family:var(--font-accent);font-style:italic;font-size:1.5rem;line-height:1.5;color:var(--brand-navy)}
+.quote cite{display:block;margin-top:20px;font-family:var(--font-mono);font-style:normal;font-size:.8rem;color:var(--muted)}
+.insight h3{margin:12px 0 8px;font-size:1.05rem}
+.insight p{color:var(--muted);font-size:.92rem;flex:1}
+.faq{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);overflow:hidden}
+.faq + .faq{margin-top:12px}
+.faq button.q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:none;border:none;font:inherit;font-weight:600;text-align:left;padding:18px 22px;cursor:pointer;color:var(--ink)}
+.faq .a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq .a p{padding:0 22px 18px;color:var(--muted);font-size:.95rem}
+.faq.open .a{max-height:220px}
+.faq .ind{transition:transform .25s;color:var(--brand-navy);flex-shrink:0}
+.faq.open .ind{transform:rotate(45deg)}
+
+/* trust chips row (door pages) */
+.chip-row{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 6px}
+.chip{display:inline-block;font-family:var(--font-mono);font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--brand-navy);background:var(--surface);border:1px solid var(--taupe);border-radius:100px;padding:6px 14px}
+
+/* ============ FOOTER ============ */
+footer.site{border-top:1px solid var(--line);background:var(--surface);padding:56px 0 40px;margin-top:40px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer .brand{margin-bottom:14px}
+footer p,footer a{font-size:.9rem;color:var(--muted)}
+footer a{display:block;text-decoration:none;padding:3px 0}
+footer a:hover{color:var(--ink)}
+footer h4{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.foot-note{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-family:var(--font-mono);font-size:.72rem;color:var(--muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* ============ THEME SWITCHER ============ */
+
+/* ============ ROUTING / REVEAL / RESPONSIVE ============ */
+.page{display:none}
+.page.visible{display:block}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+@media (max-width:960px){
+  .hero-grid,.band,.foot-grid{grid-template-columns:1fr}
+  .grid-3,.steps{grid-template-columns:1fr 1fr}
+  .proof-grid{grid-template-columns:repeat(3,1fr);gap:16px}
+  nav.main{display:none;position:absolute;top:100%;left:0;right:0;background:var(--surface);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;padding:18px 24px;gap:16px}
+  nav.main.open{display:flex}
+  .dd{width:100%}
+  .dd-menu{position:static;min-width:0;box-shadow:none;border:none;border-left:2px solid var(--taupe);border-radius:0;background:transparent;padding:4px 0 0 14px;margin-top:10px}
+  .dd-menu::before{display:none}
+  nav.main .dd-menu a{padding:8px 4px}
+  nav.main .dd-menu a span{display:none}
+  .dd-sep{margin:4px 0}
+  .hamb{display:block}
+  section{padding:64px 0}
+  .band{padding:36px 28px}
+}
+@media (max-width:620px){
+  .grid-3,.steps{grid-template-columns:1fr}
+  .band form{flex-direction:column}
+}
+noscript ~ .page, .no-js .page{display:block}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site" id="siteHeader">
+  <div class="container navwrap">
+    <a class="brand" href="#/" data-route>
+      <img class="mark" src="data:image/png;base64,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" alt="" width="46" height="28">
+      love unITed Solutions
+    </a>
+    <button class="hamb" id="hamb" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="main" id="mainNav" aria-label="Primary">
+      <a href="#/services" data-route>Services</a>
+      <div class="dd" id="ddServe">
+        <button class="dd-toggle" id="ddToggle" type="button" aria-expanded="false" aria-controls="ddMenu">Who We Serve <svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 L5 7 L8.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dd-menu" id="ddMenu">
+          <a href="#/door/commercial" data-route data-group="doors"><b>Commercial</b><span>Revenue teams and growing companies</span></a>
+          <a href="#/door/government" data-route data-group="doors"><b>Government</b><span>State, local, and federal missions</span></a>
+          <a href="#/door/nonprofit" data-route data-group="doors"><b>Nonprofit</b><span>Mission-driven organizations</span></a>
+          <div class="dd-sep" role="separator"></div>
+          <a href="#/industries" data-route><b>All 11 industries</b><span>From wealth management to telecom</span></a>
+        </div>
+      </div>
+      <a href="#/about" data-route>About</a>
+      <a href="/blog/">Insights</a>
+      <a class="btn sm" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book a Call</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- ================= HOME ================= -->
+<div class="page" id="page-home">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">Technology powered by love</span>
+        <h1 style="margin-top:14px">Right-sized Salesforce help, at every stage.</h1>
+        <p class="lead sub">Senior expertise for companies, government teams, and nonprofits. Start small with a fixed-price review, keep things running with fractional admin support, or scope a larger project together.</p>
+        <div class="actions">
+          <a class="btn" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book a free 30-min consultation</a>
+          <a class="btn ghost" href="#/services" data-route>Explore services</a>
+        </div>
+        <div class="trust-line">10 Salesforce credentials · Architect track · NPSP experienced · Minority-owned</div>
+      </div>
+      <div class="reveal d1">
+        <!-- Hero signature: pulse resolving into the logo heart -->
+        <div class="heartcard reveal-sig">
+          <svg viewBox="0 0 600 150" aria-hidden="true"><defs><linearGradient id="pulseGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0"><stop offset="0.69" stop-color="#133f69"/><stop offset="0.71" stop-color="#e3c16f"/></linearGradient></defs><path class="pulse-path" pathLength="1" d="M0 92 H70 c4 -11 14 -11 18 0 h10 l3 5 l6 -77 l7 92 l5 -20 h14 c8 0 13 -17 20 -17 c5 0 9 17 12 17 H230 c4 -11 14 -11 18 0 h10 l3 5 l6 -77 l7 92 l5 -20 h14 c8 0 13 -17 20 -17 c5 0 9 17 12 17 H428 C428 76 441 68 452 72 C461 75 468 83 470 90 C472 83 479 75 488 72 C499 68 512 76 512 92 C512 118 470 144 470 144"/></svg>
+          <p class="heart-caption">Technology powered by love.</p>
+          <p class="heart-sub">The pulse is the model: a health check is monitoring, and love is in the name. Every engagement keeps a finger on your org's heartbeat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="proof reveal">
+    <div class="container proof-grid">
+      <div><b data-count="10">0</b><span>Salesforce credentials</span></div>
+      <div><b data-count="10" data-suffix="+">0</b><span>Years on platform</span></div>
+      <div><b data-count="11">0</b><span>Industries served</span></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Who we serve</span>
+        <h2>Three sectors. One standard of care.</h2>
+        <p>Different missions, same discipline: clear scope, honest pricing, and an org your team can trust. The doors below are about how you buy and what you need to trust us with, not which industry you're in.</p>
+      </div>
+      <div class="grid-3">
+        <a class="card door reveal" style="--door-c:var(--sec-commercial)" href="#/door/commercial" data-route>
+          <span class="eyebrow">Commercial</span>
+          <h3>Revenue teams and growing companies</h3>
+          <p>Pipeline you believe, automation that holds, and admin help sized to this quarter.</p>
+          <ul><li>Fractional admin from $600/mo</li><li>Sales and Service optimization</li><li>Quick-start implementations</li></ul>
+          <span class="go">Enter the commercial door <span class="arr">→</span></span>
+        </a>
+        <a class="card door reveal d1" style="--door-c:var(--sec-government)" href="#/door/government" data-route>
+          <span class="eyebrow">Government</span>
+          <h3>State, local, and federal missions</h3>
+          <p>Public-service workflows built with care, clarity, and documentation your team can maintain.</p>
+          <ul><li>Licensing, permits, grants, casework</li><li>Constituent service workflows</li><li>Clear scope, agreed up front</li></ul>
+          <span class="go">Enter the government door <span class="arr">→</span></span>
+        </a>
+        <a class="card door reveal d2" style="--door-c:var(--sec-nonprofit)" href="#/door/nonprofit" data-route>
+          <span class="eyebrow">Nonprofit</span>
+          <h3>Mission-driven organizations</h3>
+          <p>Donors, grants, and programs on a platform that amplifies impact instead of eating it.</p>
+          <ul><li>NPSP to Nonprofit Cloud migrations</li><li>Fundraising and grant tracking</li><li>Budgets respected, always</li></ul>
+          <span class="go">Enter the nonprofit door <span class="arr">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vertical breadth band: swap the list below for the firm's confirmed 20 -->
+  <style>
+    .vband{padding:72px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface)}
+    .vband .section-head{margin-bottom:34px}
+    .vmarquee{overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+    .vtrack{display:flex;width:max-content;animation:vscroll 42s linear infinite}
+    .vband:hover .vtrack{animation-play-state:paused}
+    .vset{display:flex;align-items:center;white-space:nowrap}
+    .vset span{font-family:var(--font-display);font-weight:var(--display-weight);font-size:1.35rem;padding:0 .35em}
+    .vset i{font-style:normal;color:var(--accent);opacity:.55;padding:0 .55em;font-size:1rem}
+    @keyframes vscroll{to{transform:translateX(-50%)}}
+    @media (prefers-reduced-motion: reduce){
+      .vtrack{animation:none;width:auto;flex-wrap:wrap;justify-content:center;row-gap:10px}
+      .vset:last-child{display:none}
+      .vmarquee{-webkit-mask-image:none;mask-image:none}
+    }
+  </style>
+  <div class="vband reveal">
+    <div class="container section-head" style="text-align:center;max-width:52rem;margin-left:auto;margin-right:auto">
+      <span class="eyebrow">Industry range</span>
+      <h2>Specialists in the platform. Fluent in your industry.</h2>
+      <p>Eleven industries have trusted us with their orgs, and the patterns transfer: what manufacturing taught us about inventory flow sharpens what we build for retail and nonprofit operations. You bring the industry. We bring the platform depth.</p>
+    </div>
+    <div class="vmarquee" aria-label="Industries served">
+      <div class="vtrack">
+        <div class="vset">
+          <span>Wealth Management</span><i>♥</i><span>Manufacturing</span><i>♥</i><span>Retail &amp; E-commerce</span><i>♥</i><span>High-Tech &amp; SaaS</span><i>♥</i><span>Telecommunications</span><i>♥</i><span>Media &amp; Entertainment</span><i>♥</i><span>Media &amp; Advertising</span><i>♥</i><span>Government</span><i>♥</i><span>Education</span><i>♥</i><span>Nonprofit Organizations</span><i>♥</i><span>Professional Services</span><i>♥</i>
+        </div>
+        <div class="vset" aria-hidden="true">
+          <span>Wealth Management</span><i>♥</i><span>Manufacturing</span><i>♥</i><span>Retail &amp; E-commerce</span><i>♥</i><span>High-Tech &amp; SaaS</span><i>♥</i><span>Telecommunications</span><i>♥</i><span>Media &amp; Entertainment</span><i>♥</i><span>Media &amp; Advertising</span><i>♥</i><span>Government</span><i>♥</i><span>Education</span><i>♥</i><span>Nonprofit Organizations</span><i>♥</i><span>Professional Services</span><i>♥</i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Ways to start</span>
+        <h2>Start small. See clearly.</h2>
+        <p>Three introductory offers, each with a set scope, a set price, and a deliverable you keep. Ongoing support and larger projects are scoped to fit what you need.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card offer reveal">
+          <span class="tag">Best place to start</span>
+          <h3>Salesforce Health Check</h3>
+          <div class="price">$3,500</div>
+          <div class="meta">Fixed price · 2 weeks</div>
+          <p class="desc">A full audit across security, data, automation, and adoption. You get a scored report and a prioritized 90-day roadmap.</p>
+          <a class="btn ghost sm" href="#/services/health-check" data-route>See what's included</a>
+        </div>
+        <div class="card offer reveal d1">
+          <h3>Security &amp; Access Review</h3>
+          <div class="price">$2,000</div>
+          <div class="meta">Fixed price · 1 week</div>
+          <p class="desc">Profiles, permission sets, sharing rules, and login posture, mapped against how your team actually works.</p>
+          <a class="btn ghost sm" href="#/services/security-review" data-route>See what's included</a>
+        </div>
+        <div class="card offer reveal d2">
+          <h3>Small-Scope Build</h3>
+          <div class="price">from $4,500</div>
+          <div class="meta">Fixed quote · 2-3 weeks</div>
+          <p class="desc">One clearly-scoped process or automation, designed, built, documented, and handed over working.</p>
+          <a class="btn ghost sm" href="#/services/build" data-route>See what's included</a>
+        </div>
+      </div>
+      <div style="margin-top:28px" class="reveal"><a class="btn ghost" href="#/services" data-route>See all services, including fractional admin support</a></div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="band reveal">
+        <div>
+          <span class="eyebrow" style="color:var(--gold)">Free checklists</span>
+          <h2 style="margin-top:10px">Grade your own org first.</h2>
+          <p>Two practical checklists from the way we work with clients: one to get your team actually using Salesforce, one to clean up the data that slows everyone down.</p>
+        </div>
+        <div>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <a class="btn" href="/user-adoption-checklist/">User Adoption Checklist</a>
+            <a class="btn ghost" style="color:#f7f2e7;border-color:rgba(247,242,231,.5)" href="/data-quality-checklist/">Data Quality Checklist</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Right-Size Method</span>
+        <h2>How every engagement runs.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><b class="n">01</b><h3>Diagnose</h3><p>A fixed-price Health Check or Security Review establishes ground truth. No discovery theater.</p></div>
+        <div class="step reveal d1"><b class="n">02</b><h3>Prescribe</h3><p>A scored report and a ranked 90-day roadmap. You see everything we see.</p></div>
+        <div class="step reveal d2"><b class="n">03</b><h3>Build</h3><p>Work scoped and agreed up front. If the scope changes, we talk first and you decide.</p></div>
+        <div class="step reveal d3"><b class="n">04</b><h3>Empower</h3><p>Fractional support and training until your team owns it confidently. Then we get out of the way.</p></div>
+      </div>
+      <div style="margin-top:28px" class="reveal"><a class="btn ghost" href="#/method" data-route>Read the full method</a></div>
+    </div>
+  </section>
+</div>
+<!-- ================= DOOR TEMPLATE (content injected by JS) ================= -->
+<div class="page" id="page-door">
+  <section class="hero" style="padding-bottom:48px">
+    <div class="container">
+      <span class="eyebrow" id="doorEyebrow">Sector</span>
+      <h1 id="doorH1" style="margin-top:14px;max-width:16ch">Headline</h1>
+      <p class="lead sub" id="doorIntro"></p>
+      <div class="chip-row" id="doorChips"></div>
+      <div class="actions">
+        <a class="btn" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book a free 30-min consultation</a>
+        <a class="btn ghost" href="#/services" data-route>Explore services</a>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:56px">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow" id="doorWorkEyebrow">What we help with</span><h2 id="doorWorkH2">Workflows we deliver</h2><p>Pick the one that fits and we'll show you the best way to start.</p></div>
+      <div class="grid-3" id="doorWork" style="grid-template-columns:repeat(2,1fr)"></div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="band">
+        <div>
+          <span class="eyebrow" style="color:var(--accent)">Where to start</span>
+          <h2 style="margin-top:10px" id="doorOfferH2">The Health Check</h2>
+          <p id="doorOfferP"></p>
+        </div>
+        <div><a class="btn" id="doorOfferBtn" href="#/services" data-route>See what's included</a></div>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="container" style="max-width:820px">
+      <div class="section-head"><span class="eyebrow">Common questions</span><h2>Asked and answered.</h2></div>
+      <div id="doorFaqs"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= OFFERS ================= -->
+<div class="page" id="page-offers">
+  <section class="hero" style="padding-bottom:16px">
+    <div class="container">
+      <span class="eyebrow">Services</span>
+      <h1 style="margin-top:14px;max-width:18ch">Ways to work with us.</h1>
+      <p class="lead sub">Start with a fixed-price review, keep your org healthy with monthly fractional support, or scope a larger project together. Whatever the size, you get a clear plan and pricing you agree to before any work begins.</p>
+      <div class="chip-row" style="margin-top:26px">
+        <a class="chip" style="text-decoration:none" href="#/services/start" data-route>Start here</a>
+        <a class="chip" style="text-decoration:none" href="#/services/ongoing" data-route>Fractional admin</a>
+        <a class="chip" style="text-decoration:none" href="#/services/projects" data-route>Projects</a>
+      </div>
+    </div>
+  </section>
+  <section class="svc-section" id="svc-start">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Start here · Fixed price</span><h2>Three easy ways to start.</h2><p>Introductory offers with a set scope, a set price, and a deliverable you keep, whether or not we work together afterward.</p></div>
+      <div class="grid-3">
+      <div class="card offer" id="svc-health-check">
+        <span class="tag">Best place to start</span><h3>Salesforce Health Check</h3>
+        <div class="price">$3,500</div>
+        <div class="meta">Fixed price · 2 weeks</div>
+        <p class="desc">Full org audit: security model, data quality, automation inventory, adoption signals. Week 1 we pull and analyze. Week 2 we score, rank, and walk you through it live.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:20px"><li class="meta">✓ Scored report across 4 domains</li><li class="meta">✓ Prioritized 90-day roadmap</li><li class="meta">✓ Live readout call</li></ul>
+        <div class="card-actions"><a class="btn sm" href="/contact/?service=Salesforce%20Health%20Check">Get Started</a><a class="btn ghost sm" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book a Call</a></div>
+      </div>
+      <div class="card offer" id="svc-security-review">
+        <h3>Security &amp; Access Review</h3>
+        <div class="price">$2,000</div>
+        <div class="meta">Fixed price · 1 week</div>
+        <p class="desc">Profiles, permission sets, sharing rules, field-level security, and login posture, mapped against how your team actually works.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:20px"><li class="meta">✓ Security scorecard</li><li class="meta">✓ Ranked remediation checklist</li><li class="meta">✓ Live readout call</li></ul>
+        <div class="card-actions"><a class="btn sm" href="/contact/?service=Security%20%26%20Access%20Review">Get Started</a><a class="btn ghost sm" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book a Call</a></div>
+      </div>
+      <div class="card offer" id="svc-build">
+        <h3>Small-Scope Build</h3>
+        <div class="price">from $4,500</div>
+        <div class="meta">Fixed quote · 2-3 weeks</div>
+        <p class="desc">One clearly-scoped process or automation: an approval flow, an intake process, a broken integration made whole. Designed, built, documented, handed over working.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:20px"><li class="meta">✓ Working solution in production</li><li class="meta">✓ Plain-language documentation</li><li class="meta">✓ 2 weeks post-launch support</li></ul>
+        <div class="card-actions"><a class="btn sm" href="/contact/?service=Small-Scope%20Build">Get Started</a><a class="btn ghost sm" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book a Call</a></div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="svc-section" id="svc-ongoing">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Ongoing support · Monthly</span><h2>Fractional admin support.</h2><p>Certified Salesforce help every month, without the cost of a full-time hire.</p></div>
+      <div class="chip-row" style="margin:-20px 0 26px">
+        <span class="chip">User setup &amp; roles</span><span class="chip">Reports &amp; dashboards</span><span class="chip">Flow automation</span><span class="chip">AppExchange app support</span><span class="chip">Data imports &amp; cleanup</span><span class="chip">Quarterly health checks</span>
+      </div>
+      <div class="grid-3">
+      <div class="card offer" id="svc-starter">
+        <h3>Starter</h3>
+        <div class="price">$600/mo</div>
+        <div class="meta">5 hours per month</div>
+        <p class="desc">Light-touch ongoing help for teams that need a certified admin a few hours a month.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:20px"><li class="meta">✓ 5 hours of certified admin time</li><li class="meta">✓ Updates, reports, and fixes</li><li class="meta">✓ Light-touch ongoing help</li></ul>
+        <div class="card-actions"><a class="btn sm" href="/contact/?service=Fractional%20Admin%3A%20Starter">Get Started</a><a class="btn ghost sm" href="https://app.usemotion.com/meet/devo-perez/starter-admin" target="_blank" rel="noopener">Book a Call</a></div>
+      </div>
+      <div class="card offer" id="svc-growth">
+        <h3>Growth</h3>
+        <div class="price">$1,150/mo</div>
+        <div class="meta">10 hours per month</div>
+        <p class="desc">Regular admin work plus steady enhancements as your team grows.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:20px"><li class="meta">✓ 10 hours of certified admin time</li><li class="meta">✓ Regular admin support</li><li class="meta">✓ Ongoing enhancements</li></ul>
+        <div class="card-actions"><a class="btn sm" href="/contact/?service=Fractional%20Admin%3A%20Growth">Get Started</a><a class="btn ghost sm" href="https://app.usemotion.com/meet/devo-perez/growth-admin" target="_blank" rel="noopener">Book a Call</a></div>
+      </div>
+      <div class="card offer" id="svc-custom">
+        <h3>Custom</h3>
+        <div class="price">Let's talk</div>
+        <div class="meta">Flexible hours</div>
+        <p class="desc">Projects or tailored partnerships for teams with bigger or changing needs.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:20px"><li class="meta">✓ Flexible hours</li><li class="meta">✓ Project work or ongoing partnership</li><li class="meta">✓ Scoped to your priorities</li></ul>
+        <div class="card-actions"><a class="btn sm" href="/contact/?service=Fractional%20Admin%3A%20Custom">Request a Quote</a><a class="btn ghost sm" href="https://app.usemotion.com/meet/devo-perez/custom-admin-support" target="_blank" rel="noopener">Book a Call</a></div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="svc-section" id="svc-projects">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Projects · Scoped together</span><h2>Implementations and larger projects.</h2><p>For work bigger than a small build. We scope it together, agree on the plan and pricing, then deliver in focused phases.</p></div>
+      <div class="grid-3">
+      <div class="card offer" id="svc-quick-start">
+        <h3>Quick-Start Setup</h3>
+        <div class="price">Scoped to fit</div>
+        <div class="meta">New to Salesforce</div>
+        <p class="desc">Launch Salesforce with the essentials tailored to your business, for teams ready to leave spreadsheets behind.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:20px"><li class="meta">✓ Environment setup and customization</li><li class="meta">✓ Email templates and activity tracking</li><li class="meta">✓ Mobile setup and user onboarding</li><li class="meta">✓ 30-day post-go-live support</li></ul>
+        <div class="card-actions"><a class="btn sm" href="/contact/?service=Quick-Start%20Setup">Request a Quote</a><a class="btn ghost sm" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book a Call</a></div>
+      </div>
+      <div class="card offer" id="svc-optimization">
+        <h3>Sales &amp; Service Optimization</h3>
+        <div class="price">Scoped to fit</div>
+        <div class="meta">Already on Salesforce</div>
+        <p class="desc">Tune Salesforce to how your team actually works and turn it into a growth engine.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:20px"><li class="meta">✓ Quote-to-close automation</li><li class="meta">✓ Service ticket tracking</li><li class="meta">✓ SMS and email integration</li><li class="meta">✓ Marketing list segmentation</li></ul>
+        <div class="card-actions"><a class="btn sm" href="/contact/?service=Sales%20%26%20Service%20Optimization">Request a Quote</a><a class="btn ghost sm" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book a Call</a></div>
+      </div>
+      <div class="card offer" id="svc-mission">
+        <h3>Public Sector &amp; Nonprofit Projects</h3>
+        <div class="price">Scoped to fit</div>
+        <div class="meta">Government and nonprofit</div>
+        <p class="desc">Workflows built around the people you serve, documented so your team can run them.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:20px"><li class="meta">✓ Licensing, permits, and grants</li><li class="meta">✓ Constituent case management</li><li class="meta">✓ NPSP to Nonprofit Cloud</li><li class="meta">✓ Donor, program, and volunteer tracking</li></ul>
+        <div class="card-actions"><a class="btn sm" href="/contact/?service=Public%20Sector%20%26%20Nonprofit%20Projects">Request a Quote</a><a class="btn ghost sm" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book a Call</a></div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:64px">
+    <div class="container">
+      <div class="band">
+        <div>
+          <span class="eyebrow" style="color:var(--gold)">Not sure which fits?</span>
+          <h2 style="margin-top:10px">Grade your own org first.</h2>
+          <p>Start with one of our free checklists and you'll know where to focus before you spend a dollar.</p>
+        </div>
+        <div>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <a class="btn" href="/user-adoption-checklist/">User Adoption Checklist</a>
+            <a class="btn ghost" style="color:#f7f2e7;border-color:rgba(247,242,231,.5)" href="/data-quality-checklist/">Data Quality Checklist</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= METHOD ================= -->
+<div class="page" id="page-method">
+  <section class="hero" style="padding-bottom:40px">
+    <div class="container">
+      <span class="eyebrow">The Right-Size Method</span>
+      <h1 style="margin-top:14px;max-width:16ch">Consulting, sized to the problem.</h1>
+      <p class="lead sub">Traditional consulting sells the engagement first and discovers the problem second. We reversed it. Diagnosis is a product, scope is a promise, and the exit is part of the plan.</p>
+    </div>
+  </section>
+  <section style="padding-top:40px">
+    <div class="container">
+      <div class="steps" style="grid-template-columns:repeat(2,1fr);gap:24px">
+        <div class="step"><b class="n">01 · DIAGNOSE</b><h3>Ground truth first</h3><p>Most engagements open with a Health Check or Security Review. Two weeks max, a set price, and a shared picture of reality before anyone proposes anything.</p></div>
+        <div class="step"><b class="n">02 · PRESCRIBE</b><h3>A roadmap you own</h3><p>The scored report and 90-day roadmap are yours to keep, whether or not we do the work. Some clients execute it internally. That is a fine outcome.</p></div>
+        <div class="step"><b class="n">03 · BUILD</b><h3>Scoped work, no surprises</h3><p>Work ships in focused phases, scoped and agreed before it starts. When scope shifts, we pause, talk it through, and you decide. Nothing grows without your sign-off.</p></div>
+        <div class="step"><b class="n">04 · EMPOWER</b><h3>An exit, by design</h3><p>Fractional support and training taper as your team's confidence grows. Success is your org running without us on speed dial.</p></div>
+      </div>
+      <div class="quote" style="margin-top:64px">
+        <p>"Right-sized" is not a tagline. It is a refusal: no discovery theater, no scope that grows in the dark, and no more consultant than you need.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<div class="page" id="page-about">
+  <section class="hero" style="padding-bottom:40px">
+    <div class="container">
+      <span class="eyebrow">About the firm</span>
+      <h1 style="margin-top:14px;max-width:17ch">Built because good companies kept getting oversold.</h1>
+      <p class="lead sub">Love unITed Solutions exists to prove a boutique can pair architect-level expertise with honest, right-sized engagements. Minority-owned, values-led, and committed to systems that support equity and impact.</p>
+    </div>
+  </section>
+  <section style="padding-top:40px">
+    <div class="container" style="display:grid;grid-template-columns:1fr 1.4fr;gap:44px;align-items:start">
+      <div class="card">
+        <span class="eyebrow">Led by</span>
+        <h3 style="margin:10px 0 6px">Devohne Perez Mercado</h3>
+        <p style="color:var(--muted);font-size:.95rem">Salesforce Architect track · 10+ years hands-on · DeBary, Florida. The named architect on every engagement, not a logo that hands you off.</p>
+      </div>
+      <div>
+        <h2 style="font-size:1.4rem;margin-bottom:16px">Credentials, rendered as receipts</h2>
+        <div class="chip-row">
+          <span class="chip">Platform Administrator</span><span class="chip">Platform App Builder</span><span class="chip">Platform Data Architect</span><span class="chip">Platform User Experience Designer</span><span class="chip">Business Analyst</span><span class="chip">Agentforce Specialist</span><span class="chip">Agentforce Sales Consultant</span><span class="chip">CRM Analytics &amp; Einstein Discovery Consultant</span><span class="chip">Marketing Cloud Account Engagement Specialist</span><span class="chip">Process Automation Accredited Professional</span>
+        </div>
+        <p style="color:var(--muted);font-size:.92rem;margin-top:18px">Verified on the <a href="https://www.salesforce.com/trailblazer/devomoore" target="_blank" rel="noopener">Salesforce Trailblazer profile</a>.</p>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">How we work</span><h2>The Right-Size Method</h2><p>Four steps, sized to the problem in front of you.</p></div>
+      <div class="steps">
+        <div class="step"><b class="n">01</b><h3>Diagnose</h3><p>A Health Check or Security Review establishes ground truth. No discovery theater.</p></div>
+        <div class="step"><b class="n">02</b><h3>Prescribe</h3><p>A scored report and a ranked 90-day roadmap. You see everything we see.</p></div>
+        <div class="step"><b class="n">03</b><h3>Build</h3><p>Work scoped and agreed up front. If the scope changes, we talk first and you decide.</p></div>
+        <div class="step"><b class="n">04</b><h3>Empower</h3><p>Fractional support and training until your team owns it confidently.</p></div>
+      </div>
+      <div style="margin-top:28px"><a class="btn ghost" href="#/method" data-route>Read the full method</a></div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="band">
+        <div>
+          <span class="eyebrow" style="color:var(--gold)">Let's talk</span>
+          <h2 style="margin-top:10px">Ready when you are.</h2>
+          <p>Book a free 30-minute consultation, or send us a message and we'll reply within one business day.</p>
+        </div>
+        <div>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <a class="btn" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book a free 30-min consultation</a>
+            <a class="btn ghost" style="color:#f7f2e7;border-color:rgba(247,242,231,.5)" href="/contact/">Send a message</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#/" data-route>
+          <img class="mark" src="data:image/png;base64,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" alt="" width="46" height="28">
+          love unITed Solutions
+        </a>
+        <p style="font-family:var(--font-accent);font-style:italic;color:var(--brand-navy)">Technology Powered by Love.</p>
+        <p>Right-sized Salesforce consulting for business, government, and nonprofit missions.</p>
+        <p style="margin-top:10px">contact@loveunited.solutions<br>(321) 370-2301 · DeBary, FL</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#/services" data-route>Services</a>
+        <a href="#/method" data-route>The Right-Size Method</a>
+        <a href="/blog/">Insights</a>
+        <a href="#/about" data-route>About</a>
+        <a href="/contact/">Contact</a>
+      </div>
+      <div>
+        <h4>Trust</h4>
+        <a href="https://www.salesforce.com/trailblazer/devomoore" target="_blank" rel="noopener">Certifications</a>
+        <a href="https://www.linkedin.com/company/loveunitedsolutions/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://instagram.com/loveunited.solutions" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>© 2026 Love unITed Solutions, LLC · Minority-owned · Values-led</span>
+      <span>Technology Powered by Love.</span>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function(){
+  "use strict";
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- Door page content ---------- */
+  var DOORS = {
+    commercial: {
+      color: "var(--sec-commercial)",
+      eyebrow: "Commercial",
+      h1: "Salesforce your revenue team actually trusts.",
+      intro: "For growing companies where the CRM should be the engine, not the excuse. We tune Sales and Service Cloud to how your team really works, then stay on fractionally so it keeps working.",
+      chips: ["Agentforce Sales Consultant certified","Flow-first automation","Reports leadership believes","Fractional admin from $600/mo"],
+      work: [
+        {t:"Pipeline & forecasting cleanup", k:"health-check", s:"Health Check", d:"Stages that mean something, duplicates gone, and a forecast the CFO stops re-checking in a spreadsheet."},
+        {t:"Quote-to-close automation", k:"optimization", s:"Sales &amp; Service Optimization", d:"Approvals, alerts, and handoffs that fire on time so deals move without babysitting."},
+        {t:"Service ticket workflows", k:"optimization", s:"Sales &amp; Service Optimization", d:"Cases routed, tracked, and reported so nothing rots in a queue nobody watches."},
+        {t:"Fractional admin support", k:"ongoing", s:"Fractional admin plans", d:"Certified help on your schedule: Starter at $600/mo, Growth at $1,150/mo, custom above that."}
+      ],
+      offerKey:"health-check", offerH2:"Start with the Health Check",
+      offerP:"Two weeks, $3,500, and a scored picture of exactly where your org helps or hurts revenue. The roadmap is yours either way.",
+      faqs:[
+        {q:"We only have 12 users. Are we too small?", a:"No. Right-sized is the whole model. The fractional tiers exist precisely so small teams get senior help without a full-time hire."},
+        {q:"Can you work with our existing admin?", a:"Happily. We often pair with an in-house or accidental admin, handle the architect-level work, and leave them stronger than we found them."},
+        {q:"What happens after the Health Check?", a:"You get the report and roadmap regardless. Execute it internally, hire us for pieces of it, or do nothing. There is no forced next step."}
+      ]
+    },
+    government: {
+      color: "var(--sec-government)",
+      eyebrow: "Government",
+      h1: "Salesforce built for public service.",
+      intro: "For state, local, and federal teams modernizing how the public applies, renews, reports, and gets answers. We work alongside your IT staff and your program teams, and we document everything we build.",
+      chips: ["Case & grant workflows","Constituent self-service","Audit-ready documentation","Plain-language training"],
+      work: [
+        {t:"Licensing & permitting", k:"mission", s:"Public sector projects", d:"Applications, renewals, inspections, and fees in one auditable pipeline instead of four inboxes."},
+        {t:"Grants management", k:"mission", s:"Public sector projects", d:"Intake, scoring, awards, and reporting with a trail your auditors will actually enjoy."},
+        {t:"Constituent case management", k:"mission", s:"Public sector projects", d:"Requests routed and resolved with the responsiveness residents now expect from every service."},
+        {t:"Legacy system migration", k:"health-check", s:"Health Check", d:"Access databases and spreadsheet shadow systems retired carefully, with the institutional knowledge preserved."}
+      ],
+      offerKey:"security-review", offerH2:"Start with the Security & Access Review",
+      offerP:"One week, $2,000, and a scorecard of exactly who can see what across your org. A clear, low-risk first step for public sector teams.",
+      faqs:[
+        {q:"Can you work alongside our IT and security staff?", a:"Yes. We follow your access and approval processes, coordinate with your internal teams, and document every change so your staff can maintain it after we leave."},
+        {q:"Do we need a large project to get started?", a:"No. Most teams start with a one-week Security & Access Review or a two-week Health Check. Both are fixed price, so you know the scope and cost before any work begins."}
+      ]
+    },
+    nonprofit: {
+      color: "var(--sec-nonprofit)",
+      eyebrow: "Nonprofit",
+      h1: "More mission per dollar of technology.",
+      intro: "For organizations where every hour and dollar is accountable to the mission. We know NPSP deeply, we know where Nonprofit Cloud is headed, and we know what a program budget feels like.",
+      chips: ["NPSP implementation experience","Nonprofit Cloud migrations","Power of Us program fluent","Board-ready reporting"],
+      work: [
+        {t:"NPSP to Nonprofit Cloud", k:"health-check", s:"Health Check", d:"A calm, staged migration path that protects your donor history and your team's sanity."},
+        {t:"Fundraising & donor management", k:"mission", s:"Nonprofit projects", d:"Gifts, pledges, and relationships tracked so development can steward instead of spreadsheet."},
+        {t:"Grant & program tracking", k:"build", s:"Small-Scope Build", d:"Deliverables, outcomes, and funder reports from the same system your team already lives in."},
+        {t:"Volunteer & event operations", k:"build", s:"Small-Scope Build", d:"Sign-ups, hours, and follow-ups handled by automation instead of your program manager's evenings."}
+      ],
+      offerKey:"health-check", offerH2:"Start with the Health Check",
+      offerP:"Two weeks, $3,500, scoped and priced for nonprofit realities. You keep the scored report and 90-day roadmap whether or not we do another hour of work.",
+      faqs:[
+        {q:"We are on NPSP. Do we have to migrate?", a:"Not today, and not in a panic. NPSP remains supported, and the right moment to move depends on your roadmap. We will give you an honest read, including 'stay put for now' when that is the truth."},
+        {q:"Do you offer nonprofit pricing?", a:"Our fixed-price offers are already sized for lean budgets, and we will always design the smallest scope that genuinely solves the problem."},
+        {q:"Can you train our volunteers and staff?", a:"Yes. Empower is a formal step in our method: plain-language documentation and hands-on sessions until your team runs it confidently."}
+      ]
+    }
+  };
+
+  /* ---------- Router ---------- */
+  var pages = document.querySelectorAll(".page");
+  function show(id, keepScroll){
+    Array.prototype.forEach.call(pages, function(p){p.classList.remove("visible");});
+    var el = document.getElementById(id);
+    if(!el){ el = document.getElementById("page-home"); }
+    el.classList.add("visible");
+    if(!keepScroll) window.scrollTo({top:0, behavior: reduced ? "auto" : "smooth"});
+    observeReveals(el);
+  }
+  /* Scroll so an element sits just below the sticky header. The header
+     shrinks once the page scrolls, so allow for that when starting at the top. */
+  function scrollToEl(el){
+    var top=0, e=el; while(e){ top+=e.offsetTop; e=e.offsetParent; }
+    var adj = window.scrollY > 40 ? 96 : 100;
+    window.scrollTo({top: Math.max(0, top - adj), behavior: reduced ? "auto" : "smooth"});
+  }
+  function flashEl(el){
+    if(!el.classList.contains("card")) return;
+    var c = reduced ? "flash-static" : "flash";
+    el.classList.remove(c); void el.offsetWidth; el.classList.add(c);
+    setTimeout(function(){ el.classList.remove(c); }, 2400);
+  }
+  function renderDoor(key){
+    var d = DOORS[key] || DOORS.commercial;
+    var page = document.getElementById("page-door");
+    page.style.setProperty("--accent-door", d.color);
+    document.getElementById("doorEyebrow").textContent = d.eyebrow;
+    
+    document.getElementById("doorH1").textContent = d.h1;
+    document.getElementById("doorIntro").textContent = d.intro;
+    var chips = document.getElementById("doorChips"); chips.innerHTML = "";
+    d.chips.forEach(function(c){ var s=document.createElement("span"); s.className="chip"; s.textContent=c; chips.appendChild(s); });
+    var work = document.getElementById("doorWork"); work.innerHTML = "";
+    d.work.forEach(function(w){
+      var c=document.createElement("a"); c.className="card door"; c.style.setProperty("--door-c", d.color);
+      c.href="#/services/"+w.k; c.setAttribute("data-route","");
+      c.innerHTML = "<h3>"+w.t+"</h3><p style='margin-top:8px'>"+w.d+"</p><span class='go'>Best way to start: "+w.s+" <span class='arr'>&rarr;</span></span>";
+      work.appendChild(c);
+    });
+    document.getElementById("doorOfferH2").textContent = d.offerH2;
+    document.getElementById("doorOfferP").textContent = d.offerP;
+    document.getElementById("doorOfferBtn").setAttribute("href", "#/services/"+d.offerKey);
+    var faqs = document.getElementById("doorFaqs"); faqs.innerHTML = "";
+    d.faqs.forEach(function(f){
+      var w=document.createElement("div"); w.className="faq";
+      w.innerHTML = "<button class='q' aria-expanded='false'><span>"+f.q+"</span><span class='ind' aria-hidden='true'>+</span></button><div class='a'><p>"+f.a+"</p></div>";
+      w.querySelector(".q").addEventListener("click", function(){
+        var open = w.classList.toggle("open");
+        this.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      faqs.appendChild(w);
+    });
+  }
+  function route(){
+    var h = location.hash || "#/";
+    var m = h.match(/^#\/door\/(\w+)/);
+    var navKey = h;
+    if(m){ renderDoor(m[1]); show("page-door"); }
+    else if(h.indexOf("#/services")===0 || h.indexOf("#/offers")===0){
+      navKey="#/services";
+      var sub=h.split("/")[2];
+      show("page-offers", !!sub);
+      if(sub){ setTimeout(function(){ var el=document.getElementById("svc-"+sub); if(el){ scrollToEl(el); flashEl(el); } }, 60); }
+    }
+    else if(h.indexOf("#/method")===0){ show("page-method"); navKey="#/about"; }
+    else if(h.indexOf("#/insights")===0){ window.location.href = "/blog/"; return; }
+    else if(h.indexOf("#/about")===0){ show("page-about"); }
+    else if(h.indexOf("#/industries")===0){
+      show("page-home", true);
+      setTimeout(function(){ var band=document.querySelector(".vband"); if(band){ band.classList.add("in"); scrollToEl(band); } }, 60);
+    }
+    else { show("page-home"); navKey="#/"; }
+    var links = document.querySelectorAll("nav.main a[data-route]");
+    Array.prototype.forEach.call(links, function(a){
+      a.classList.toggle("active", a.getAttribute("href") === navKey);
+    });
+    var tog=document.getElementById("ddToggle");
+    if(tog){ tog.classList.toggle("active", !!m || navKey.indexOf("#/industries")===0); closeDD(); }
+    document.getElementById("mainNav").classList.remove("open");
+  }
+  window.addEventListener("hashchange", route);
+
+  /* ---------- Reveal on scroll ---------- */
+  var io = null;
+  if("IntersectionObserver" in window && !reduced){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);
+          if(e.target.classList.contains("proof")) countUp(e.target);
+          if(e.target.querySelector && e.target.querySelector("#dialVal")) fillDial();
+        }
+      });
+    }, {threshold:.18});
+  }
+  function observeReveals(scope){
+    var els = (scope||document).querySelectorAll(".reveal, .proof");
+    Array.prototype.forEach.call(els, function(el){
+      if(reduced || !io){ el.classList.add("in"); if(el.classList.contains("proof")) countUp(el,true); if(el.querySelector&&el.querySelector("#dialVal")) fillDial(true); }
+      else io.observe(el);
+    });
+  }
+
+  /* ---------- Count up + dial ---------- */
+  function countUp(scope, instant){
+    var nums = scope.querySelectorAll("[data-count]");
+    Array.prototype.forEach.call(nums, function(n){
+      if(n.dataset.done) return; n.dataset.done="1";
+      var target=+n.dataset.count, suf=n.dataset.suffix||"";
+      if(instant || reduced){ n.textContent = target + suf; return; }
+      var t0=null;
+      function tick(ts){ if(!t0)t0=ts; var p=Math.min((ts-t0)/1100,1);
+        n.textContent = Math.round(target * (1-Math.pow(1-p,3))) + suf;
+        if(p<1) requestAnimationFrame(tick); }
+      requestAnimationFrame(tick);
+    });
+  }
+  var dialDone=false;
+  function fillDial(instant){
+    if(dialDone) return; dialDone=true;
+    var v=document.getElementById("dialVal"), n=document.getElementById("dialNum");
+    if(!v) return;
+    var score=.87;
+    if(instant || reduced){ v.style.transition="none"; v.style.strokeDashoffset=String(1-score); n.textContent="87"; return; }
+    requestAnimationFrame(function(){ v.style.strokeDashoffset=String(1-score); });
+    var t0=null;
+    function tick(ts){ if(!t0)t0=ts; var p=Math.min((ts-t0)/1400,1);
+      n.textContent=Math.round(87*(1-Math.pow(1-p,3)));
+      if(p<1) requestAnimationFrame(tick); }
+    requestAnimationFrame(tick);
+  }
+
+  /* ---------- Header and menu ---------- */
+  var header=document.getElementById("siteHeader");
+  window.addEventListener("scroll", function(){ header.classList.toggle("tight", window.scrollY>40); }, {passive:true});
+  document.getElementById("hamb").addEventListener("click", function(){
+    var nav=document.getElementById("mainNav");
+    var open=nav.classList.toggle("open");
+    this.setAttribute("aria-expanded", open?"true":"false");
+  });
+  /* ---------- Who We Serve dropdown ---------- */
+  function closeDD(){
+    var dd=document.getElementById("ddServe"), t=document.getElementById("ddToggle");
+    if(dd){ dd.classList.remove("open"); t.setAttribute("aria-expanded","false"); }
+  }
+  (function(){
+    var dd=document.getElementById("ddServe"), t=document.getElementById("ddToggle");
+    if(!dd) return;
+    t.addEventListener("click", function(e){
+      e.stopPropagation();
+      var open=dd.classList.toggle("open");
+      t.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    document.addEventListener("click", function(e){ if(!dd.contains(e.target)) closeDD(); });
+    document.addEventListener("keydown", function(e){
+      if(e.key==="Escape" && dd.classList.contains("open")){ closeDD(); t.focus(); }
+    });
+    dd.querySelectorAll(".dd-menu a").forEach(function(a){ a.addEventListener("click", closeDD); });
+  })();
+
+  /* ---------- Boot ---------- */
+  route();
+  observeReveals(document);
+  var hp=document.querySelector(".heartcard"); if(hp){ if(reduced){var ps=hp.querySelectorAll("path");ps.forEach(function(p){p.style.strokeDashoffset="0";});} else {hp.classList.add("in");} }
+})();
+</script>
+</body>
+</html>
