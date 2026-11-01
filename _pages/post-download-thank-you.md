@@ -1,13 +1,12 @@
 ---
 title: "Thank You!"
-layout: splash
+layout: lu-page
 permalink: /thanks/
-author_profile: false
 ---
 
 <h1 class="centered-heading">Thank You!</h1>
 
-We hope the downloaded content helps you excellerate your instance. We're excited to connect with you!
+We hope the downloaded content helps you accelerate your instance. We're excited to connect with you!
 {: style="text-align: center;"}
 
 <h3 class="centered-heading">Ready to Elevate Your Salesforce Experience?</h3>
@@ -15,22 +14,17 @@ We hope the downloaded content helps you excellerate your instance. We're excite
 Explore how we can help you streamline processes, enhance data quality, and deliver real results.
 {: style="text-align: center;"}
 
-[What To Expect](https://www.loveunited.solutions/our-services) <br>
+[Explore our services](/#/services) <br>
 {: style="text-align: center;"}
 
-Together, we can build a Salesforce solution that’s not just functional — but future-proof. <br>
+Together, we can build a Salesforce solution that’s not just functional, but future-proof. <br>
 {: style="text-align: center;"}
-— Love unITed Solutions
+Love unITed Solutions
 {: style="text-align: center;"}
 
 <br>
 
-<!-- Button section -->
 <div class="button-container">
-  <a href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener noreferrer">
-    <button class="large-centered-button">Book a Discovery Call</button>
-  </a>
-  <a href="https://app.formbricks.com/s/cmatz49ts052zu2014tacgoxc" target="_blank" rel="noopener noreferrer">
-    <button class="large-centered-button">Inquire About Services</button>
-  </a>
+  <a class="btn" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener noreferrer">Book a Discovery Call</a>
+  <a class="btn ghost" href="/contact/">Inquire About Services</a>
 </div>

@@ -1,8 +1,7 @@
 ---
 title: "Data Quality Checklist"
-layout: splash
+layout: lu-page
 permalink: /data-quality-checklist-download/
-author_profile: false
 ---
 
 <html lang="en">

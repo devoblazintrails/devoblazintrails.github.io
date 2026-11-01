@@ -1,5 +1,6 @@
 ---
 title: "Salesforce Flow Demystified: Design, Build, and Automate with Confidence"
+description: "A practical starter guide to Salesforce Flow: the main flow types, how templates save you time, and why process mapping comes before you build."
 categories:
   - Flow
   - Enhancement Guides

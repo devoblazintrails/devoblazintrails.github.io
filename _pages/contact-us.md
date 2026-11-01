@@ -1,67 +1,60 @@
 ---
-title: "Let's Chat"
-layout: splash
+title: "Contact"
+layout: lu-page
+wide: true
 permalink: /contact/
-author_profile: false
+description: "Tell us what's going on in your Salesforce org. We reply within 1 business day, or you can book a free 30-minute consultation."
 ---
-
-
-<h1 class="centered"> Contact Us</h1>
-
-<h3 class="centered"> We'd love to hear from you.</h3>
-  <br>
-<p class="centered">Whether you're exploring Salesforce for the first time or looking to improve an existing setup, we’re here to help.</p>
-
-<h4 class="centered"> 📬 Get in Touch</h4>
-
-<p class="centered"> <strong>Email:</strong> <a href="mailto:contact@loveunited.solutions">contact@loveunited.solutions</a><br>
-<strong>Phone/Text:</strong> (321) 370-2301<br>
-<strong>Instagram:</strong> <a href="https://instagram.com/loveunited.solutions">@loveunited.solutions</a><br> 
-<strong>LinkedIn:</strong> <a href="https://linkedin.com/company/loveunitedsolutions">Connect with us</a><br>
-</p>
-
----
-
-## 💬 Send Us a Message
-
-Fill out the form below and we'll get back to you within 1 business day.
-
+<!-- NOTE: keep this file free of blank lines. The page is plain HTML inside a Markdown file, and a blank line can make Markdown rewrite the HTML. -->
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Contact</p>
+    <h1>We'd love to hear from you.</h1>
+    <p class="lead">Whether you're exploring Salesforce for the first time or improving an org you already have, tell us what's going on. We reply within 1 business day.</p>
+  </div>
+</section>
+<section class="inner">
+  <div class="container contact-grid">
+    <div class="card form-card">
+      <h2>Send us a message</h2>
+      <p>A few details help us come prepared. Only the first three fields are required.</p>
 <!-- Begin Embedded Contact Form -->
-<form id="custom-form" action="https://script.google.com/macros/s/AKfycbzEYHSClG8MKxQFfsfRrORD97Fhg2h9is9UMMX5KdnvZCrNCZ-pa_SlzbgN4Cv8-O2t/exec" method="POST">
-  <label for="name">Your Name:</label><br>
-  <input type="text" name="name" id="name" required><br><br>
-  <label for="email">Your Email:</label><br>
-  <input type="email" name="email" id="email" required><br><br>
- 
-  <label for="message">Your Message:</label><br>
-  <textarea name="message" id="message" rows="4" required></textarea><br><br>
- 
-  <label for="edition">What edition of Salesforce are you using?</label><br>
-  <input type="text" name="edition" id="edition"><br><br>
- 
-  <label for="users">How many users?</label><br>
-  <input type="number" name="users" id="users"><br><br>
- 
-  <label for="needs">What are your top 3 admin needs?</label><br>
-  <textarea name="needs" id="needs" rows="3"></textarea><br><br>
- 
-  <!-- ⚠️ REPLACE the placeholder below with YOUR real site key
-       (copy it from your current live file before saving) -->
-  <div class="g-recaptcha" data-sitekey="6LfP5ncrAAAAAKteCgCl1uFl8CPxX6-jhdIVORVE"></div><br>
-  <button type="submit">Send Message</button>
+<form id="custom-form" class="lu-form" action="https://script.google.com/macros/s/AKfycbzEYHSClG8MKxQFfsfRrORD97Fhg2h9is9UMMX5KdnvZCrNCZ-pa_SlzbgN4Cv8-O2t/exec" method="POST">
+  <div class="row-2">
+    <div>
+      <label for="name">Your name</label>
+      <input type="text" name="name" id="name" autocomplete="name" required>
+    </div>
+    <div>
+      <label for="email">Your email</label>
+      <input type="email" name="email" id="email" autocomplete="email" required>
+    </div>
+  </div>
+  <label for="message">How can we help?</label>
+  <textarea name="message" id="message" rows="5" required></textarea>
+  <div class="row-2">
+    <div>
+      <label for="edition">Salesforce edition <span class="opt">(optional)</span></label>
+      <input type="text" name="edition" id="edition" placeholder="e.g. Enterprise, NPSP">
+    </div>
+    <div>
+      <label for="users">Number of users <span class="opt">(optional)</span></label>
+      <input type="number" name="users" id="users" min="0">
+    </div>
+  </div>
+  <label for="needs">Top 3 admin needs <span class="opt">(optional)</span></label>
+  <textarea name="needs" id="needs" rows="3"></textarea>
+  <div class="g-recaptcha" data-sitekey="6LfP5ncrAAAAAKteCgCl1uFl8CPxX6-jhdIVORVE"></div>
+  <button type="submit" class="btn">Send Message</button>
   <p id="response-message" role="status" aria-live="polite"></p>
 </form>
 <!-- Thank-you card: hidden until a successful submission -->
-<div id="form-success" hidden style="text-align:center; padding:2.5rem 1.5rem; border:1px solid #d9d9d9; border-radius:10px; margin:1.5rem 0; background:#fafafa;">
-  <h3 style="margin-top:0;">🎉 Thanks! Your message is on its way.</h3>
-  <p>We'll get back to you within <strong>1 business day</strong>.<br>
-     A confirmation email is headed to your inbox right now.</p>
-  <p style="margin-bottom:0;">Don't want to wait? You can
-     <a href="https://app.usemotion.com/meet/devo-perez/30-min-consultation">book your free 30-minute consultation</a>
-     below and skip the back-and-forth.</p>
+<div id="form-success" class="form-success" hidden>
+  <h3>Thanks! Your message is on its way.</h3>
+  <p>We'll get back to you within <strong>1 business day</strong>. A confirmation email is headed to your inbox right now.</p>
+  <p>Don't want to wait? <a href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book your free 30-minute consultation</a> and skip the back-and-forth.</p>
 </div>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
- 
 <script>
   const contactForm = document.getElementById('custom-form');
   const responseMsg = document.getElementById('response-message');
@@ -102,7 +95,7 @@ Fill out the form below and we'll get back to you within 1 business day.
   });
 </script>
 <!-- End Embedded Contact Form -->
-<!-- Fills in the service a visitor chose on the Services page. Paste directly below "End Embedded Contact Form". Keep it free of blank lines. -->
+<!-- Fills in the service a visitor chose on the Services page. -->
 <script>
   (function () {
     var service = new URLSearchParams(window.location.search).get("service");
@@ -114,7 +107,8 @@ Fill out the form below and we'll get back to you within 1 business day.
     }
     var form = document.getElementById("custom-form");
     if (form) {
-      form.scrollIntoView({ behavior: "smooth", block: "start" });
+      var top = form.getBoundingClientRect().top + window.scrollY - 110;
+      window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
     }
     var name = document.getElementById("name");
     if (name) {
@@ -122,41 +116,43 @@ Fill out the form below and we'll get back to you within 1 business day.
     }
   })();
 </script>
-
----
-
-## 🗓️ Schedule Your Free Salesforce Consultation
-
-We’re here to help you get the most out of Salesforce—whether you’re planning a new implementation, struggling with adoption, or looking to clean up your data.
-
-Our free 30-minute consultation is designed to give you immediate clarity and value, no strings attached.
-
-#### 🤝 What to Expect
-
-During our conversation, we’ll take time to understand your business goals, current Salesforce setup, and any roadblocks you’re facing. You don’t need to prepare anything formal—just bring your questions, pain points, or ideas.
-
-### ✅ You’ll Walk Away With:
-
-1. **A Clear Snapshot of Where You Are**
-We’ll identify key opportunities and risks in your current Salesforce environment or processes.
-
-2. **Tailored Recommendations**
-You’ll receive practical, platform-aware suggestions that are aligned with your business needs, not generic best practices.
-
-3. **A Roadmap Preview**
-We’ll outline next steps for enhancing your Salesforce setup—whether that’s quick wins, longer-term strategy, or where to get started.
-
+    </div>
+    <aside>
+      <div class="card side-card">
+        <h3>Get in touch</h3>
+        <dl>
+          <div><dt>Email</dt><dd><a href="mailto:contact@loveunited.solutions">contact@loveunited.solutions</a></dd></div>
+          <div><dt>Phone or text</dt><dd><a href="tel:+13213702301">(321) 370-2301</a></dd></div>
+          <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/company/loveunitedsolutions/" target="_blank" rel="noopener">Connect with us</a></dd></div>
+          <div><dt>Instagram</dt><dd><a href="https://instagram.com/loveunited.solutions" target="_blank" rel="noopener">@loveunited.solutions</a></dd></div>
+        </dl>
+      </div>
+      <div class="card side-card">
+        <h3>Prefer to talk it through?</h3>
+        <p>Book a free 30-minute consultation. No prep needed, just bring your questions.</p>
+        <a class="btn ghost" href="#book">Pick a time below</a>
+      </div>
+      <p class="side-note">Proudly minority-owned and values-led.</p>
+    </aside>
+  </div>
+</section>
+<section id="book" style="padding-top:0">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Free consultation</p>
+      <h2>Schedule your free 30-minute consultation</h2>
+      <p>We'll learn your goals, your current Salesforce setup, and what's getting in the way. You don't need to prepare anything formal.</p>
+    </div>
+    <div class="expect">
+      <div class="step"><b class="n">01</b><h3>A clear snapshot</h3><p>Key opportunities and risks in your current org or processes.</p></div>
+      <div class="step"><b class="n">02</b><h3>Tailored recommendations</h3><p>Practical, platform-aware suggestions shaped to your business, not generic best practices.</p></div>
+      <div class="step"><b class="n">03</b><h3>A roadmap preview</h3><p>Next steps, whether that's quick wins, longer-term strategy, or where to start.</p></div>
+    </div>
+    <div class="card embed-card">
 <!-- Motion embed begin -->
-<iframe src="https://app.usemotion.com/meet/devo-perez/30-min-consultation" title="Motion Booking Page" width="100%" height="840px" frameborder="0"></iframe>
+<iframe src="https://app.usemotion.com/meet/devo-perez/30-min-consultation" title="Motion Booking Page" width="100%" height="840" frameborder="0"></iframe>
 <!-- Motion embed end -->
-
-Need help right away? [Grab time with us within the next 24 hours.](https://balo.expert/profile/devo-pm)
-
-## 🤝 Let’s Collaborate
-
-Love unITed Solutions brings experience across small businesses and enterprise sectors—including manufacturing, healthcare, life sciences, and media.  
-
-> Let's make Salesforce work *for* your business—not the other way around.
-> Love unITed Solutions is proudly minority-owned and committed to building systems that support equity and impact.
-
----
+    </div>
+    <p class="after-embed">Need help right away? <a href="https://balo.expert/profile/devo-pm" target="_blank" rel="noopener">Grab time with us within the next 24 hours.</a></p>
+  </div>
+</section>
