@@ -196,7 +196,8 @@ footer h4{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;tex
 .prose h1 + *,.prose h2 + *,.prose h3 + *,.prose h4 + *{margin-top:.6em}
 .prose a{color:var(--brand-navy);text-decoration:underline;text-decoration-color:var(--taupe);text-decoration-thickness:2px;text-underline-offset:3px}
 .prose a:hover{text-decoration-color:var(--brand-navy)}
-.prose a.btn{text-decoration:none}
+.prose a.btn{text-decoration:none;color:#f4efe6}
+.prose a.btn.ghost,.prose a.btn:hover,.prose a.btn:focus-visible{color:var(--brand-navy)}
 .prose ul,.prose ol{padding-left:1.4em}
 .prose li + li{margin-top:.4em}
 .prose li::marker{color:var(--steel)}
@@ -331,3 +332,5 @@ footer h4{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;tex
 
 .post-figure{max-width:46rem;margin:0 auto 36px}
 .post-figure img{width:100%;height:auto;max-height:380px;object-fit:cover;border-radius:var(--radius-lg);border:1px solid var(--line);box-shadow:var(--shadow)}
+.lu-form input.btn{background:var(--brand-navy);color:#f4efe6;border-color:transparent;cursor:pointer;font-weight:600}
+.lu-form input.btn:hover{background:var(--gold);color:var(--brand-navy)}

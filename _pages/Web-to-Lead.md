@@ -1,10 +1,11 @@
 ---
 permalink: /web-to-lead/
-title: " "
-layout: single
-classes: wide
-author_profile: true
+title: "Web-to-Lead Test"
+layout: lu-page
+noindex: true
+sitemap: false
 ---
+<!-- Internal test page for a Salesforce Web-to-Lead form. Not linked from the site and hidden from search engines. -->
 
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
@@ -21,7 +22,7 @@ author_profile: true
 <div id="statusMessage" style="display:none;text-align:center;padding:20px;"></div>
 
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
-<form id="webToLeadForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D300000001Zrp" method="POST">
+<form id="webToLeadForm" class="lu-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D300000001Zrp" method="POST">
 
 <input type="hidden" name='captcha_settings' value='{"keyname":"LUS_TestSite","fallback":"true","orgId":"00D300000001Zrp","ts":""}'>
 <input type="hidden" name="oid" value="00D300000001Zrp">
@@ -47,7 +48,7 @@ author_profile: true
 
 <div class="g-recaptcha" data-sitekey="6LfP5ncrAAAAAKteCgCl1uFl8CPxX6-jhdIVORVE"></div><br>
 
-<input type="submit" name="submit">
+<input type="submit" name="submit" class="btn" value="Submit">
 
 </form>
 
