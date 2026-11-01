@@ -16,10 +16,15 @@ description: "Tell us what's going on in your Salesforce org. We reply within 1 
 <section class="inner">
   <div class="container contact-grid">
     <div class="card form-card">
+      <div id="form-intro">
       <h2>Send us a message</h2>
       <p>A few details help us come prepared. Only the first three fields are required.</p>
+      </div>
 <!-- Begin Embedded Contact Form -->
 <form id="custom-form" class="lu-form" action="https://script.google.com/macros/s/AKfycbzEYHSClG8MKxQFfsfRrORD97Fhg2h9is9UMMX5KdnvZCrNCZ-pa_SlzbgN4Cv8-O2t/exec" method="POST">
+  <!-- Filled in automatically when a visitor arrives from a service card (contact/?service=...). -->
+  <input type="hidden" name="service" id="service" value="">
+  <p class="service-note" id="service-note" hidden>You're asking about: <strong id="service-name"></strong></p>
   <div class="row-2">
     <div>
       <label for="name">Your name</label>
@@ -76,11 +81,13 @@ description: "Tell us what's going on in your Salesforce org. We reply within 1 
       if (res.ok && text === "Success") {
         // The swap: form disappears, thank-you card takes its place.
         contactForm.hidden = true;
+        var intro = document.getElementById('form-intro');
+        if (intro) intro.hidden = true;
         successBox.hidden = false;
         successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
         // Count the lead at the moment it actually exists.
         if (typeof gtag === 'function') {
-          gtag('event', 'generate_lead', { method: 'contact_form' });
+          gtag('event', 'generate_lead', { method: 'contact_form', service: document.getElementById('service').value || 'none' });
         }
       } else {
         // Failure: keep the form on screen so they can retry.
@@ -95,19 +102,21 @@ description: "Tell us what's going on in your Salesforce org. We reply within 1 
   });
 </script>
 <!-- End Embedded Contact Form -->
-<!-- Fills in the service a visitor chose on the Services page. -->
+<!-- Records the service a visitor chose on the Services page in the hidden "service" field. -->
 <script>
   (function () {
     var service = new URLSearchParams(window.location.search).get("service");
     if (!service) return;
     service = service.replace(/[<>]/g, "").slice(0, 80);
-    var message = document.getElementById("message");
-    if (message && !message.value) {
-      message.value = "I'm interested in: " + service + "\n\n";
-    }
+    var field = document.getElementById("service");
+    if (field) field.value = service;
+    var note = document.getElementById("service-note");
+    var label = document.getElementById("service-name");
+    if (note && label) { label.textContent = service; note.hidden = false; }
     var form = document.getElementById("custom-form");
     if (form) {
-      var top = form.getBoundingClientRect().top + window.scrollY - 110;
+      var card = form.closest(".card") || form;
+      var top = card.getBoundingClientRect().top + window.scrollY - 100;
       window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
     }
     var name = document.getElementById("name");

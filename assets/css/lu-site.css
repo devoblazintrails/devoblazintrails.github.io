@@ -270,7 +270,8 @@ footer h4{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;tex
 .contact-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:28px;align-items:start}
 .form-card{padding:34px 34px 30px}
 .form-card h2{font-size:1.5rem;margin-bottom:4px}
-.form-card > p{color:var(--muted);font-size:.95rem;margin-bottom:22px}
+.form-card > p,#form-intro p{color:var(--muted);font-size:.95rem;margin-bottom:22px}
+#form-intro[hidden]{display:none}
 .lu-form label{display:block;font-weight:600;font-size:.92rem;color:var(--brand-navy);margin:0 0 6px}
 .lu-form label .opt{font-weight:400;color:var(--muted)}
 .lu-form input,.lu-form textarea,.lu-form select{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:18px;transition:border-color .15s ease,box-shadow .15s ease}
@@ -334,3 +335,5 @@ footer h4{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;tex
 .post-figure img{width:100%;height:auto;max-height:380px;object-fit:cover;border-radius:var(--radius-lg);border:1px solid var(--line);box-shadow:var(--shadow)}
 .lu-form input.btn{background:var(--brand-navy);color:#f4efe6;border-color:transparent;cursor:pointer;font-weight:600}
 .lu-form input.btn:hover{background:var(--gold);color:var(--brand-navy)}
+.service-note{background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--steel);border-radius:10px;padding:10px 14px;font-size:.93rem;color:var(--muted);margin-bottom:20px}
+.service-note strong{color:var(--brand-navy)}
