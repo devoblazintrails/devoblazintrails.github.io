@@ -102,6 +102,26 @@ Fill out the form below and we'll get back to you within 1 business day.
   });
 </script>
 <!-- End Embedded Contact Form -->
+<!-- Fills in the service a visitor chose on the Services page. Paste directly below "End Embedded Contact Form". Keep it free of blank lines. -->
+<script>
+  (function () {
+    var service = new URLSearchParams(window.location.search).get("service");
+    if (!service) return;
+    service = service.replace(/[<>]/g, "").slice(0, 80);
+    var message = document.getElementById("message");
+    if (message && !message.value) {
+      message.value = "I'm interested in: " + service + "\n\n";
+    }
+    var form = document.getElementById("custom-form");
+    if (form) {
+      form.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    var name = document.getElementById("name");
+    if (name) {
+      setTimeout(function () { name.focus({ preventScroll: true }); }, 700);
+    }
+  })();
+</script>
 
 ---
 
