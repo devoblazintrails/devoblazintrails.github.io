@@ -1,5 +1,6 @@
 ---
 title: "Still Using Process Builder? It’s Time for an Upgrade"
+description: "Process Builder and Workflow Rules are being retired. Here's a simple, low-stress strategy for moving your automations to Flow and cleaning house while you do it."
 header:
   overlay_filter: linear-gradient(rgba(19, 63, 105, 0.7), rgba(194, 178, 128, 0.7))
   overlay_image: /assets/images/Process-Mapping-Blog Image.png

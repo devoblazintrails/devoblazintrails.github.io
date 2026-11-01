@@ -18,10 +18,9 @@ masthead_title: "Love unITed Solutions"
 # in the templates via {{ site.myvariable }}.
 title: Love unITed Solutions, LLC
 email: contact@loveunited.solutions
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description
+description: >-
+  Right-sized Salesforce consulting for business, government, and nonprofit
+  teams. Technology Powered by Love.
 github_username: username
 minimal_mistakes_skin: dirt
 search: true
@@ -93,24 +92,18 @@ footer:
       url: "https://github.com/devoblazintrails"
 
 defaults:
-  # _posts
+  # _posts: use the new site design (see _layouts/lu-post.html)
   - scope:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
+      layout: lu-post
+  # _pages: use the new site design (see _layouts/lu-page.html)
   - scope:
       path: "_pages"
       type: pages
     values:
-      layout: splash
-      author_profile: true
+      layout: lu-page
 
 category_archive:
   type: liquid

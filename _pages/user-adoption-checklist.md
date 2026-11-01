@@ -1,8 +1,7 @@
 ---
 title: "User Adoption Checklist"
-layout: splash
+layout: lu-page
 permalink: /user-adoption-checklist/
-author_profile: false
 ---
 
 # Boost Salesforce User Adoption
@@ -27,19 +26,14 @@ Fill in your info to receive the checklist instantly:
     frameborder="0" style="position: absolute; left:0; top:0; width:100%; height:100%; border:0;">
   </iframe>
 </div>
-<cite>** We respect your privacy.**</cite> Your information will only be used to share the checklist and occasional insights — no spam.
+<strong>We respect your privacy.</strong> Your information will only be used to share the checklist and occasional insights. No spam.
 {: .small}
 
-<br>
-<h3 class="centered"> Ready to Transform Your Salesforce Experience?</h3>
+<h3 class="centered" style="margin-top:2.2em"> Ready to Transform Your Salesforce Experience?</h3>
 
 <p class="centered"> <strong>Schedule a free 15-minute discovery call</strong> to discuss your needs and explore how we can help your business thrive.</p>
 
 <div class="button-container">
-  <a href="https://app.usemotion.com/meet/devo-perez/meeting?d=15" target="_blank" rel="noopener noreferrer">
-    <button class="btn--primary">Book a Call</button>
-  </a>
-  <a href="#" onclick="openForm(); return false;">
-    <button class="btn--primary">Inquire About Services</button>
-  </a>
+  <a class="btn" href="https://app.usemotion.com/meet/devo-perez/meeting?d=15" target="_blank" rel="noopener noreferrer">Book a Call</a>
+  <a class="btn ghost" href="/contact/">Inquire About Services</a>
 </div>

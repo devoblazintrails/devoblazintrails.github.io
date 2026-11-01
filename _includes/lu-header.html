@@ -1,0 +1,26 @@
+<a class="skip" href="#main">Skip to content</a>
+<header class="site" id="siteHeader">
+  <div class="container navwrap">
+    <a class="brand" href="/">
+      <img class="mark" src="/assets/images/lu-mark.png" alt="" width="46" height="28">
+      love unITed Solutions
+    </a>
+    <button class="hamb" id="hamb" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+    <nav class="main" id="mainNav" aria-label="Primary">
+      <a href="/#/services">Services</a>
+      <div class="dd" id="ddServe">
+        <button class="dd-toggle" id="ddToggle" type="button" aria-expanded="false" aria-controls="ddMenu">Who We Serve <svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 L5 7 L8.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dd-menu" id="ddMenu">
+          <a href="/#/door/commercial"><b>Commercial</b><span>Revenue teams and growing companies</span></a>
+          <a href="/#/door/government"><b>Government</b><span>State, local, and federal missions</span></a>
+          <a href="/#/door/nonprofit"><b>Nonprofit</b><span>Mission-driven organizations</span></a>
+          <div class="dd-sep" role="separator"></div>
+          <a href="/#/industries"><b>All 11 industries</b><span>From wealth management to telecom</span></a>
+        </div>
+      </div>
+      <a href="/#/about">About</a>
+      <a href="/blog/"{% if page.layout == "lu-blog" or page.layout == "lu-post" %} class="active" aria-current="page"{% endif %}>Insights</a>
+      <a class="btn sm cta" href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book a Call</a>
+    </nav>
+  </div>
+</header>

@@ -1,8 +1,7 @@
 ---
 title: "User Adoption Checklist"
-layout: splash
+layout: lu-page
 permalink: /user-adoption-checklist-download/
-author_profile: false
 ---
 
 <html lang="en">

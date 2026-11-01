@@ -1,5 +1,6 @@
 ---
 title: "From Vision to Launch: Why I Started Love unITed Solutions"
+description: "Seven years in the making: why I started Love unITed Solutions, and the kind of inclusive, people-first Salesforce consultancy I set out to build."
 header:
   overlay_filter: linear-gradient(rgba(19, 63, 105, 0.7), rgba(194, 178, 128, 0.7))
   overlay_image: /assets/images/Launch-Banner.png
