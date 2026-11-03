@@ -1,0 +1,19 @@
+# The side-by-side comparison shown on the Health Check and Security & Access Review pages.
+- key: security-review
+  name: Security & Access Review
+  short: Security & Access Review
+  question: "Who can see and change what?"
+  covers: "Security only, in depth: profiles, permission sets, sharing, field-level security, MFA, and login posture."
+  price: "$2,000 · 1 week"
+  get: "Security scorecard and a ranked fix list"
+  best: "You have a specific security worry, an audit coming up, or a lot of staff turnover."
+  url: /services/security-review/
+- key: health-check
+  name: Salesforce Health Check
+  short: Health Check
+  question: "How healthy is our whole org?"
+  covers: "Your whole org across 4 areas: security model, data quality, automation, and adoption."
+  price: "$3,500 · 2 weeks"
+  get: "Scored report across all 4 areas and a 90-day roadmap"
+  best: "You want the full picture before you plan, invest, or hire."
+  url: /services/health-check/

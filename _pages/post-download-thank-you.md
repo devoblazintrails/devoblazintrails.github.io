@@ -14,7 +14,7 @@ We hope the downloaded content helps you accelerate your instance. We're excited
 Explore how we can help you streamline processes, enhance data quality, and deliver real results.
 {: style="text-align: center;"}
 
-[Explore our services](/#/services) <br>
+[Explore our services](/services/) <br>
 {: style="text-align: center;"}
 
 Together, we can build a Salesforce solution that’s not just functional, but future-proof. <br>

@@ -1,0 +1,30 @@
+# One entry per service page. Used by the service layout ("Other ways to start")
+# and the /services/ overview. Prices here should match the homepage Services section.
+- key: health-check
+  name: Salesforce Health Check
+  short: Health Check
+  price: "$3,500"
+  meta: Fixed price · 2 weeks
+  summary: A full org audit with a scored report across 4 domains and a prioritized 90-day roadmap.
+  url: /services/health-check/
+- key: security-review
+  name: Security & Access Review
+  short: Security & Access Review
+  price: "$2,000"
+  meta: Fixed price · 1 week
+  summary: Profiles, permission sets, sharing, and login posture, with a scorecard and a ranked fix list.
+  url: /services/security-review/
+- key: small-scope-build
+  name: Small-Scope Build
+  short: Small-Scope Build
+  price: from $4,500
+  meta: Fixed quote · 2-3 weeks
+  summary: One clearly scoped process or automation, designed, built, documented, and handed over working.
+  url: /services/small-scope-build/
+- key: fractional-admin
+  name: Fractional Admin Support
+  short: Fractional Admin
+  price: from $600/mo
+  meta: Monthly · 5 or 10 hours
+  summary: Certified Salesforce help every month, without the cost of a full-time hire.
+  url: /services/fractional-admin/
