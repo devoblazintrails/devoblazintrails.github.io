@@ -7,7 +7,7 @@
     </a>
     <button class="hamb" id="hamb" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">☰</button>
     <nav class="main" id="mainNav" aria-label="Primary">
-      <a href="/#/services">Services</a>
+      <a href="/services/"{% if page.url contains "/services/" %} class="active" aria-current="page"{% endif %}>Services</a>
       <div class="dd" id="ddServe">
         <button class="dd-toggle" id="ddToggle" type="button" aria-expanded="false" aria-controls="ddMenu">Who We Serve <svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 L5 7 L8.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <div class="dd-menu" id="ddMenu">

@@ -1,0 +1,70 @@
+{%- comment -%}
+  Shared contact form. Posts to the same Google Apps Script as the Contact page.
+  Usage: {% include lu-contact-form.html service="Security & Access Review" compact=true %}
+  - service: saved in the hidden "service" field (shows in your sheet and emails)
+  - compact: tucks the optional fields behind "Add details" for sidebars
+  Only one copy of this form can appear on a page.
+{%- endcomment -%}
+<form id="custom-form" class="lu-form{% if include.compact %} compact{% endif %}" action="https://script.google.com/macros/s/AKfycbzEYHSClG8MKxQFfsfRrORD97Fhg2h9is9UMMX5KdnvZCrNCZ-pa_SlzbgN4Cv8-O2t/exec" method="POST">
+  <input type="hidden" name="service" id="service" value="{{ include.service | escape }}">
+  <label for="name">Your name</label>
+  <input type="text" name="name" id="name" autocomplete="name" required>
+  <label for="email">Work email</label>
+  <input type="email" name="email" id="email" autocomplete="email" required>
+  <label for="message">What's going on in your org?</label>
+  <textarea name="message" id="message" rows="4" required></textarea>
+  {% if include.compact %}<details class="more-fields"><summary>Add details <span class="opt">(optional)</span></summary>{% endif %}
+  <label for="edition">Salesforce edition <span class="opt">(optional)</span></label>
+  <input type="text" name="edition" id="edition" placeholder="e.g. Enterprise, NPSP">
+  <label for="users">Number of users <span class="opt">(optional)</span></label>
+  <input type="number" name="users" id="users" min="0">
+  <label for="needs">Top 3 admin needs <span class="opt">(optional)</span></label>
+  <textarea name="needs" id="needs" rows="3"></textarea>
+  {% if include.compact %}</details>{% endif %}
+  <div class="g-recaptcha" data-sitekey="6LfP5ncrAAAAAKteCgCl1uFl8CPxX6-jhdIVORVE"></div>
+  <button type="submit" class="btn">Send Message</button>
+  <p id="response-message" role="status" aria-live="polite"></p>
+</form>
+<div id="form-success" class="form-success" hidden>
+  <h3>Thanks! Your message is on its way.</h3>
+  <p>We'll get back to you within <strong>1 business day</strong>. A confirmation email is headed to your inbox right now.</p>
+  <p>Don't want to wait? <a href="https://app.usemotion.com/meet/devo-perez/30-min-consultation" target="_blank" rel="noopener">Book your free 30-minute consultation</a>.</p>
+</div>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+  (function () {
+    var contactForm = document.getElementById('custom-form');
+    var responseMsg = document.getElementById('response-message');
+    var successBox = document.getElementById('form-success');
+    var submitBtn = contactForm.querySelector('button[type="submit"]');
+    contactForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      var token = grecaptcha.getResponse();
+      if (!token) { responseMsg.textContent = "Please complete the reCAPTCHA."; return; }
+      submitBtn.disabled = true;
+      responseMsg.textContent = "Sending...";
+      try {
+        var body = new URLSearchParams(new FormData(contactForm));
+        var res = await fetch(contactForm.action, { method: 'POST', body: body });
+        var text = (await res.text()).trim();
+        if (res.ok && text === "Success") {
+          contactForm.hidden = true;
+          var intro = document.getElementById('form-intro');
+          if (intro) intro.hidden = true;
+          successBox.hidden = false;
+          successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', { method: 'contact_form', service: document.getElementById('service').value || 'none' });
+          }
+        } else {
+          responseMsg.textContent = "Something went wrong: " + (text || ("HTTP " + res.status));
+          grecaptcha.reset();
+          submitBtn.disabled = false;
+        }
+      } catch (err) {
+        responseMsg.textContent = "Network error. Please try again.";
+        submitBtn.disabled = false;
+      }
+    });
+  })();
+</script>

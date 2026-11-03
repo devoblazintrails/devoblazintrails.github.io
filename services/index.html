@@ -1,0 +1,81 @@
+---
+layout: lu-page
+wide: true
+title: "Salesforce Consulting Services and Pricing"
+description: "Fixed-price ways to start, monthly fractional admin support, and scoped Salesforce projects for business, government, and nonprofit teams."
+permalink: /services/
+---
+{%- assign book = "https://app.usemotion.com/meet/devo-perez/30-min-consultation" -%}
+<section class="page-hero svc-hero" style="padding-bottom:52px">
+  <div class="container">
+    <div class="svc-hero-grid">
+      <div>
+        <p class="eyebrow">Services</p>
+        <h1>Ways to work with us.</h1>
+        <p class="lead">Start with a fixed-price review, keep your org healthy with monthly fractional support, or scope a larger project together. Whatever the size, you get a clear plan and pricing you agree to before any work begins.</p>
+      </div>
+      <div class="svc-hero-cta">
+        <a class="btn" href="{{ book }}" target="_blank" rel="noopener">Book a free 30-min call</a>
+        <a class="svc-jump" href="/contact/">or send us a message</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="inner">
+  <div class="container">
+    <div class="section-head" id="start">
+      <p class="eyebrow">Start here · Fixed price</p>
+      <h2>Clear ways to start.</h2>
+      <p>Each one has a set scope, a set price, and a deliverable you keep. Review fees count toward any build or project you start within 60 days.</p>
+    </div>
+    <div class="grid-3">
+      {% for s in site.data.services %}{% if s.key != "fractional-admin" %}
+      <a class="card svc-mini" href="{{ s.url }}">
+        <h3>{{ s.name }}</h3>
+        <p class="price">{{ s.price }}</p>
+        <p class="meta">{{ s.meta }}</p>
+        <p class="desc">{{ s.summary }}</p>
+        <span class="go">See details <span class="arr">&rarr;</span></span>
+      </a>
+      {% endif %}{% endfor %}
+    </div>
+
+    <div class="section-head" id="ongoing" style="margin-top:72px">
+      <p class="eyebrow">Ongoing support · Monthly</p>
+      <h2>Fractional admin support.</h2>
+      <p>Certified Salesforce help every month, without the cost of a full-time hire.</p>
+    </div>
+    <div class="grid-3">
+      <a class="card svc-mini" href="/services/fractional-admin/"><h3>Starter</h3><p class="price">$600/mo</p><p class="meta">5 hours per month</p><p class="desc">Light-touch ongoing help for teams that need a certified admin a few hours a month.</p><span class="go">See plans <span class="arr">&rarr;</span></span></a>
+      <a class="card svc-mini" href="/services/fractional-admin/"><h3>Growth</h3><p class="price">$1,150/mo</p><p class="meta">10 hours per month</p><p class="desc">Regular admin work plus steady enhancements as your team grows.</p><span class="go">See plans <span class="arr">&rarr;</span></span></a>
+      <a class="card svc-mini" href="/services/fractional-admin/"><h3>Custom</h3><p class="price">Let's talk</p><p class="meta">Flexible hours</p><p class="desc">Projects or tailored partnerships for teams with bigger or changing needs.</p><span class="go">See plans <span class="arr">&rarr;</span></span></a>
+    </div>
+
+    <div class="section-head" id="projects" style="margin-top:72px">
+      <p class="eyebrow">Projects · Scoped together</p>
+      <h2>Implementations and larger projects.</h2>
+      <p>For work bigger than a small build. We scope it together, agree on the plan and pricing, then deliver in focused phases.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card svc-mini svc-project"><h3>Quick-Start Setup</h3><p class="price">Scoped to fit</p><p class="meta">New to Salesforce</p><p class="desc">Launch Salesforce with the essentials tailored to your business, for teams ready to leave spreadsheets behind.</p><a class="btn" href="/contact/?service=Quick-Start%20Setup">Request a Quote</a></div>
+      <div class="card svc-mini svc-project"><h3>Sales &amp; Service Optimization</h3><p class="price">Scoped to fit</p><p class="meta">Already on Salesforce</p><p class="desc">Tune Salesforce to how your team actually works and turn it into a growth engine.</p><a class="btn" href="/contact/?service=Sales%20%26%20Service%20Optimization">Request a Quote</a></div>
+      <div class="card svc-mini svc-project"><h3>Public Sector &amp; Nonprofit Projects</h3><p class="price">Scoped to fit</p><p class="meta">Government and nonprofit</p><p class="desc">Workflows built around the people you serve, documented so your team can run them.</p><a class="btn" href="/contact/?service=Public%20Sector%20%26%20Nonprofit%20Projects">Request a Quote</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-wrap">
+  <div class="container">
+    <div class="band">
+      <div>
+        <h2>Not sure where to start?</h2>
+        <p>Book a free 30-minute call. We'll point you to the option that fits your org and your budget.</p>
+      </div>
+      <div class="actions">
+        <a class="btn" href="{{ book }}" target="_blank" rel="noopener">Book a free consultation</a>
+        <a class="btn ghost" href="/contact/">Send a message</a>
+      </div>
+    </div>
+  </div>
+</section>

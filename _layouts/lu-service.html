@@ -1,0 +1,240 @@
+---
+layout: lu-page
+wide: true
+---
+{%- comment -%}
+  Service page layout. Each service page fills these in its front matter:
+  service_name, service_key, eyebrow, summary, price, price_note, timeline, deliverable,
+  schema_price, request_noun, symptoms (list), reviews (list), deliverables (list of title/text),
+  sample (optional include file name), steps (list of title/text), included (list), not_included (list).
+  The page body (below the front matter) holds "Who it is for" and "Common questions".
+{%- endcomment -%}
+{%- assign book = "https://app.usemotion.com/meet/devo-perez/30-min-consultation" -%}
+<section class="page-hero svc-hero">
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/services/">Services</a> <span aria-hidden="true">/</span> <span>{{ page.service_name }}</span></nav>
+    <div class="svc-hero-grid">
+      <div>
+        <p class="eyebrow">{{ page.eyebrow }}</p>
+        <h1>{{ page.h1 | default: page.service_name }}</h1>
+        <p class="lead">{{ page.summary }}</p>
+      </div>
+      <div class="svc-hero-cta">
+        <a class="btn" href="{{ book }}" target="_blank" rel="noopener">Book a free 30-min call</a>
+        <a class="svc-jump" href="#request">or send us a message &darr;</a>
+      </div>
+    </div>
+    <dl class="svc-facts">
+      {% if page.facts %}{% for f in page.facts %}<div><dt>{{ f.label }}</dt><dd>{{ f.value }}</dd></div>{% endfor %}
+      {% else %}
+      <div><dt>Price</dt><dd>{{ page.price }}</dd></div>
+      <div><dt>Pricing</dt><dd>{{ page.price_note }}</dd></div>
+      <div><dt>Timeline</dt><dd>{{ page.timeline }}</dd></div>
+      <div><dt>You keep</dt><dd>{{ page.deliverable }}</dd></div>
+      {% endif %}
+    </dl>
+    {% if page.fee_credit %}<p class="svc-credit"><span class="svc-credit-tag">Fee credit</span> {{ page.fee_credit }}</p>{% endif %}
+  </div>
+</section>
+
+<section class="inner svc-main">
+  <div class="container svc-grid">
+    <div class="svc-col">
+      {% if page.symptoms %}
+      <div class="svc-block svc-symptoms">
+        <h2>Sound familiar?</h2>
+        <ul>{% for s in page.symptoms %}<li>{{ s }}</li>{% endfor %}</ul>
+        <p class="svc-symptoms-note">{{ page.symptoms_note }}</p>
+      </div>
+      {% endif %}
+
+      <div class="prose svc-body">
+        {% if page.reviews %}
+        <h2>What we {{ page.reviews_verb | default: "review" }}</h2>
+        <ul>{% for r in page.reviews %}{% if r contains ": " %}{% assign rp = r | split: ": " %}<li><strong>{{ rp[0] }}:</strong> {{ rp[1] }}</li>{% else %}<li>{{ r }}</li>{% endif %}{% endfor %}</ul>
+        {% if page.reviews_note %}<p>{{ page.reviews_note }}</p>{% endif %}
+        {% endif %}
+      </div>
+
+      {% if page.compare %}
+      <div class="svc-block">
+        <h2>Health Check or Security &amp; Access Review?</h2>
+        <p class="svc-compare-intro">Both are fixed-price ways to start. The difference is how much of your org we look at.</p>
+        <div class="svc-compare">
+          {% for c in site.data.compare %}
+          <div class="svc-cmp{% if c.key == page.service_key %} is-current{% endif %}">
+            {% if c.key == page.service_key %}<span class="svc-cmp-tag">You're here</span>{% endif %}
+            <h3>{{ c.name }}</h3>
+            <p class="svc-cmp-q">{{ c.question }}</p>
+            <dl>
+              <div><dt>Covers</dt><dd>{{ c.covers }}</dd></div>
+              <div><dt>Price and time</dt><dd>{{ c.price }}</dd></div>
+              <div><dt>You get</dt><dd>{{ c.get }}</dd></div>
+              <div><dt>Best when</dt><dd>{{ c.best }}</dd></div>
+            </dl>
+            {% if c.key != page.service_key %}<a class="go" href="{{ c.url }}">See the {{ c.short }} <span class="arr">&rarr;</span></a>{% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      <div class="prose svc-body">
+
+        {% if page.deliverables %}
+        <h2>What you get</h2>
+        <div class="svc-get">
+          <ul>{% for d in page.deliverables %}<li><strong>{{ d.title }}.</strong> {{ d.text }}</li>{% endfor %}</ul>
+          {% if page.sample %}{% include {{ page.sample }} %}{% endif %}
+        </div>
+        {% endif %}
+      </div>
+
+      {% if page.tiers %}
+      <div class="svc-block">
+        <h2>{{ page.tiers_heading | default: "Plans" }}</h2>
+        <div class="svc-tiers">
+          {% for t in page.tiers %}<a class="card offer svc-tier" href="{{ t.url }}" target="_blank" rel="noopener">
+            {% if t.tag %}<span class="tag">{{ t.tag }}</span>{% endif %}
+            <h3>{{ t.name }}</h3>
+            <div class="price">{{ t.price }}</div>
+            <div class="meta">{{ t.meta }}</div>
+            <p class="desc">{{ t.desc }}</p>
+            <span class="go">{{ t.cta | default: "Book a call" }} <span class="arr">&rarr;</span></span>
+          </a>{% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if page.steps %}
+      <div class="svc-block">
+        <h2>How it works</h2>
+        <ol class="svc-steps">
+          {% for st in page.steps %}<li><b class="n">{{ forloop.index | prepend: "0" }}</b><h3>{{ st.title }}</h3><p>{{ st.text }}</p>{% if st.outputs %}<div class="svc-out"><span>You get</span><ul>{% for o in st.outputs %}<li>{{ o }}</li>{% endfor %}</ul></div>{% endif %}</li>{% endfor %}
+        </ol>
+      </div>
+      {% endif %}
+
+      {% if page.included %}
+      <div class="svc-block">
+        <h2>What's in scope</h2>
+        <div class="svc-scope">
+          <div class="in"><h3>Included</h3><ul>{% for i in page.included %}<li>{{ i }}</li>{% endfor %}</ul></div>
+          <div class="out"><h3>Not included</h3><ul>{% for i in page.not_included %}<li>{{ i }}</li>{% endfor %}</ul></div>
+        </div>
+      </div>
+      {% endif %}
+
+      <div class="svc-block svc-who">
+        <img src="/assets/images/headshot.png" alt="Devohne Perez Mercado" width="96" height="96">
+        <div>
+          <p class="eyebrow">Who you'll work with</p>
+          <h3>Devohne "Devo" Perez Mercado, Founder</h3>
+          <p>Every engagement is led by Devo, who has spent more than a decade on the Salesforce platform across business, government, and nonprofit orgs.</p>
+          <div class="chip-row">
+            <span class="chip">10 Salesforce credentials</span><span class="chip">10+ years on platform</span><span class="chip">Minority-owned</span>
+          </div>
+          <a class="svc-cred" href="https://www.salesforce.com/trailblazer/devomoore" target="_blank" rel="noopener">See verified credentials on Trailblazer &rarr;</a>
+        </div>
+      </div>
+      <div class="prose svc-body">
+{{ content }}
+      </div>
+
+      {% if page.faqs %}
+      <div class="svc-block">
+        <h2>Common questions</h2>
+        <div class="svc-faqs">
+          {% for f in page.faqs %}<div class="faq"><button class="q" type="button" aria-expanded="false"><span>{{ f.q }}</span><span class="ind" aria-hidden="true">+</span></button><div class="a"><p>{{ f.a }}</p></div></div>{% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+    </div>
+
+    <aside class="svc-side" id="request" aria-label="Request this {{ page.request_noun | default: 'service' }}">
+      <button class="svc-close" type="button" aria-label="Close form">&times;</button>
+      <div class="card form-card">
+        <div id="form-intro">
+          <p class="eyebrow">Get started</p>
+          <h2>Request this {{ page.request_noun | default: "service" }}</h2>
+          <p>Tell us a little about your org. We reply within 1 business day, with no obligation.</p>
+          {% if page.fee_credit_short %}<p class="svc-side-credit">{{ page.fee_credit_short }}</p>{% endif %}
+        </div>
+        {% include lu-contact-form.html service=page.service_name compact=true %}
+      </div>
+      <p class="svc-side-note">Prefer to talk first? <a href="{{ book }}" target="_blank" rel="noopener">Book a free 30-minute call.</a></p>
+    </aside>
+  </div>
+</section>
+
+<section class="svc-more">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Other ways to start</p>
+      <h2>Not quite the right fit?</h2>
+    </div>
+    <div class="grid-3">
+      {% for s in site.data.services %}{% if s.key != page.service_key %}
+      <a class="card svc-mini" href="{{ s.url }}">
+        <h3>{{ s.name }}</h3>
+        <p class="price">{{ s.price }}</p>
+        <p class="meta">{{ s.meta }}</p>
+        <p class="desc">{{ s.summary }}</p>
+        <span class="go">See details <span class="arr">&rarr;</span></span>
+      </a>
+      {% endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="svc-backdrop" hidden></div>
+<div class="svc-mobile-bar">
+  <a class="btn ghost" href="#request" data-open-form>Request</a>
+  <a class="btn" href="{{ book }}" target="_blank" rel="noopener">Book a call</a>
+</div>
+
+<script>
+/* Common questions open and close like the rest of the site. */
+document.querySelectorAll('.svc-faqs .faq').forEach(function (w) {
+  w.querySelector('.q').addEventListener('click', function () {
+    var open = w.classList.toggle('open');
+    this.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+});
+/* On phones the form lives in a slide-up panel that opens from "Request". */
+(function () {
+  var side = document.getElementById('request');
+  var backdrop = document.querySelector('.svc-backdrop');
+  var mq = window.matchMedia('(max-width: 620px)');
+  function open() {
+    side.classList.add('open'); backdrop.hidden = false; document.body.classList.add('sheet-open');
+    setTimeout(function () { var n = document.getElementById('name'); if (n) n.focus({ preventScroll: true }); }, 250);
+  }
+  function close() { side.classList.remove('open'); backdrop.hidden = true; document.body.classList.remove('sheet-open'); }
+  document.querySelectorAll('a[href="#request"]').forEach(function (a) {
+    a.addEventListener('click', function (e) { if (mq.matches) { e.preventDefault(); open(); } });
+  });
+  document.querySelector('.svc-close').addEventListener('click', close);
+  backdrop.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && side.classList.contains('open')) close(); });
+  if (mq.matches && location.hash === '#request') open();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": {{ page.schema_name | default: page.service_name | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "url": "https://www.loveunited.solutions{{ page.url }}",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Love unITed Solutions",
+    "url": "https://www.loveunited.solutions/"
+  }{% if page.schema_price %},
+  "offers": { "@type": "Offer", "price": "{{ page.schema_price }}", "priceCurrency": "USD" }{% elsif page.schema_min_price %},
+  "offers": { "@type": "Offer", "priceCurrency": "USD", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "{{ page.schema_min_price }}", "priceCurrency": "USD" } }{% endif %}
+}
+</script>
