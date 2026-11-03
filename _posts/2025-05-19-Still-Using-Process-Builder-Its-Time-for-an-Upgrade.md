@@ -7,7 +7,8 @@ permalink: /blog/process-builder-to-flow/
 #   - /OLD-ADDRESS/
 header:
   overlay_filter: linear-gradient(rgba(19, 63, 105, 0.7), rgba(194, 178, 128, 0.7))
-  overlay_image: /assets/images/Process-Mapping-Blog Image.png
+  # previous image: /assets/images/Process-Mapping-Blog Image.png
+  overlay_image: /assets/images/banner-process-builder-to-flow.jpg
   og_image: /assets/images/og-process-builder-to-flow.png
 categories:
   - Flow
