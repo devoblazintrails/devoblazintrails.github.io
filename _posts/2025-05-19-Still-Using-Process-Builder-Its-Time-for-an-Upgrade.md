@@ -7,7 +7,8 @@ permalink: /blog/process-builder-to-flow/
 #   - /OLD-ADDRESS/
 header:
   overlay_filter: linear-gradient(rgba(19, 63, 105, 0.7), rgba(194, 178, 128, 0.7))
-  overlay_image: /assets/images/Process-Mapping-Blog Image.png
+  # previous image: /assets/images/Process-Mapping-Blog Image.png
+  overlay_image: /assets/images/banner-process-builder-to-flow.jpg
   og_image: /assets/images/og-process-builder-to-flow.png
 categories:
   - Flow
@@ -84,7 +85,7 @@ We don’t just migrate your automations. We make them better. With our help, yo
 Salesforce is making it clear: the future is Flow. While the sunsetting of Process Builder may feel like a burden, it’s actually a chance to streamline, innovate, and future-proof your Salesforce environment. Take the time to review, consolidate, and build smart, and don’t be afraid to bring in experts who live and breathe this stuff every day.
 
 Ready to ditch Process Builder and build something better? Let’s talk.
-[Contact love unITed Solutions today](https://calendar.app.google/KtFfzRHRmS41CmtZ7) and take your Salesforce automations to the next level.
+[Contact love unITed Solutions today](https://www.loveunited.solutions/contact/) and take your Salesforce automations to the next level.
 
 ## Keep Reading
 - [Salesforce Flow Demystified: Design, Build, and Automate with Confidence](/blog/salesforce-flow-guide/)

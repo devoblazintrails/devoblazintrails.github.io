@@ -4,6 +4,8 @@ description: "Salesforce now requires phishing-resistant MFA for admins. Learn w
 permalink: /blog/salesforce-mfa-requirement/
 image: /assets/images/og-salesforce-mfa.png
 header:
+  overlay_filter: linear-gradient(rgba(19, 63, 105, 0.7), rgba(194, 178, 128, 0.7))
+  overlay_image: /assets/images/banner-salesforce-mfa.jpg
   og_image: /assets/images/og-salesforce-mfa.png
 last_modified_at: 2026-11-04
 categories:
@@ -101,8 +103,7 @@ MFA is one piece of your org's login and access picture, and most teams simply d
 
 If you're not sure who really has admin-level access in your org, **[start with a free 30-minute consultation](https://app.usemotion.com/meet/devo-perez/30-min-consultation)**. We'll give you a clear read on where you stand, with no pitch.
 
-For a complete assessment, our **[Security & Access Review](https://www.loveunited.solutions/#/services/security-review)** is a fixed-price, one-week engagement priced at $2,000. It evaluates profiles, permission sets, sharing rules, field-level security, **MFA readiness, and login posture** against how your team operates. Deliverables are a security scorecard, a prioritized remediation checklist, and a live readout call.
-<!-- TODO: once the real /security-review/ page exists, point the link above to it (see the website fix guide, Phase 3, step 6). -->
+For a complete assessment, our **[Security & Access Review](https://www.loveunited.solutions/services/security-review)** is a fixed-price, one-week engagement priced at $2,000. It evaluates profiles, permission sets, sharing rules, field-level security, **MFA readiness, and login posture** against how your team operates. Deliverables are a security scorecard, a prioritized remediation checklist, and a live readout call.
 
 Ready to move? [Book a free consultation](https://app.usemotion.com/meet/devo-perez/30-min-consultation) today, or [request a Security & Access Review](https://www.loveunited.solutions/contact/?service=Security%20%26%20Access%20Review&utm_source=blog&utm_medium=post&utm_campaign=mfa-requirement).
 

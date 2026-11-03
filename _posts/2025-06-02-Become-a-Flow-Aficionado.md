@@ -6,6 +6,8 @@ permalink: /blog/salesforce-flow-guide/
 # redirect_from:
 #   - /OLD-ADDRESS/
 header:
+  overlay_filter: linear-gradient(rgba(19, 63, 105, 0.7), rgba(194, 178, 128, 0.7))
+  overlay_image: /assets/images/banner-salesforce-flow-guide.jpg
   og_image: /assets/images/og-flow-demystified.png
 categories:
   - Flow
