@@ -3,6 +3,8 @@ title: "Salesforce MFA Requirement: Is Your Admin Team Covered?"
 description: "Salesforce now requires phishing-resistant MFA for admins. Learn who is affected, how to check your org, and how small teams can simplify it with SSO."
 permalink: /blog/salesforce-mfa-requirement/
 image: /assets/images/og-salesforce-mfa.png
+header:
+  og_image: /assets/images/og-salesforce-mfa.png
 last_modified_at: 2026-11-04
 categories:
   - Security
@@ -16,7 +18,8 @@ tags:
 ---
 *Last checked against Salesforce's documentation on November 2, 2026. Salesforce has adjusted this rollout several times, so confirm your org's status in the Salesforce articles linked at the bottom.*
 
-**The short answer:** Salesforce now requires multi-factor authentication (MFA) for all employee users, and *phishing-resistant* MFA for anyone with admin-level access. That means a passkey, a built-in authenticator like Touch ID or Windows Hello, or a hardware security key. An admin without one of those registered is blocked at login until they set it up.
+**The unITed TL;DR:** Salesforce now requires multi-factor authentication (MFA) for all employee users, and *phishing-resistant* MFA for anyone with admin-level access. That means a passkey, a built-in authenticator like Touch ID or Windows Hello, or a hardware security key. An admin without one of those registered is blocked at login until they set it up.
+{: .notice--primary}
 
 Let's talk about the thing nobody wants to discover on a busy Monday morning: your Salesforce admin can't log in. Nobody can fix a broken report, onboard a new hire, or change a field. Take a breath, because this is very fixable. We've walked small teams through exactly this, so here we'll cover what changed, how to check your own org in two steps, and why we steer most small teams toward SSO.
 
@@ -98,7 +101,8 @@ MFA is one piece of your org's login and access picture, and most teams simply d
 
 If you're not sure who really has admin-level access in your org, **[start with a free 30-minute consultation](https://app.usemotion.com/meet/devo-perez/30-min-consultation)**. We'll give you a clear read on where you stand, with no pitch.
 
-For a complete assessment, our **[Security & Access Review](https://www.loveunited.solutions/services/security-review/)** is a fixed-price, one-week engagement priced at $2,000. It evaluates profiles, permission sets, sharing rules, field-level security, **MFA readiness, and login posture** against how your team operates. Deliverables are a security scorecard, a prioritized remediation checklist, and a live readout call.
+For a complete assessment, our **[Security & Access Review](https://www.loveunited.solutions/#/services/security-review)** is a fixed-price, one-week engagement priced at $2,000. It evaluates profiles, permission sets, sharing rules, field-level security, **MFA readiness, and login posture** against how your team operates. Deliverables are a security scorecard, a prioritized remediation checklist, and a live readout call.
+<!-- TODO: once the real /security-review/ page exists, point the link above to it (see the website fix guide, Phase 3, step 6). -->
 
 Ready to move? [Book a free consultation](https://app.usemotion.com/meet/devo-perez/30-min-consultation) today, or [request a Security & Access Review](https://www.loveunited.solutions/contact/?service=Security%20%26%20Access%20Review&utm_source=blog&utm_medium=post&utm_campaign=mfa-requirement).
 
