@@ -7,7 +7,7 @@ header:
   overlay_filter: linear-gradient(rgba(19, 63, 105, 0.7), rgba(194, 178, 128, 0.7))
   overlay_image: /assets/images/banner-salesforce-mfa.jpg
   og_image: /assets/images/og-salesforce-mfa.png
-last_modified_at: 2026-11-04
+last_modified_at: 2026-11-03 09:00:00 -0500
 categories:
   - Security
   - Enhancement Guides
